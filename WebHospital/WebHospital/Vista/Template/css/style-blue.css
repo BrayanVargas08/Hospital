@@ -2996,7 +2996,7 @@ blockquote {
   background: #DDD;
   text-align: center; }
   .or-using::before {
-    content: 'Or Using';
+    content: 'Iniciar con';
     position: absolute;
     top: -10px;
     left: 50%;

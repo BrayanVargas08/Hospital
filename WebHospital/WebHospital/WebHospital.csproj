@@ -303,6 +303,7 @@
     <Content Include="Vista\Template\uploads\testimonial-3.jpg" />
     <Content Include="Vista\Template\uploads\testimonial-4.jpg" />
     <Content Include="Vista\Template\uploads\testimonial-5.jpg" />
+    <Content Include="Vista\Template\CITAS.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -320,6 +321,13 @@
     </Compile>
     <Compile Include="Vista\MasterAdmi.Master.designer.cs">
       <DependentUpon>MasterAdmi.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Template\CITAS.aspx.cs">
+      <DependentUpon>CITAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Template\CITAS.aspx.designer.cs">
+      <DependentUpon>CITAS.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

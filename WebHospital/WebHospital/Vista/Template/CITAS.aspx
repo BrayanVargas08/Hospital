@@ -1,8 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CITAS.aspx.cs" Inherits="WebHospital.Vista.Template.WebForm1" %>
 
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,7 +63,8 @@
                             </div>
                         </div>
                         <div class="col-md-auto pl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect hdr-apointment"><i class="fa fa-calendar m-0 color-white"></i> Make An Appointment</button>
+
+                            <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect hdr-apointment"><i class="fa fa-calendar m-0 color-white"></i> AGENDAR CITA</button>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,9 @@
                         <div class="col-md-6">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                                 <i class="fa fa-user-o"></i>
-                                <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="appointment-name">
+                             
+                                <asp:TextBox ID="TxtNombre" runat="server" class="mdl-textfield__input"  pattern="[A-Z,a-z, ]*" ></asp:TextBox>
+                                <%--<input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="appointment-name">--%>
                                 <label class="mdl-textfield__label" for="appointment-name">Name</label>
                                 <span class="mdl-textfield__error">Please Enter Valid Name!</span>
                             </div>
@@ -93,7 +95,8 @@
                         <div class="col-md-6">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                                 <i class="fa fa-envelope-o"></i>
-                                <input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="appointment-email">
+                                <asp:TextBox ID="txtEmail" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" ></asp:TextBox>
+                              <%--  <input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="appointment-email">--%>
                                 <label class="mdl-textfield__label" for="appointment-email">Email</label>
                                 <span class="mdl-textfield__error">Please Enter Valid Email!</span>
                             </div>
@@ -101,7 +104,8 @@
                         <div class="col-md-6">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                                 <i class="fa fa-phone"></i>
-                                <input class="mdl-textfield__input" type="text" pattern="[0-9]*" id="appointment-mobile">
+                                 <asp:TextBox ID="TxtNumero" runat="server" class="mdl-textfield__input" pattern="[0-9]*" ></asp:TextBox>
+                                <%--<input class="mdl-textfield__input" type="text" pattern="[0-9]*" id="appointment-mobile">--%>
                                 <label class="mdl-textfield__label" for="appointment-mobile">Mobile Number</label>
                                 <span class="mdl-textfield__error">Please Enter Valid Mobile Number!</span>
                             </div>
@@ -109,14 +113,17 @@
                         <div class="col-md-6">
                             <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
                                 <i class="fa fa-hospital-o"></i>
-                                <select class="mdl-selectfield__select" id="appointment-department">
+                                <asp:DropDownList ID="DropDownList2" runat="server" class="mdl-selectfield__select"></asp:DropDownList>
+                                <%--<select class="mdl-selectfield__select" id="appointment-department">--%>
                                     <option value="">&nbsp;</option>
-                                    <option value="1">Gynaecology</option>
+                                   <%-- <option value="1">Gynaecology</option>
                                     <option value="2">Orthology</option>
                                     <option value="3">Dermatologist</option>
                                     <option value="4">Anaesthesia</option>
-                                    <option value="5">Ayurvedic</option>
+                                    <option value="5">Ayurvedic</option>--%>
                                 </select>
+                               
+
                                 <label class="mdl-selectfield__label" for="appointment-department">Choose Department</label>
                             </div>
                         </div>
@@ -150,7 +157,7 @@
             </div>
         </div>
     </div><!-- End Make an Appointment Modal -->
-        
+
 
     <!-- **********Included Scripts*********** -->
 
@@ -181,11 +188,12 @@
     <!--Custom JavaScript for Klinik Template-->
     <script src="js/custom.js"></script>
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-93901876-1', 'auto');
         ga('send', 'pageview');
     </script>

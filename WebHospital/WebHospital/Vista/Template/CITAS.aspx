@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CITAS.aspx.cs" Inherits="WebHospital.Vista.Template.WebForm1" %>
 
 <!DOCTYPE html>
-html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,7 +77,8 @@ html xmlns="http://www.w3.org/1999/xhtml">
             <div class="modal-content">
                 <div class="modal-header text-center">
                     <h5 class="modal-title">Make An Appointment</h5>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
+                    <%--<button type="button" class="close" data-dismiss="modal">&times;</button>--%>
                 </div>
                 <div class="modal-body">
                     <div class="appointment-error"></div>
@@ -144,7 +145,8 @@ html xmlns="http://www.w3.org/1999/xhtml">
                         <div class="col-md-6">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                                 <i class="fa fa-calendar-o"></i>
-                                <input class="mdl-textfield__input" type="text" id="appointment-date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                <asp:TextBox ID="TextBox1" runat="server" class="mdl-textfield__input"  onfocus="(this.type='date')" onblur="(this.type='text')" ></asp:TextBox>
+                               <%-- <input class="mdl-textfield__input" type="text" id="appointment-date" onfocus="(this.type='date')" onblur="(this.type='text')">--%>
                                 <label class="mdl-textfield__label" for="appointment-date">Date</label>
                                 <span class="mdl-textfield__error">Please Enter Valid Date Number!</span>
                             </div>

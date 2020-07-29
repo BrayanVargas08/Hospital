@@ -321,12 +321,12 @@
     <Compile Include="Vista\MaestraDoctor.Master.designer.cs">
       <DependentUpon>MaestraDoctor.Master</DependentUpon>
     </Compile>
-    <Compile Include="Vista\MasterUsuarios.Master.cs">
-      <DependentUpon>MasterUsuarios.Master</DependentUpon>
+    <Compile Include="Vista\MasterInicial.Master.cs">
+      <DependentUpon>MasterInicial.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\MasterUsuarios.Master.designer.cs">
-      <DependentUpon>MasterUsuarios.Master</DependentUpon>
+    <Compile Include="Vista\MasterInicial.Master.designer.cs">
+      <DependentUpon>MasterInicial.Master</DependentUpon>
     </Compile>
     <Compile Include="Vista\MasterAdministrador.Master.cs">
       <DependentUpon>MasterAdministrador.Master</DependentUpon>
@@ -380,7 +380,7 @@
     <Content Include="Vista\Template\sass\partials\_variable.scss" />
     <Content Include="Vista\Template\sass\style.scss" />
     <Content Include="Vista\Template\sass\_buttons.scss" />
-    <Content Include="Vista\MasterUsuarios.Master" />
+    <Content Include="Vista\MasterInicial.Master" />
     <Content Include="Vista\MaestraDoctor.Master" />
     <Content Include="Vista\MasterAdministrador.Master" />
     <Content Include="Vista\MasterUsuario.Master" />

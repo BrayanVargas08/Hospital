@@ -98,7 +98,8 @@
                                 <i class="fa fa-envelope-o"></i>
                                 <asp:TextBox ID="txtEmail" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" ></asp:TextBox>
                               <%--  <input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="appointment-email">--%>
-                                <label class="mdl-textfield__label" for="appointment-email">Email</label>
+                                <asp:Label ID="lblEmail" runat="server" Text"Correo"></asp:Label>
+                                <%--<label class="mdl-textfield__label" for="appointment-email">Email</label>--%>
                                 <span class="mdl-textfield__error">Please Enter Valid Email!</span>
                             </div>
                         </div>

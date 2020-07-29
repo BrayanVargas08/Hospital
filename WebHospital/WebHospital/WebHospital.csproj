@@ -72,7 +72,6 @@
       <DependentUpon>dbHospital.mdf</DependentUpon>
     </Content>
     <Content Include="Vista\CitasMedicas.aspx" />
-    <Content Include="Vista\PRUEBA GITHUB\splash.png" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-orange.css" />

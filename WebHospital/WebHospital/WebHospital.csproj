@@ -172,8 +172,6 @@
     <Content Include="Vista\Template\js\owl.carousel.min.js" />
     <Content Include="Vista\Template\js\popper.min.js" />
     <Content Include="Vista\Template\js\smoothscroll.min.js" />
-    <Content Include="Vista\Template\Login.aspx" />
-    <Content Include="Vista\Template\login.html" />
     <Content Include="Vista\Template\myappointment.html" />
     <Content Include="Vista\Template\myprofile.html" />
     <Content Include="Vista\Template\myrequest.html" />
@@ -349,13 +347,6 @@
     </Compile>
     <Compile Include="Vista\Template\CITAS.aspx.designer.cs">
       <DependentUpon>CITAS.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Template\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\Template\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\Template\Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>

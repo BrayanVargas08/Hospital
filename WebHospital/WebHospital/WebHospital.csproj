@@ -71,7 +71,7 @@
     <Content Include="App_Data\dbHospital_log.ldf">
       <DependentUpon>dbHospital.mdf</DependentUpon>
     </Content>
-    <Content Include="Vista\CitasMedicas.aspx" />
+    <Content Include="Vista\index.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-orange.css" />
@@ -172,8 +172,6 @@
     <Content Include="Vista\Template\js\owl.carousel.min.js" />
     <Content Include="Vista\Template\js\popper.min.js" />
     <Content Include="Vista\Template\js\smoothscroll.min.js" />
-    <Content Include="Vista\Template\Login.aspx" />
-    <Content Include="Vista\Template\login.html" />
     <Content Include="Vista\Template\myappointment.html" />
     <Content Include="Vista\Template\myprofile.html" />
     <Content Include="Vista\Template\myrequest.html" />
@@ -309,19 +307,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vista\CitasMedicas.aspx.cs">
-      <DependentUpon>CitasMedicas.aspx</DependentUpon>
+    <Compile Include="Vista\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\CitasMedicas.aspx.designer.cs">
-      <DependentUpon>CitasMedicas.aspx</DependentUpon>
+    <Compile Include="Vista\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\MasterAdmi.Master.cs">
-      <DependentUpon>MasterAdmi.Master</DependentUpon>
+    <Compile Include="Vista\MaestraDoctor.Master.cs">
+      <DependentUpon>MaestraDoctor.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\MasterAdmi.Master.designer.cs">
-      <DependentUpon>MasterAdmi.Master</DependentUpon>
+    <Compile Include="Vista\MaestraDoctor.Master.designer.cs">
+      <DependentUpon>MaestraDoctor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MasterInicial.Master.cs">
+      <DependentUpon>MasterInicial.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\MasterInicial.Master.designer.cs">
+      <DependentUpon>MasterInicial.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MasterAdministrador.Master.cs">
+      <DependentUpon>MasterAdministrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\MasterAdministrador.Master.designer.cs">
+      <DependentUpon>MasterAdministrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MasterUsuario.Master.cs">
+      <DependentUpon>MasterUsuario.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MasterUsuario.Master.designer.cs">
+      <DependentUpon>MasterUsuario.Master</DependentUpon>
     </Compile>
     <Compile Include="Vista\Template\CITAS.aspx.cs">
       <DependentUpon>CITAS.aspx</DependentUpon>
@@ -329,13 +347,6 @@
     </Compile>
     <Compile Include="Vista\Template\CITAS.aspx.designer.cs">
       <DependentUpon>CITAS.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Template\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\Template\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\Template\Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
@@ -369,7 +380,10 @@
     <Content Include="Vista\Template\sass\partials\_variable.scss" />
     <Content Include="Vista\Template\sass\style.scss" />
     <Content Include="Vista\Template\sass\_buttons.scss" />
-    <Content Include="Vista\MasterAdmi.Master" />
+    <Content Include="Vista\MasterInicial.Master" />
+    <Content Include="Vista\MaestraDoctor.Master" />
+    <Content Include="Vista\MasterAdministrador.Master" />
+    <Content Include="Vista\MasterUsuario.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

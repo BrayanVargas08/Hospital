@@ -11,7 +11,7 @@ namespace WebHospital.Vista
 {
 
 
-    public partial class CitasMedicas
+    public partial class CitasMedicas1
     {
     }
 }

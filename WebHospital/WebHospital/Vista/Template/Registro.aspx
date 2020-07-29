@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterAdmi.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="WebHospital.Vista.Template.Registro" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterAdministrador.Master" AutoEventWireup="true" CodeBehind="Registro.aspx.cs" Inherits="WebHospital.Vista.Template.Registro" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!DOCTYPE html>   
-    <html lang="en">
+    <html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <!-- Start Header -->
     <header id="header">
         <!-- Start Header Top Section -->
@@ -296,9 +297,9 @@
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
                     <!--<input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-name"> -->
-                    <asp:TextBox ID="txtNombre" class="mdl-textfield__input" pattern="[A-Z,a-z, ]*"  runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtNombre" class="mdl-textfield__input" pattern="[A-Z,a-z, ]*"  runat="server" ></asp:TextBox>
                     <label class="mdl-textfield__label" for="register-name">Nombre <em> *</em></label>
-                    <span class="mdl-textfield__error">Please Enter Valid Name!</span>
+                    <span class="mdl-textfield__error">Please Enter Valid Name!</span> 
                 </div>
                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
@@ -311,6 +312,21 @@
                     <i class="fa fa-user-o"></i>
                     <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-name">
                     <label class="mdl-textfield__label" for="register-name">Documento <em> *</em></label>
+                    <span class="mdl-textfield__error">Please Enter Valid Name!</span>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                    <i class="fa fa-user-o"></i>
+                    <!--<input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-name"> -->
+                    <div class="text-justify">
+                        <strong>
+                    <label for="register-name"> <em> *</em></label>
+                    <asp:RadioButtonList ID="RadioButtonList1"  class="mdl-textfield__label" runat="server" RepeatDirection="Horizontal">
+                        <asp:ListItem>Masculino</asp:ListItem>
+                        <asp:ListItem>Femenino</asp:ListItem>
+                        </asp:RadioButtonList>
+                        </strong>
+                    </div>
+                   
                     <span class="mdl-textfield__error">Please Enter Valid Name!</span>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
@@ -677,6 +693,7 @@
     <script src="js/smoothscroll.min.js"></script>
     <!--Custom JavaScript for Klinik Template-->
     <script src="js/custom.js"></script>
+       
 </body>
 </html>
 </asp:Content>

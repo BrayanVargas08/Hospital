@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebHospital.Vista
 {
-    public partial class CitasMedicas : System.Web.UI.Page
+    public partial class CitasMedicas1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

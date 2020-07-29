@@ -71,7 +71,7 @@
     <Content Include="App_Data\dbHospital_log.ldf">
       <DependentUpon>dbHospital.mdf</DependentUpon>
     </Content>
-    <Content Include="Vista\CitasMedicas.aspx" />
+    <Content Include="Vista\CitasMedicas1.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-orange.css" />
@@ -307,12 +307,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vista\CitasMedicas.aspx.cs">
-      <DependentUpon>CitasMedicas.aspx</DependentUpon>
+    <Compile Include="Vista\CitasMedicas1.aspx.cs">
+      <DependentUpon>CitasMedicas1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\CitasMedicas.aspx.designer.cs">
-      <DependentUpon>CitasMedicas.aspx</DependentUpon>
+    <Compile Include="Vista\CitasMedicas1.aspx.designer.cs">
+      <DependentUpon>CitasMedicas1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\MasterAdmi.Master.cs">
       <DependentUpon>MasterAdmi.Master</DependentUpon>

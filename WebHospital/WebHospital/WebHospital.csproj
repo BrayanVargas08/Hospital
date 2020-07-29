@@ -71,7 +71,7 @@
     <Content Include="App_Data\dbHospital_log.ldf">
       <DependentUpon>dbHospital.mdf</DependentUpon>
     </Content>
-    <Content Include="Vista\CitasMedicas1.aspx" />
+    <Content Include="Vista\index.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-orange.css" />
@@ -309,19 +309,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vista\CitasMedicas1.aspx.cs">
-      <DependentUpon>CitasMedicas1.aspx</DependentUpon>
+    <Compile Include="Vista\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\CitasMedicas1.aspx.designer.cs">
-      <DependentUpon>CitasMedicas1.aspx</DependentUpon>
+    <Compile Include="Vista\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\MasterAdmi.Master.cs">
-      <DependentUpon>MasterAdmi.Master</DependentUpon>
+    <Compile Include="Vista\MaestraDoctor.Master.cs">
+      <DependentUpon>MaestraDoctor.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\MasterAdmi.Master.designer.cs">
-      <DependentUpon>MasterAdmi.Master</DependentUpon>
+    <Compile Include="Vista\MaestraDoctor.Master.designer.cs">
+      <DependentUpon>MaestraDoctor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MasterUsuarios.Master.cs">
+      <DependentUpon>MasterUsuarios.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\MasterUsuarios.Master.designer.cs">
+      <DependentUpon>MasterUsuarios.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MasterAdministrador.Master.cs">
+      <DependentUpon>MasterAdministrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\MasterAdministrador.Master.designer.cs">
+      <DependentUpon>MasterAdministrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MasterUsuario.Master.cs">
+      <DependentUpon>MasterUsuario.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MasterUsuario.Master.designer.cs">
+      <DependentUpon>MasterUsuario.Master</DependentUpon>
     </Compile>
     <Compile Include="Vista\Template\CITAS.aspx.cs">
       <DependentUpon>CITAS.aspx</DependentUpon>
@@ -369,7 +389,10 @@
     <Content Include="Vista\Template\sass\partials\_variable.scss" />
     <Content Include="Vista\Template\sass\style.scss" />
     <Content Include="Vista\Template\sass\_buttons.scss" />
-    <Content Include="Vista\MasterAdmi.Master" />
+    <Content Include="Vista\MasterUsuarios.Master" />
+    <Content Include="Vista\MaestraDoctor.Master" />
+    <Content Include="Vista\MasterAdministrador.Master" />
+    <Content Include="Vista\MasterUsuario.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

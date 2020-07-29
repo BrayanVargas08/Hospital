@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Site Title -->
-    <title> HOSPITAL </title>
+    <title>HOSPITAL </title>
     <!-- Meta Description Tag -->
     <meta name="Description" content="Klinik is a HTML5 & CSS3 responsive template">
     <!-- Favicon Icon -->
@@ -34,13 +34,15 @@
     <link rel="stylesheet" href="template/css/style.css">
 </head>
 <body>
+    <form id="formulario" runat="server">
     <!-- Header -->
     <header id="header-3">
         <div class="layer-stretch hdr-center">
             <div class="row align-items-center">
                 <div class="col-md-5 hidden-xs">
                     <div class="hdr-center-account text-left p-0">
-                        <a class="font-14 mr-4"><i class="fa fa-sign-in"></i>Login</a>
+                        <%--<a class="font-14 mr-4"><i class="fa fa-sign-in"></i>Login</a>--%>
+                        <a class="font-14 mr-4" data-toggle="modal" data-target="#login"><i class="fa fa-sign-in"></i>  Iniciar Sesión</a>
                         <a class="font-14"><i class="fa fa-user-o"></i>Register</a>
                     </div>
                 </div>
@@ -469,49 +471,49 @@
         </div>
     </div><!-- End Make an Appointment Modal -->
     <!-- Start Login Modal -->
-    <div id="loginpopup" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title">Login Now</h5>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body text-center">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                        <i class="fa fa-envelope-o"></i>    
-                        <input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="loginpopup-email">
-                        <label class="mdl-textfield__label" for="loginpopup-email">Email <em> *</em></label>
-                        <span class="mdl-textfield__error">Please Enter Valid Email!</span>
+        <div id="login" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title">Iniciar Sesión</h5>
+                        <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
                     </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                        <i class="fa fa-key"></i>
-                        <input class="mdl-textfield__input" type="password" id="loginpopup-password">
-                        <label class="mdl-textfield__label" for="loginpopup-password">Password <em> *</em></label>
-                        <span class="mdl-textfield__error">Please Enter Valid Password!</span>
-                        <div class="forgot-pass">Forgot Password?</div>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon form-bot-check">
-                        <i class="fa fa-question"></i>
-                        <input class="mdl-textfield__input" type="number" id="loginpopup-bot">
-                        <label class="mdl-textfield__label" for="loginpopup-bot">What is 7 plus 1 = <em>* </em></label>
-                        <span class="mdl-textfield__error">Please Enter Correct Value!</span>
-                    </div>
-                    <div class="form-submit">
-                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary">Login Now</button>
-                    </div>
-                    <div class="or-using">Or Using</div>
-                    <div class="social-login">
-                        <a href="#" class="social-facebook"><i class="fa fa-facebook"></i>Facebook</a>
-                        <a href="#" class="social-google"><i class="fa fa-google"></i>Google</a>
-                    </div>
-                    <div class="login-link">
-                        <span class="paragraph-small">Don't have an account?</span>
-                        <a href="#" class="">Register as New User</a>
+                    <div class="modal-body text-center">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-envelope-o">      </i>
+                            <asp:TextBox ID="txtemail" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
+                            <label class="mdl-textfield__label" for="loginpopup-email">Email <em> *</em></label>
+                            <span class="mdl-textfield__error">Please Enter Valid Email!</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-key"></i>
+                            <asp:TextBox ID="txtPassword" runat="server" class="mdl-textfield__input" TextMode="Password"></asp:TextBox>
+                            <label class="mdl-textfield__label" for="login-password">Contraseña <em> *</em></label>
+                            <span class="mdl-textfield__error">Please Enter Valid Password!</span>
+                            <div class="forgot-pass">¿Se te olvidó tu contraseña?</div>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon form-bot-check">
+                            <i class="fa fa-question"></i>
+                            <asp:TextBox ID="txtBot" runat="server" class="mdl-textfield__input" TextMode="Number"></asp:TextBox>
+                            <label class="mdl-textfield__label" for="login-bot">Cuanto es 7 + 1 = <em>* </em></label>
+                            <span class="mdl-textfield__error">Please Enter Correct Value!</span>
+                        </div>
+                        <div class="form-submit">
+                            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" />
+                        </div>
+                        <div class="or-using"></div>
+                        <div class="social-login">
+                            <a href="#" class="social-google"><i class="fa fa-google"></i>Google</a>
+                        </div>
+                        <div class="login-link">
+                            <span class="paragraph-small">¿No tienes una cuenta?</span>
+                            <a href="#" class="">Registrarse como nuevo usuario</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div><!-- End Login Modal -->
+        <!-- End Login Modal -->
     <!-- Start Register Modal -->
     <div id="registerpopup" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -719,5 +721,7 @@
         ga('create', 'UA-93901876-1', 'auto');
         ga('send', 'pageview');
     </script>
+    
+    </form>
 </body>
 </html>

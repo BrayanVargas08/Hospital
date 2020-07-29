@@ -90,13 +90,13 @@
                                 <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                                <i class="fa fa-user-o"></i>
-                             <asp:TextBox ID="TextBox2" runat="server" class="mdl-textfield__input"  pattern="[A-Z,a-z, ]*" ></asp:TextBox>
-                              
-                                <label class="mdl-textfield__label" for="appointment-name">EPS</label>
-                                <span class="mdl-textfield__error">Please Enter Valid Name!</span>
+                       <div class="col-md-6">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
+                                <i class="fa fa-user-md"></i>
+                                 <asp:DropDownList ID="DropDownList3" runat="server" class="mdl-selectfield__select"></asp:DropDownList>
+ 
+                                </select>
+                                <label class="mdl-selectfield__label" for="appointment-doctor">Seleccione Su EPS</label>
                             </div>
                         </div>
                         <div class="col-md-6">

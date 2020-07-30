@@ -320,7 +320,7 @@
                     <div class="text-justify">
                         <strong>
                     <label for="register-name"> <em> *</em></label>
-                    <asp:RadioButtonList ID="RadioButtonList1"  class="mdl-textfield__label" runat="server" RepeatDirection="Horizontal">
+                    <asp:RadioButtonList ID="RadioButtonList1"   runat="server" RepeatDirection="Horizontal">
                         <asp:ListItem>Masculino</asp:ListItem>
                         <asp:ListItem>Femenino</asp:ListItem>
                         </asp:RadioButtonList>
@@ -343,7 +343,8 @@
                 </div>
                 <div class="login-condition">By clicking Creat Account you agree to our<br /><a href="#">terms &#38; condition</a></div>
                 <div class="form-submit">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary">Create Account</button>
+                    <!--<button class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary">Create Account</button>-->
+                    <asp:Button ID="btnRegistrar" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" runat="server" Text="Crear Cuenta" />
                 </div>
                 <div class="or-using">Or Using</div>
                 <div class="social-login">

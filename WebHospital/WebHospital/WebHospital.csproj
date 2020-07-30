@@ -306,6 +306,7 @@
     <Compile Include="Codigo\clConexion.cs" />
     <Compile Include="Codigo\Entidad\ClEntidadUsuario.cs" />
     <Compile Include="Codigo\clUsuario.cs" />
+    <Compile Include="Codigo\Entidad\clEntidadCita.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vista\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

@@ -285,7 +285,7 @@
     <div class="page-ttl">
         <div class="layer-stretch">
             <div class="page-ttl-container">
-                <h1>Register</h1>
+                <h1>Registrar</h1>
                 <p><a href="#">Home</a> &#8594; <span>Register</span></p>
             </div>
         </div>

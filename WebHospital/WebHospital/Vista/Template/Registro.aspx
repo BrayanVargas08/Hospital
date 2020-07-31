@@ -310,7 +310,8 @@
                 </div>
                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
-                    <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-name">
+                    <!--<input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-name"> -->
+                     <asp:TextBox ID="txtDocumento" class="mdl-textfield__input"  pattern="[A-Z,a-z, ]*" runat="server"></asp:TextBox>
                     <label class="mdl-textfield__label" for="register-name">Documento <em> *</em></label>
                     <span class="mdl-textfield__error">Please Enter Valid Name!</span>
                 </div>
@@ -331,20 +332,22 @@
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-envelope-o"></i>
-                    <input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="register-email">
-                    <label class="mdl-textfield__label" for="register-email">Email <em> *</em></label>
+                    <!--<input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="register-email">  -->
+                    <asp:TextBox ID="txtUsuario" class="mdl-textfield__input"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" runat="server"></asp:TextBox>
+                    <label class="mdl-textfield__label" for="register-email">Usuario <em> *</em></label>
                     <span class="mdl-textfield__error">Please Enter Valid Email!</span>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-key"></i>
-                    <input class="mdl-textfield__input" type="password" id="register-password">
-                    <label class="mdl-textfield__label" for="register-password">Password <em> *</em></label>
+                    <!--<input class="mdl-textfield__input" type="password" id="register-password">-->
+                    <asp:TextBox ID="txtContraseña" class="mdl-textfield__input" runat="server"></asp:TextBox>
+                    <label class="mdl-textfield__label" for="register-password">Contraseña <em> *</em></label>
                     <span class="mdl-textfield__error">Please Enter Valid Password(Min 6 Character)!</span>
                 </div>
                 <div class="login-condition">By clicking Creat Account you agree to our<br /><a href="#">terms &#38; condition</a></div>
                 <div class="form-submit">
                     <!--<button class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary">Create Account</button>-->
-                    <asp:Button ID="btnRegistrar" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" runat="server" Text="Crear Cuenta" />
+                    <asp:Button ID="btnRegistrar" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" runat="server" Text="Crear Cuenta" OnClick="btnRegistrar_Click" />
                 </div>
                 <div class="or-using">Or Using</div>
                 <div class="social-login">

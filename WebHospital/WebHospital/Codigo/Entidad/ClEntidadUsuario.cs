@@ -14,8 +14,8 @@ namespace WebHospital.Codigo
         public string Usuario { get; set; }
         public string Contraseña { get; set; }
         public string Genero { get; set; }
-        public int idEps { get; set; }
-        public int idRol { get; set; }
+        public int IdEps { get; set; }
+        public int IdRol { get; set; }
 
     }
 }

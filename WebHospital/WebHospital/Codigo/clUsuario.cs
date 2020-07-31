@@ -9,9 +9,14 @@ namespace WebHospital.Codigo
     {
         public int mtdRegistrar(ClEntidadUsuario objUsuario)
         {
-            string sqlInsert = "INSERT INTO Usuario(Nombre,Apellido,Documento,Usuario,Cntraseña,Genero)" +
-                "values('"+objUsuario.Nombre+ "','" + objUsuario.Apellido + "''" + objUsuario.Documento + "'" +
-                "'" + objUsuario.Usuario + "','" + objUsuario.Contraseña + "','" + objUsuario.Genero + "')";
+            string sqlInsert = "INSERT INTO Usuario(Nombre,Apellido,Documento,Usuario,Cntraseña,Genero,IdEps,IdRol)" +
+                "values('" + objUsuario.Nombre + "','" + objUsuario.Apellido + "''" + objUsuario.Documento + "'" +
+                "'" + objUsuario.Usuario + "','" + objUsuario.Contraseña + "','" + objUsuario.Genero + "'" +
+                "" + objUsuario.IdEps + "," + objUsuario.IdRol + ")";
+
+            clAdminSQL objSQL = new clAdminSQL();
+            int result = objSQL.mtdConectado(sqlInsert);
+            return result;
         }
     }
 }

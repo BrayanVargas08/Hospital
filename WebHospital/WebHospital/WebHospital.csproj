@@ -145,8 +145,32 @@
     <Content Include="Vista\Template\forgot.html" />
     <Content Include="Vista\Template\gallery-1.html" />
     <Content Include="Vista\Template\gallery.html" />
+    <Content Include="Vista\Template\images\ambulancia.jpg" />
+    <Content Include="Vista\Template\images\corona.jpeg" />
+    <Content Include="Vista\Template\images\descargar.jpg" />
+    <Content Include="Vista\Template\images\farmacia.jpg" />
     <Content Include="Vista\Template\images\favicon.png" />
+    <Content Include="Vista\Template\images\hispital6.jpeg" />
+    <Content Include="Vista\Template\images\hospiatal23.jpg" />
+    <Content Include="Vista\Template\images\hospital2.jpg" />
+    <Content Include="Vista\Template\images\hospital3.jpg" />
+    <Content Include="Vista\Template\images\hospital4.png" />
+    <Content Include="Vista\Template\images\hospital6.jpeg" />
+    <Content Include="Vista\Template\images\hospital7.jpg" />
+    <Content Include="Vista\Template\images\hospital8.jpg" />
+    <Content Include="Vista\Template\images\intoxicacion.jpg" />
     <Content Include="Vista\Template\images\logo.png" />
+    <Content Include="Vista\Template\images\medico1.jpg" />
+    <Content Include="Vista\Template\images\medico2.jpg" />
+    <Content Include="Vista\Template\images\medico3.jpg" />
+    <Content Include="Vista\Template\images\medico4.jpg" />
+    <Content Include="Vista\Template\images\medico5.jpg" />
+    <Content Include="Vista\Template\images\medico6.jpg" />
+    <Content Include="Vista\Template\images\Pictures\1593192371.jpg" />
+    <Content Include="Vista\Template\images\Pictures\Feedback\{440FF6A0-D7D1-4CEA-B618-FB2C362E6978}\Capture001.png" />
+    <Content Include="Vista\Template\images\foto1.jpg" />
+    <Content Include="Vista\Template\images\primerosauxilios.jpg" />
+    <Content Include="Vista\Template\images\tecnologias.jpg" />
     <Content Include="Vista\Template\inc\contact-form.php" />
     <Content Include="Vista\Template\inc\make-appointment.php" />
     <Content Include="Vista\Template\index-1.html" />
@@ -390,6 +414,9 @@
     <Content Include="Vista\MaestraDoctor.Master" />
     <Content Include="Vista\MasterAdministrador.Master" />
     <Content Include="Vista\MasterUsuario.Master" />
+    <Content Include="Vista\Template\images\Pictures\Camera Roll\desktop.ini" />
+    <Content Include="Vista\Template\images\Pictures\desktop.ini" />
+    <Content Include="Vista\Template\images\Pictures\Saved Pictures\desktop.ini" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

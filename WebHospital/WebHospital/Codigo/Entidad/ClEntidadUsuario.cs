@@ -7,7 +7,7 @@ namespace WebHospital.Codigo
 {
     public class ClEntidadUsuario
     {
-        public int idUsuario { get; set; }
+        public int IdUsuario { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Documento { get; set; }

@@ -311,7 +311,7 @@
                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
                     <!--<input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-name"> -->
-                     <asp:TextBox ID="txtDocumento" class="mdl-textfield__input"  pattern="[A-Z,a-z, ]*" runat="server"></asp:TextBox>
+                     <asp:TextBox ID="txtDocumento" class="mdl-textfield__input"   runat="server"></asp:TextBox>
                     <label class="mdl-textfield__label" for="register-name">Documento <em> *</em></label>
                     <span class="mdl-textfield__error">Please Enter Valid Name!</span>
                 </div>
@@ -321,7 +321,7 @@
                     <div class="text-justify">
                         <strong>
                     <label for="register-name"> <em> *</em></label>
-                    <asp:RadioButtonList ID="RadioButtonList1"   runat="server" RepeatDirection="Horizontal">
+                    <asp:RadioButtonList ID="RadioButtonGenero"   runat="server" RepeatDirection="Horizontal">
                         <asp:ListItem>Masculino</asp:ListItem>
                         <asp:ListItem>Femenino</asp:ListItem>
                         </asp:RadioButtonList>

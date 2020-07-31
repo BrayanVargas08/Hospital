@@ -23,6 +23,9 @@ namespace WebHospital.Vista.Template
             objEUsuario.Documento = txtDocumento.Text;
             objEUsuario.Usuario = txtUsuario.Text;
             objEUsuario.Contraseña = txtContraseña.Text;
+            objEUsuario.Genero = RadioButtonGenero.SelectedValue;
+            objEUsuario.IdEps = 0;
+            objEUsuario.IdRol = 0;
 
             clUsuario objUsuario = new clUsuario();
             int resultsql = objUsuario.mtdRegistrar(objEUsuario);

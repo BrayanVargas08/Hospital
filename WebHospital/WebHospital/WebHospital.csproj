@@ -71,10 +71,6 @@
     <Content Include="App_Data\dbHospitalPaz_log.ldf">
       <DependentUpon>dbHospitalPaz.mdf</DependentUpon>
     </Content>
-    <Content Include="App_Data\dbHospitalWeb.mdf" />
-    <Content Include="App_Data\dbHospitalWeb_log.ldf">
-      <DependentUpon>dbHospitalWeb.mdf</DependentUpon>
-    </Content>
     <Content Include="Vista\index.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />

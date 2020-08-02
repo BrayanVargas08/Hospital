@@ -291,7 +291,7 @@
                             <span class="mdl-textfield__error">Please Enter Correct Value!</span>
                         </div>
                         <div class="form-submit">
-                            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" />
+                            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" OnClick="btnIngresar_Click"/>
                         </div>
                         <div class="or-using"></div>
                         <div class="social-login">

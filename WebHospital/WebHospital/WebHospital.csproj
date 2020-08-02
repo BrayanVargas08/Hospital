@@ -71,6 +71,7 @@
     <Content Include="App_Data\dbHospitalPaz_log.ldf">
       <DependentUpon>dbHospitalPaz.mdf</DependentUpon>
     </Content>
+    <Content Include="Codigo\Global.asax" />
     <Content Include="Vista\index.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
@@ -308,9 +309,14 @@
   <ItemGroup>
     <Compile Include="Codigo\clAdminSQL.cs" />
     <Compile Include="Codigo\clConexion.cs" />
-    <Compile Include="Codigo\Entidad\clEntidadPaciente.cs" />
-    <Compile Include="Codigo\clPaciente.cs" />
+    <Compile Include="Codigo\clLogin.cs" />
+    <Compile Include="Codigo\Entidad\clEntidadPersonalAdministrativo.cs" />
+    <Compile Include="Codigo\Entidad\ClEntidadUsuario.cs" />
+    <Compile Include="Codigo\clUsuario.cs" />
     <Compile Include="Codigo\Entidad\clEntidadCita.cs" />
+    <Compile Include="Codigo\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vista\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

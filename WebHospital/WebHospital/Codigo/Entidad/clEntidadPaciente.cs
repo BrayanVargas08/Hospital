@@ -11,11 +11,10 @@ namespace WebHospital.Codigo
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Documento { get; set; }
-        public string Usuario { get; set; }
-        public string Contraseña { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
         public string Genero { get; set; }
         public int IdEps { get; set; }
-        public int IdRol { get; set; }
 
     }
 }

@@ -24,7 +24,7 @@
                     </div>
                     <img src="Template/images/hospital2.jpg" alt="" />
                     <div class="slider-button slider-appointment">
-                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect animated fadeInUp">More Info<i class="fa fa-external-link"></i></a>
+                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect animated fadeInUp">Mas informacion <i class="fa fa-external-link"></i></a>
                     </div>
                 </li>
                 <li>
@@ -158,7 +158,7 @@ seguridad a través de equipo médico de alta tecnología y sobre todo calidez h
                             <img src="Template/images/hospital8.jpg" alt="">
                         </div>
                         <span>Departamento de emergencia</span>
-                        <p class="paragraph-small paragraph-black">Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.</p>
+                        <p class="paragraph-small paragraph-black">departamento de emergencias ( ED ), también conocido como un accidente y de emergencia departamento ( A & E ), la sala de emergencia ( ER ), sala de urgencias ( EW ) o servicio de urgencias , es un centro de tratamiento médico especializado en medicina de emergencia , la aguda atención de los pacientes que presente sin cita previa; ya sea por sus propios medios o por la de una ambulancia . El servicio de urgencias se encuentra generalmente en el hospital, u otra atención primaria central.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -167,7 +167,7 @@ seguridad a través de equipo médico de alta tecnología y sobre todo calidez h
                             <img src="template/images/hospital7.jpg" alt="">
                         </div>
                         <span>24 horas de servicio</span>
-                        <p class="paragraph-small paragraph-black">Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.</p>
+                        <p class="paragraph-small paragraph-black">El Servicio de Urgencias 24 horas del Centro Médico red salud brinda una atención  oportuna con calidad y calidez, en la cual las acciones médico – asistenciales están caracterizadas por la prudencia, la pericia, la experiencia, la capacitación técnica.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -176,7 +176,8 @@ seguridad a través de equipo médico de alta tecnología y sobre todo calidez h
                             <img src="template/images/tecnologias.jpg" alt="">
                         </div>
                         <span>Tecnologia avanzada</span>
-                        <p class="paragraph-small paragraph-black">Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.</p>
+                        <p class="paragraph-small paragraph-black">Los hospitales son el objetivo de muchas empresas de alta tecnología y de emprendedores innovadores que aportan su talento para generar nuevas tecnologías que ayuden a médicos a realizar mejor su trabajo y a los pasientes hacer su estancia en esos lugares más confortable.
+Conoce las 10 tecnologías  más avanzadas que están innovando los procesos clínicos y quirurgicos en hospitales de todo el mundo.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -185,7 +186,12 @@ seguridad a través de equipo médico de alta tecnología y sobre todo calidez h
                             <img src="template/images/ambulancia.jpg" alt="">
                         </div>
                         <span>Ambulancia</span>
-                        <p class="paragraph-small paragraph-black">Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.</p>
+                        <p class="paragraph-small paragraph-black">Contamos con un parque de 2 ambulancias, 1 medicalizadas y 1 básicas habilitadas con la última
+resolución del ministerio.
+
+Ambulancia medicalizada Nissan Frontier 4×4 modelo 2014, habilitada con equipos de última tecnología, especial para zonas rurales de difícil acceso en la topografía de nuestra región.
+Ambulancia Volkswagen Crafter 35 modelo 2008 tipo vans, de fácil maniobrabilidad para médicos y
+paramédicos. Dotada con equipos de alta tecnologí.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -194,7 +200,13 @@ seguridad a través de equipo médico de alta tecnología y sobre todo calidez h
                             <img src="template/images/primerosauxilios.jpg" alt="">
                         </div>
                         <span>Primeros auxilios</span>
-                        <p class="paragraph-small paragraph-black">Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.</p>
+                        <p class="paragraph-small paragraph-black">En la vida, nos podemos encontrar frente a situaciones donde debemos auxiliar a otra persona. Es por esa razón que debemos tener los conocimientos básicos para realizar los primeros auxilios y ayudar a una persona en situación de accidente o enfermedad repentina, de manera de preservarle la vida y evitar así que su estado empeore.
+
+Antes que todo, debemos verificar que la persona a la que vamos a asistir esté consciente, respire y tenga pulso.
+
+Es fundamental, frente a una situación como ésta, siempre evitar el pánico, como así también no cambiar de posición a la persona hasta que se determine la naturaleza del proceso.
+
+Existen procedimientos, en caso de emergencias, que es conveniente seguir, para que la ayuda resulte realmente eficaz.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -203,7 +215,14 @@ seguridad a través de equipo médico de alta tecnología y sobre todo calidez h
                             <img src="template/images/farmacia.jpg" alt="">
                         </div>
                         <span>Farmacias y droguerías</span>
-                        <p class="paragraph-small paragraph-black">Mel in hinc veri admodum, copiosae epicurei mea ei. Cum at nisl soleat. Eam insolens referrentur efficiantur an. Nibh deleniti ad vix, quodsi aliquam legendos pri in.</p>
+                        <p class="paragraph-small paragraph-black">El servicio de farmacia se encarga de garantizar una terapia farmacológica exitosa con calidad en el cuidado y atención de los pacientes, con el mínimo riesgo.
+                            Farmacia hospitalaria: El área de preparación y dispensación de medicamentos del servicio de farmacia se encarga del suministro de medicamentos y dispositivos médicos a las diferentes unidades asistenciales
+                            Farmacia clínica:
+                            Farmacia ambulatoria:Servicios de gestión:
+Comprenden la evaluación de nuevos medicamentos, evaluación del uso de medicamentos, educación continua, información de medicamentos e investigación clínica
+La Farmacia ambulatoria presta servicio a pacientes dados de alta del Hospital Pablo Tobón Uribe y público en general.
+Se encuentra ubicada en el primer piso en el hall principal, accediendo por la puerta principal.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -436,11 +455,12 @@ Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás persona
                                 <i class="fa fa-hospital-o"></i>
                                 <select class="mdl-selectfield__select" id="appointment-department">
                                     <option value="">&nbsp;</option>
-                                    <option value="1">Gynaecology</option>
-                                    <option value="2">Orthology</option>
-                                    <option value="3">Dermatologist</option>
-                                    <option value="4">Anaesthesia</option>
-                                    <option value="5">Ayurvedic</option>
+                                    <option value="1">Ginecologia</option>
+                                    <option value="2">Odontologia</option>
+                                    <option value="3">Demartologia</option>
+                                    <option value="4">Medicina general</option>
+                                    <option value="5">Citologia</option>
+                                    <option value="6">Radiografias</option>
                                 </select>
                                 <label class="mdl-selectfield__label" for="appointment-department">Choose Department</label>
                             </div>

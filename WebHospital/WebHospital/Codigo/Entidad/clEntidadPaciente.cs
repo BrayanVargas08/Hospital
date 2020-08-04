@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WebHospital.Codigo
+namespace WebHospital.Codigo.Entidad
 {
-    public class ClEntidadPaciente
+    public class clEntidadPaciente
     {
         public int IdPaciente { get; set; }
         public string Nombre { get; set; }
@@ -18,6 +18,5 @@ namespace WebHospital.Codigo
         public string Password { get; set; }
         public string Genero { get; set; }
         public int IdEps { get; set; }
-
     }
 }

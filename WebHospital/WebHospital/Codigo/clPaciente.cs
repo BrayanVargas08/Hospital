@@ -12,7 +12,7 @@ namespace WebHospital.Codigo
             string sqlInsert = "INSERT INTO Usuario(Nombre,Apellido,Documento,email,Direccion,Telefono,FechaNacimiento,Password,Genero,IdRol)" +
                 "values('" + objPaciente.Nombre + "','" + objPaciente.Apellido + "''" + objPaciente.Documento + "'" +
                 "'" + objPaciente.email + "','" + objPaciente.Direccion + "','" + objPaciente.Telefono + "'" +
-                "" + objPaciente.FechaNacimiento + ",'" + objPaciente.Password + "','" + objPaciente.Genero+ "'," + objPaciente.IdEps + ")";
+                "" + objPaciente.FechaNacimiento + ",'" + objPaciente.Password + "','" + objPaciente.Genero + "'," + objPaciente.IdEps + ")";
 
 
 

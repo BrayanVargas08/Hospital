@@ -5,19 +5,19 @@ using System.Web;
 
 namespace WebHospital.Codigo
 {
-    public class clUsuario
+    public class clPaciente
     {
-        public int mtdRegistrar(ClEntidadUsuario objUsuario)
+        public int mtdRegistrar(clEntidadPaciente objPaciente)
         {
-            //string sqlInsert = "INSERT INTO Usuario(Nombre,Apellido,Documento,Usuario,Contraseña,Genero,IdEps,IdRol)" +
-            //    "values('" + objUsuario.Nombre + "','" + objUsuario.Apellido + "''" + objUsuario.Documento + "'" +
-            //    "'" + objUsuario.Usuario + "','" + objUsuario.Contraseña + "','" + objUsuario.Genero + "'" +
-            //    "" + objUsuario.IdEps + "," + objUsuario.IdRol + ")";
+            string sqlInsert = "INSERT INTO Usuario(Nombre,Apellido,Documento,email,Direccion,Telefono,FechaNacimiento,Password,Genero,IdRol)" +
+                "values('" + objPaciente.Nombre + "','" + objPaciente.Apellido + "''" + objPaciente.Documento + "'" +
+                "'" + objPaciente.email + "','" + objPaciente.Direccion + "','" + objPaciente.Telefono + "'" +
+                "" + objPaciente.FechaNacimiento + ",'" + objPaciente.Password + "','" + objPaciente.Genero+ "'," + objPaciente.IdEps + ")";
 
 
 
-            //clAdminSQL objSQL = new clAdminSQL();
-            //int result = objSQL.mtdConectado(sqlInsert);
+            clAdminSQL objSQL = new clAdminSQL();
+            int result = objSQL.mtdConectado(sqlInsert);
             return 4;
         }
     }

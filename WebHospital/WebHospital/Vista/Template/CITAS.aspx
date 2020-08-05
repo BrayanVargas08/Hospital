@@ -90,7 +90,7 @@
                                     <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                          <%--  <div class="col-md-6">
                                 <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
                                     <i class="fa fa-user-md"></i>
                                     <asp:DropDownList ID="DropDownList3" runat="server" class="mdl-selectfield__select"></asp:DropDownList>
@@ -98,27 +98,27 @@
                                     </select>
                                 <label class="mdl-selectfield__label" for="appointment-doctor">Seleccione Su EPS</label>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
+                            </div>--%>
+                            <%--<div class="col-md-6">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                                     <i class="fa fa-envelope-o"></i>
                                     <asp:TextBox ID="txtEmail" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
                                     <label class="mdl-textfield__label" for="appointment-email">Correo Electronico</label>
                                     <span class="mdl-textfield__error">Please Enter Valid Email!</span>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
+                            </div>--%>
+                           <%-- <div class="col-md-6">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                                     <i class="fa fa-phone"></i>
                                     <asp:TextBox ID="TxtNumero" runat="server" class="mdl-textfield__input" pattern="[0-9]*"></asp:TextBox>
                                     <label class="mdl-textfield__label" for="appointment-mobile">Numero Celular</label>
                                     <span class="mdl-textfield__error">Please Enter Valid Mobile Number!</span>
                                 </div>
-                            </div>
+                            </div>--%>
                             <div class="col-md-6">
                                 <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
                                     <i class="fa fa-hospital-o"></i>
-                                    <asp:DropDownList ID="DropDownList2" runat="server" class="mdl-selectfield__select"></asp:DropDownList>
+                                    <asp:DropDownList ID="ddlEspecialidad" runat="server" class="mdl-selectfield__select" OnSelectedIndexChanged="ddlEspecialidad_SelectedIndexChanged"></asp:DropDownList>
 
                                     <option value="">&nbsp;</option>
 

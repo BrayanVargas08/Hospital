@@ -118,7 +118,7 @@
                             <div class="col-md-6">
                                 <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
                                     <i class="fa fa-hospital-o"></i>
-                                    <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" ></asp:DropDownList>
+                                    <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
 
                                     <option value="">&nbsp;</option>
 
@@ -130,7 +130,7 @@
                             <div class="col-md-6">
                                 <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
                                     <i class="fa fa-user-md"></i>
-                                    <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
+                                    <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
                                      <select class="mdl-selectfield__select" id="appointment-doctor">
                                    
                                 </select>
@@ -149,7 +149,7 @@
                         </div>
                         <div class="text-center pt-4">
 
-                            <asp:Button class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment">AGENDAR CITA></asp:Button>
+                            <asp:Button class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="RegistroCita">AGENDAR CITA> </asp:Button>
                             <%--<button class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment">Submit</button>--%>
                         </div>
                     </div>

@@ -17,7 +17,6 @@ namespace WebHospital.Codigo.Entidad
             tblpaciente  = objSQL.mtdDesconectado(TomarId);
             int IdPaciente=int.Parse(tblpaciente.Rows[0][0].ToString());
 
-
             string sqlInsert = "INSERT INTO CitaMedica(FechaHIngreso,Estado,IdMedico,IdPaciente,IdEspecialidad)" +
                 "values('" + objCita.FechaHIngreso + "',Activo,'" + objCita.IdMedico + "'" +
                 "'" + IdPaciente + "','" + objCita.IdEspecialidad + "','" + ")";

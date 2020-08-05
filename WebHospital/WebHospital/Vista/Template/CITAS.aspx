@@ -131,12 +131,12 @@
                                 <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
                                     <i class="fa fa-user-md"></i>
                                     <asp:DropDownList ID="DropDownList1" runat="server" class="mdl-selectfield__select"></asp:DropDownList>
-                                    <%-- <select class="mdl-selectfield__select" id="appointment-doctor">--%>
+                                    <%-- <select class="mdl-selectfield__select" id="appointment-doctor">
                                    
                                 </select>
                                 <label class="mdl-selectfield__label" for="appointment-doctor">Seleccione Un Especialista</label>
                                 </div>
-                            </div>
+                            </div>--%>
                             <div class="col-md-6">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                                     <i class="fa fa-calendar-o"></i>

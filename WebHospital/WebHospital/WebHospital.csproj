@@ -67,10 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\dbHospitalPaz.mdf" />
-    <Content Include="App_Data\dbHospitalPaz_log.ldf">
-      <DependentUpon>dbHospitalPaz.mdf</DependentUpon>
-    </Content>
     <Content Include="Codigo\Global.asax" />
     <Content Include="Vista\index.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
@@ -311,6 +307,7 @@
     <Compile Include="Codigo\clConexion.cs" />
     <Compile Include="Codigo\clLogin.cs" />
     <Compile Include="Codigo\clPaciente.cs" />
+    <Compile Include="Codigo\clCita.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPaciente.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPersonalAdministrativo.cs" />
     <Compile Include="Codigo\Entidad\clEntidadCita.cs" />
@@ -403,7 +400,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

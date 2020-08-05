@@ -11,7 +11,9 @@ namespace WebHospital.Codigo.Entidad
         public int Numero { get; set; }
         public string Correo { get; set; }
         public int idEps{ get; set; }
-        public int idDoctor { get; set; }
+        public int IdMedico{ get; set; }
+        public int IdEspecialidad { get; set; }
+        public int IdMedico { get; set; }
         public DateTime Fecha { get; set; }
 
     }

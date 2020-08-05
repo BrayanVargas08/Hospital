@@ -28,7 +28,7 @@ namespace WebHospital.Codigo
             clConexion objConexion = new clConexion();
             conex = objConexion.mtdConexion();
             conex.Open();
-            SqlDataAdapter adaptador = new SqlDataAdapter();
+            SqlDataAdapter adaptador = new SqlDataAdapter(sql,conex);
             DataTable tblDatos = new DataTable();
             adaptador.Fill(tblDatos);
             conex.Close();

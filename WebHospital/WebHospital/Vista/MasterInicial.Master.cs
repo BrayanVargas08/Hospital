@@ -21,7 +21,7 @@ namespace WebHospital.Vista
             clEntidadPersonalAdministrativo objEAdministrativo = new clEntidadPersonalAdministrativo();
             clLogin objLogin = new clLogin();
             objEAdministrativo.email = txtemail.Text;
-            objEAdministrativo.password = txtPassword.Text;
+            objEAdministrativo.Password = txtPassword.Text;
             result = objLogin.mtdIngresoAdministrativo(objEAdministrativo);
 
             if (result.Count > 0)
@@ -30,10 +30,15 @@ namespace WebHospital.Vista
                 for (int i = 0; i < result.Count; i++)
                 {
                     Session["usuario"] = result[i].Nombre;
-                    Session["rol"] = result[i].IdRol;
-                    if (Session["rol"].ToString() == "Administrator" )
+
+                    Session["rol"] = result[i].Rol;
+                    if (Session["rol"].ToString() == "Administrador")
                     {
                         Response.Write("<script>alert('Admin.');</script>");
+                    }
+                    else
+                    {
+                        Response.Write("<script>alert('Error');</script>");
                     }
 
                 }

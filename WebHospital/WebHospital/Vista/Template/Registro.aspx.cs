@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebHospital.Codigo;
+using WebHospital.Codigo.Entidad;
 
 namespace WebHospital.Vista.Template
 {
@@ -17,7 +18,7 @@ namespace WebHospital.Vista.Template
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
-            ClEntidadPaciente objEUsuario = new ClEntidadPaciente();
+            clEntidadPaciente objEUsuario = new clEntidadPaciente();
             objEUsuario.Nombre = txtNombre.Text;
             objEUsuario.Apellido = txtApellido.Text;
             objEUsuario.Documento = txtDocumento.Text;
@@ -26,7 +27,7 @@ namespace WebHospital.Vista.Template
             objEUsuario.Genero = RadioButtonGenero.SelectedValue;
             objEUsuario.IdEps = 0;
 
-            clp objUsuario = new clPaciente();
+            clPaciente objUsuario = new clPaciente();
             int resultsql = objUsuario.mtdRegistrar(objEUsuario);
         }
     }

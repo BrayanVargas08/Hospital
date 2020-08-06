@@ -346,7 +346,7 @@
                     <div class="col-md-6">
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-calendar-o"></i>
-                            <asp:TextBox ID="TextBox1" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')" onblur="(this.type='text')"></asp:TextBox>
+                            <asp:TextBox ID="txtFecha" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')" onblur="(this.type='text')"></asp:TextBox>
                             <label class="mdl-textfield__label" for="appointment-date">Fecha Nacimiento</label>
                             <span class="mdl-textfield__error">Please Enter Valid Date Number!</span>
                         </div>

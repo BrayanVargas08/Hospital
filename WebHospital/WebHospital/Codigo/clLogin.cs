@@ -9,27 +9,44 @@ namespace WebHospital.Codigo
 {
     public class clLogin
     {
-        //En este metodo se validan los datos para el inicio de sesión de Administrador, Secretaria y jefé de enfermeria
+        clAdminSQL objSQL = new clAdminSQL();
+        //En este metodo se validan los datos para el inicio de sesión del personal Administrativo.
         public List<clEntidadPersonalAdministrativo> mtdIngresoAdministrativo(clEntidadPersonalAdministrativo objEPersonalAdmin)
         {
+
             string cosulta = "select Nombre,Apellido,Rol from PersonalAdministrativo " +
             "inner join Rol on PersonalAdministrativo.IdRol=Rol.IdRol " +
             "where email='" + objEPersonalAdmin.email + "' and Password = '" + objEPersonalAdmin.Password + "' ";
-            clAdminSQL objSQL = new clAdminSQL();
+            
             DataTable tblDatos = new DataTable();
             tblDatos = objSQL.mtdDesconectado(cosulta);
-            List<clEntidadPersonalAdministrativo> DatosEncontrados = new List<clEntidadPersonalAdministrativo>();
+            List<clEntidadPersonalAdministrativo> DatosEncontradosAdmin = new List<clEntidadPersonalAdministrativo>();
 
-            for (int i = 0; i < tblDatos.Rows.Count; i++)
-            {
-                objEPersonalAdmin.Nombre = tblDatos.Rows[i][0].ToString();
-                objEPersonalAdmin.Apellido = tblDatos.Rows[i][1].ToString();
-                objEPersonalAdmin.Rol = tblDatos.Rows[i][2].ToString();
-                DatosEncontrados.Add(objEPersonalAdmin);
+                objEPersonalAdmin.Nombre = tblDatos.Rows[0][0].ToString();
+                objEPersonalAdmin.Apellido = tblDatos.Rows[0][1].ToString();
+                objEPersonalAdmin.Rol = tblDatos.Rows[0][2].ToString();
+                DatosEncontradosAdmin.Add(objEPersonalAdmin);
 
-            }
+           
 
-            return DatosEncontrados;
+            return DatosEncontradosAdmin;
+
+        }
+
+        //En este metodo se validan los datos para el inicio de sesión de los pacientes registrados en el Hospital.
+        public List<clEntidadPaciente> mtdValidarDatosPaciente(clEntidadPaciente objEPaciente)
+        {
+            string cosulta = "Select Nombre,Apellido From Paciente " +
+                "Where email='" + objEPaciente.email + "' AND Password = '" + objEPaciente.Password + "'";
+            DataTable tblDatos = new DataTable();
+            tblDatos = objSQL.mtdDesconectado(cosulta);
+            List<clEntidadPaciente> DatosEncontradosPaciente = new List<clEntidadPaciente>();
+
+            objEPaciente.Nombre = tblDatos.Rows[0][0].ToString();
+            objEPaciente.Apellido = tblDatos.Rows[0][1].ToString();
+            DatosEncontradosPaciente.Add(objEPaciente);
+
+            return DatosEncontradosPaciente;
         }
     }
 }

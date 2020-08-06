@@ -62,7 +62,7 @@
                                     <a href="https://twitter.com/RCasanare?s=09" id="hdr-twitter" class="fa fa-twitter rounded"></a>
                                     <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-twitter">Twitter</span>
                                 </li>
-                                
+
                                 <li>
                                     <a href="https://instagram.com/redsaludcasanare?igshid=1xhsbdq9im04k" id="hdr-instagram" class="fa fa-instagram rounded"></a>
                                     <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-instagram">Instagram</span>
@@ -71,7 +71,7 @@
                                     <a href="https://www.youtube.com/channel/UCfYY9Fkt0ZZg62sVHS3B0ig" id="hdr-youtube" class="fa fa-youtube rounded"></a>
                                     <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-youtube">Youtube</span>
                                 </li>
-                               </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -238,7 +238,7 @@
                         </ul>
                         <!-- End Menu Section -->
                         <div class="col col-md-auto d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                            <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect hdr-apointment"><i class="fa fa-calendar m-0 color-white"></i> Haga su Cita</button>
+                            <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect hdr-apointment"><i class="fa fa-calendar m-0 color-white"></i>Haga su Cita</button>
                         </div>
                         <div class="col-2 col-md-auto col-lg-auto">
                             <div class="mdl-button mdl-js-button mdl-button--fab hdr-search">
@@ -283,8 +283,17 @@
                             <label class="mdl-textfield__label" for="login-bot">Cuanto es 7 + 1 = <em>* </em></label>
                             <span class="mdl-textfield__error">Please Enter Correct Value!</span>
                         </div>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon form-bot-check">
+                            <asp:RadioButtonList ID="rblUsuarios" runat="server" RepeatDirection="Horizontal" CellPadding="10" >
+                                <asp:ListItem>Administrativos</asp:ListItem>
+                                <asp:ListItem>Medico</asp:ListItem>
+                                <asp:ListItem>Paciente</asp:ListItem>
+                            </asp:RadioButtonList>
+                        </div>
+
                         <div class="form-submit">
-                            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" OnClick="btnIngresar_Click"/>
+                            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" OnClick="btnIngresar_Click" />
                         </div>
                         <div class="or-using"></div>
                         <div class="social-login">
@@ -369,7 +378,7 @@
                                     <div class="tbl-cell"><i class="fa fa-map-marker"></i></div>
                                     <div class="tbl-cell">
                                         <p class="paragraph-medium paragraph-white">
-                                             Carrera 7 # 5-40<br />
+                                            Carrera 7 # 5-40<br />
                                             Hospital Local de Paz de Ariporo
                                         </p>
                                     </div>
@@ -377,15 +386,19 @@
                                 <div class="tbl-row">
                                     <div class="tbl-cell"><i class="fa fa-phone"></i></div>
                                     <div class="tbl-cell">
-                                        <p class="paragraph-medium paragraph-white"> 3134593918
-                                                                                    -3115228617-3232842840</p>
+                                        <p class="paragraph-medium paragraph-white">
+                                            3134593918
+                                                                                    -3115228617-3232842840
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="tbl-row">
                                     <div class="tbl-cell"><i class="fa fa-envelope"></i></div>
                                     <div class="tbl-cell">
-                                        <p class="paragraph-medium paragraph-white">pazdeariporo
-                                                                                    @redsaludcasanare.gov.co</p>
+                                        <p class="paragraph-medium paragraph-white">
+                                            pazdeariporo
+                                                                                    @redsaludcasanare.gov.co
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -451,7 +464,7 @@
                                     <a href="https://www.youtube.com/channel/UCfYY9Fkt0ZZg62sVHS3B0ig" target="_blank" id="footer-youtube" class="fa fa-youtube"></a>
                                     <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-youtube">Youtube</span>
                                 </li>
-                              </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>

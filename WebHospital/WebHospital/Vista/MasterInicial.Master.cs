@@ -15,38 +15,70 @@ namespace WebHospital.Vista
         {
 
         }
-        List<clEntidadPersonalAdministrativo> result = new List<clEntidadPersonalAdministrativo>();
+
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
+            List<clEntidadPersonalAdministrativo> ListaAdmin = new List<clEntidadPersonalAdministrativo>();
             clEntidadPersonalAdministrativo objEAdministrativo = new clEntidadPersonalAdministrativo();
+
+            List<clEntidadPaciente> ListaPaciete = new List<clEntidadPaciente>();
+            clEntidadPaciente objEPaciente = new clEntidadPaciente();
             clLogin objLogin = new clLogin();
-            objEAdministrativo.email = txtemail.Text;
-            objEAdministrativo.Password = txtPassword.Text;
-            result = objLogin.mtdIngresoAdministrativo(objEAdministrativo);
+            string dd = rblUsuarios.SelectedItem.Text;
 
-            if (result.Count > 0)
+            if (dd == "Administrativos")
             {
+                objEAdministrativo.email = txtemail.Text;
+                objEAdministrativo.Password = txtPassword.Text;
+                ListaAdmin = objLogin.mtdIngresoAdministrativo(objEAdministrativo);
 
+                if (ListaAdmin.Count > 0)
+                {
+                    Session["usuario"] = ListaAdmin[0].Nombre +" "+ ListaAdmin[0].Apellido;
+                    Session["rol"] = ListaAdmin[0].Rol;
+                    if (Session["rol"].ToString() == "Administrador")
+                    {
+                        Response.Write("<script>alert('" + Session["usuario"] + "');</script>");
+                    }
+                    if (Session["rol"].ToString() == "Emfermero Jefe")
+                    {
+                        Response.Write("<script>alert('" + Session["usuario"] + "');</script>");
+                    }
+                    if (Session["rol"].ToString() == "Secretaria")
+                    {
+                        Response.Write("<script>alert('" + Session["usuario"] + "');</script>");
+                    }
+                }
+               
 
-                Session["usuario"] = result[0].Nombre;
-                Session["rol"] = result[0].Rol;
-                if (Session["rol"].ToString() == "Administrador")
-                {
-                    Response.Write("<script>alert('Admin.');</script>");
-                }
-                if (Session["rol"].ToString() == "Emfermero Jefe")
-                {
-                    Response.Write("<script>alert('Emfermero.');</script>");
-                }
-                if (Session["rol"].ToString() == "Secretaria")
-                {
-                    Response.Write("<script>alert('Secretaria.');</script>");
-                }
             }
             else
             {
-                Response.Write("<script>alert('Error... Usuario no encontrado');</script>");
+                if (rblUsuarios.SelectedItem.Text == "Paciente")
+                {
+                    objEPaciente.email = txtemail.Text;
+                    objEPaciente.Password = txtPassword.Text;
+                    ListaPaciete = objLogin.mtdValidarDatosPaciente(objEPaciente);
+
+                    if (ListaPaciete.Count > 0)
+                    {
+                        Session["usuario"] = ListaPaciete[0].Nombre +" "+ ListaPaciete[0].Apellido;
+                        Response.Write("<script>alert('" + Session["usuario"] + "');</script>");
+
+                    }
+                    else
+                    {
+                        Response.Write("<script>alert('Error... Usuario no encontrado');</script>");
+                    }
+                }
+                else
+                {
+                    Response.Write("<script>alert('Error... Usuario no encontrado');</script>");
+                }
             }
+
+
+
         }
     }
 }

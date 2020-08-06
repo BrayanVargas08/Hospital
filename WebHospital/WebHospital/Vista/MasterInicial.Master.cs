@@ -27,22 +27,25 @@ namespace WebHospital.Vista
             if (result.Count > 0)
             {
 
-                for (int i = 0; i < result.Count; i++)
+
+                Session["usuario"] = result[0].Nombre;
+                Session["rol"] = result[0].Rol;
+                if (Session["rol"].ToString() == "Administrador")
                 {
-                    Session["usuario"] = result[i].Nombre;
-
-                    Session["rol"] = result[i].Rol;
-                    if (Session["rol"].ToString() == "Administrador")
-                    {
-                        Response.Write("<script>alert('Admin.');</script>");
-                    }
-                    else
-                    {
-                        Response.Write("<script>alert('Error');</script>");
-                    }
-
+                    Response.Write("<script>alert('Admin.');</script>");
                 }
-
+                if (Session["rol"].ToString() == "Emfermero Jefe")
+                {
+                    Response.Write("<script>alert('Emfermero.');</script>");
+                }
+                if (Session["rol"].ToString() == "Secretaria")
+                {
+                    Response.Write("<script>alert('Secretaria.');</script>");
+                }
+            }
+            else
+            {
+                Response.Write("<script>alert('Error... Usuario no encontrado');</script>");
             }
         }
     }

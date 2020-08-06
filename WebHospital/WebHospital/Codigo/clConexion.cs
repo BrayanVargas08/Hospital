@@ -14,7 +14,7 @@ namespace WebHospital.Codigo
 
         public SqlConnection mtdConexion()
         {
-            string cadena = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbHospitalPaz2.mdf;Integrated Security=True";
+            string cadena = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbHospitalPaz.mdf;Integrated Security=True";
             try
             {
                 conexDB = new SqlConnection(cadena);

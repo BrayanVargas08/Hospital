@@ -70,9 +70,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\dbHospitalPaz2.mdf" />
-    <Content Include="App_Data\dbHospitalPaz2_log.ldf">
-      <DependentUpon>dbHospitalPaz2.mdf</DependentUpon>
+    <Content Include="App_Data\dbHospitalPaz.mdf" />
+    <Content Include="App_Data\dbHospitalPaz_log.ldf">
+      <DependentUpon>dbHospitalPaz.mdf</DependentUpon>
     </Content>
     <Content Include="Codigo\Global.asax" />
     <Content Include="Vista\index.aspx" />

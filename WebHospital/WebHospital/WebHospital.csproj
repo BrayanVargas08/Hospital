@@ -339,6 +339,7 @@
     </Compile>
     <Compile Include="Vista\Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\Contacto.aspx.designer.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>

@@ -48,5 +48,22 @@ namespace WebHospital.Codigo
 
             return DatosEncontradosPaciente;
         }
+
+        //En este metodo se validan los datos para el inicio de sesión del personal Medico del Hospital.
+        public List<clEntidadMedico> mtdValidarDatosMedico(clEntidadMedico objEMedico)
+        {
+            string cosulta = "Select Nombre,Apellido From Medico " +
+                "Where email='" + objEMedico.email + "' AND Password = '" + objEMedico.Password + "'";
+            DataTable tblDatos = new DataTable();
+            tblDatos = objSQL.mtdDesconectado(cosulta);
+            List<clEntidadMedico> DatosEncontradosMedico = new List<clEntidadMedico>();
+
+            objEMedico.Nombre = tblDatos.Rows[0][0].ToString();
+            objEMedico.Apellido = tblDatos.Rows[0][1].ToString();
+            DatosEncontradosMedico.Add(objEMedico);
+
+            return DatosEncontradosMedico;
+
+        }
     }
 }

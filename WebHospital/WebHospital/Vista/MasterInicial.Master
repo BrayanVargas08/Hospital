@@ -286,9 +286,9 @@
 
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon form-bot-check">
                             <asp:RadioButtonList ID="rblUsuarios" runat="server" RepeatDirection="Horizontal" CellPadding="10" >
-                                <asp:ListItem>Administrativos</asp:ListItem>
-                                <asp:ListItem>Medico</asp:ListItem>
-                                <asp:ListItem>Paciente</asp:ListItem>
+                                <asp:ListItem Value="PersonalAdministrativo">Administrativos</asp:ListItem>
+                                <asp:ListItem Value="Medico">Medico</asp:ListItem>
+                                <asp:ListItem Value="Paciente">Paciente</asp:ListItem>
                             </asp:RadioButtonList>
                         </div>
 

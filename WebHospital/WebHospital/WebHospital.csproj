@@ -75,7 +75,11 @@
       <DependentUpon>dbHospitalPaz.mdf</DependentUpon>
     </Content>
     <Content Include="Codigo\Global.asax" />
+    <Content Include="Vista\CondicionesdePrivacidad.aspx" />
+    <Content Include="Vista\Contacto.aspx" />
+    <Content Include="Vista\Contactooss.aspx" />
     <Content Include="Vista\index.aspx" />
+    <Content Include="Vista\indexadministrador.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-orange.css" />
@@ -307,6 +311,7 @@
     <Content Include="Vista\Template\uploads\testimonial-4.jpg" />
     <Content Include="Vista\Template\uploads\testimonial-5.jpg" />
     <Content Include="Vista\Template\CITAS.aspx" />
+    <Content Include="Vista\Ugencias.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -315,20 +320,49 @@
     <Compile Include="Codigo\clLogin.cs" />
     <Compile Include="Codigo\clPaciente.cs" />
     <Compile Include="Codigo\clCita.cs" />
+    <Compile Include="Codigo\clUgencias.cs" />
     <Compile Include="Codigo\Entidad\clEntidadMedico.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPaciente.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPersonalAdministrativo.cs" />
     <Compile Include="Codigo\Entidad\clEntidadCita.cs" />
+    <Compile Include="Codigo\Entidad\clEntidadUrgencias.cs" />
     <Compile Include="Codigo\Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\CondicionesdePrivacidad.aspx.cs">
+      <DependentUpon>CondicionesdePrivacidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\CondicionesdePrivacidad.aspx.designer.cs">
+      <DependentUpon>CondicionesdePrivacidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Contacto.aspx.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Contacto.aspx.designer.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Contactooss.aspx.cs">
+      <DependentUpon>Contactooss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Contactooss.aspx.designer.cs">
+      <DependentUpon>Contactooss.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vista\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\indexadministrador.aspx.cs">
+      <DependentUpon>indexadministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\indexadministrador.aspx.designer.cs">
+      <DependentUpon>indexadministrador.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\MaestraDoctor.Master.cs">
       <DependentUpon>MaestraDoctor.Master</DependentUpon>
@@ -371,6 +405,13 @@
     </Compile>
     <Compile Include="Vista\Template\Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Ugencias.aspx.cs">
+      <DependentUpon>Ugencias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Ugencias.aspx.designer.cs">
+      <DependentUpon>Ugencias.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

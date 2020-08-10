@@ -45,7 +45,7 @@ namespace WebHospital.Vista.Template
 
         public DataSet Consultar(string strSQL)
         {
-            string strconn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbHospitalPaz2.mdf;Integrated Security=True";
+            string strconn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbHospitalPaz.mdf;Integrated Security=True";
             SqlConnection con = new SqlConnection(strconn);
             con.Open();
             SqlCommand cmd = new SqlCommand(strSQL, con);
@@ -58,9 +58,18 @@ namespace WebHospital.Vista.Template
 
         protected void RegistroCita(object sender, EventArgs e)
         {
-            clEntidadCita objCita = new clEntidadCita();
-            objCita.Documento = TxtNombre.Text;
+            clEntidadCita objECita = new clEntidadCita();
+            objECita.Documento = TxtNombre.Text;
+            objECita.FechaHIngreso = DateTime.Parse(TxtCita.Text);
+            objECita.IdMedico= int.Parse(dropEspecialista.Text);
+            objECita.IdPaciente = int.Parse(TxtNombre.Text);
+            objECita.IdEspecialidad = int.Parse(dropEspecialidad.Text);
             
+
+
+            clCita objCita = new clCita();
+            int result = objCita.mtdRegistrarCita(objECita);
+
         }
     }
 }

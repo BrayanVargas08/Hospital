@@ -18,17 +18,20 @@ namespace WebHospital.Vista.Template
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
-            clEntidadPaciente objEUsuario = new clEntidadPaciente();
-            objEUsuario.Nombre = txtNombre.Text;
-            objEUsuario.Apellido = txtApellido.Text;
-            objEUsuario.Documento = txtDocumento.Text;
-            objEUsuario.email = txtUsuario.Text;
-            objEUsuario.Password = txtContraseña.Text;
-            objEUsuario.Genero = RadioButtonGenero.SelectedValue;
-            objEUsuario.IdEps = 0;
+            clEntidadPaciente objEPaciente = new clEntidadPaciente();
+            objEPaciente.Nombre = txtNombre.Text;
+            objEPaciente.Apellido = txtApellido.Text;
+            objEPaciente.Documento = txtDocumento.Text;
+            objEPaciente.email = txtUsuario.Text;
+            objEPaciente.Direccion = txtDireccion.Text;
+            objEPaciente.Telefono = txtTelefono.Text;
+            objEPaciente.FechaNacimiento = Convert.ToDateTime.
+            objEPaciente.Password = txtContraseña.Text;
+            objEPaciente.Genero = RadioButtonGenero.SelectedValue;
+            
 
             clPaciente objUsuario = new clPaciente();
-            int resultsql = objUsuario.mtdRegistrar(objEUsuario);
+            int resultsql = objUsuario.mtdRegistrar(objEPaciente);
         }
     }
 }

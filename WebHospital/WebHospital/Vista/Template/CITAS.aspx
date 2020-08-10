@@ -90,6 +90,31 @@
                                     <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
                                 </div>
                             </div>
+
+                            <%--<div class="modal-body">
+                        <div class="appointment-error"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                    <i class="fa fa-user-o"></i>
+                                    <asp:TextBox ID="TxtEstado" runat="server" class="mdl-textfield__input" pattern="[A-Z,a-z, ]*"></asp:TextBox>
+                                    <label class="mdl-textfield__label" for="appointment-name">Estado</label>
+                                    <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
+                                </div>
+                            </div>
+
+                              <div class="modal-body">
+                        <div class="appointment-error"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                    <i class="fa fa-user-o"></i>
+                                    <asp:TextBox ID="TxtPersonal" runat="server" class="mdl-textfield__input" pattern="[A-Z,a-z, ]*"></asp:TextBox>
+                                    <label class="mdl-textfield__label" for="appointment-name">Personal Administrativo</label>
+                                    <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
+                                </div>
+                            </div>--%>
+
                           <%--  <div class="col-md-6">
                                 <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
                                     <i class="fa fa-user-md"></i>
@@ -141,7 +166,7 @@
                             <div class="col-md-6">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                                     <i class="fa fa-calendar-o"></i>
-                                    <asp:TextBox ID="TextBox1" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')" onblur="(this.type='text')"></asp:TextBox>
+                                    <asp:TextBox ID="TxtCita" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')" onblur="(this.type='text')"></asp:TextBox>
                                     <label class="mdl-textfield__label" for="appointment-date">SELECCIONE LA FECHA DE SU CITA</label>
                                     <span class="mdl-textfield__error">Please Enter Valid Date Number!</span>
                                 </div>

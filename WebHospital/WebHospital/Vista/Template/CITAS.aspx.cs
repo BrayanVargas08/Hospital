@@ -56,15 +56,18 @@ namespace WebHospital.Vista.Template
             return ds;
         }
 
-        protected void RegistroCita(object sender, EventArgs e)
+   
+
+        protected void btnRegistrarCita_Click(object sender, EventArgs e)
         {
+
             clEntidadCita objECita = new clEntidadCita();
             objECita.Documento = TxtNombre.Text;
             objECita.FechaHIngreso = DateTime.Parse(TxtCita.Text);
-            objECita.IdMedico= int.Parse(dropEspecialista.Text);
+            objECita.IdMedico = int.Parse(dropEspecialista.Text);
             objECita.IdPaciente = int.Parse(TxtNombre.Text);
             objECita.IdEspecialidad = int.Parse(dropEspecialidad.Text);
-            
+
 
 
             clCita objCita = new clCita();

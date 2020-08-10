@@ -25,7 +25,7 @@ namespace WebHospital.Vista.Template
             objEPaciente.email = txtUsuario.Text;
             objEPaciente.Direccion = txtDireccion.Text;
             objEPaciente.Telefono = txtTelefono.Text;
-            objEPaciente.FechaNacimiento = txtFecha.
+            //objEPaciente.FechaNacimiento =  txtFecha.
             
 
             clPaciente objUsuario = new clPaciente();

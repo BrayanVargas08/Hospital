@@ -4,7 +4,7 @@
     <div class="page-ttl">
         <div class="layer-stretch">
             <div class="page-ttl-container">
-                <h1>INFORMACION PARTE ADMINISTRATIVA</h1>
+                <h1>BIENVENIDO PARTE ADMINISTRATIVA</h1>
                 <p><a href="#">Home</a> &#8594; <a href="#">lista de Blog</a> &#8594; <span>Blog</span></p>
             </div>
         </div>

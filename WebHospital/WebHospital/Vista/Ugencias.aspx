@@ -1,8 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterAdministrador.Master" AutoEventWireup="true" CodeBehind="Ugencias.aspx.cs" Inherits="WebHospital.Vista.Ugencias" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    
-    <!-- Start Page Title Section -->
+    <form  runat="server">
+
+   <!-- Start Page Title Section -->
     <div class="page-ttl">
         <div class="layer-stretch">
             <div class="page-ttl-container">
@@ -80,4 +81,5 @@
 
         </div>
     </div><!-- End Register Section -->
+</form>
 </asp:Content>

@@ -25,7 +25,7 @@ namespace WebHospital.Vista.Template
             objEPaciente.email = txtUsuario.Text;
             objEPaciente.Direccion = txtDireccion.Text;
             objEPaciente.Telefono = txtTelefono.Text;
-            objEPaciente.FechaNacimiento = Convert.ToDateTime.
+           // objEPaciente.FechaNacimiento = Convert.ToDateTime.//
             objEPaciente.Password = txtContraseña.Text;
             objEPaciente.Genero = RadioButtonGenero.SelectedValue;
             

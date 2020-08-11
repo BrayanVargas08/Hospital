@@ -23,12 +23,12 @@
                     
                     <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-name">
                      <asp:TextBox ID="txtfechaingreso" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
-                    <span class="mdl-textfield__error">¡Por favor introduzca una fecha de inicio valida!!</span>
+                  
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
                     <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-ingreso">
-                    <label class="mdl-textfield__label" for="register-name">Fecha de salida <em> *</em></label>
+                    <asp:TextBox ID="txtfechafinal" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
                     <span class="mdl-textfield__error">¡Por favor introduzca una fecha final  valida!!</span>
                 </div>
                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">

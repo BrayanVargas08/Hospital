@@ -20,58 +20,51 @@
                 
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
-                    
-                    <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-name">
-                     <asp:TextBox ID="txtfechaingreso" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
-                  
+                    <asp:TextBox ID="txtfechaingreso" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
+                   <label class="mdl-textfield__label" for="appointment-name">Fecha de Ingreso</label>
+                   <span class="mdl-textfield__error">Porfavor verifique su fecha de ingreso!</span>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
-                    <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-ingreso">
-                    <asp:TextBox ID="txtfechafinal" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
-                    <span class="mdl-textfield__error">¡Por favor introduzca una fecha final  valida!!</span>
+                    <asp:TextBox ID="Textfechafinal" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
+                   <label class="mdl-textfield__label" for="appointment-name">Fecha de final</label>
+                   <span class="mdl-textfield__error">Porfavor verifique su fecha final!</span>
                 </div>
                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
-                    <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-motivio">
-                    <label class="mdl-textfield__label" for="register-name">Motivo <em> *</em></label>
-                    <span class="mdl-textfield__error">¡Por favor introduzca un motivo  valida!!</span>
+                    <asp:TextBox ID="Textmotivo" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
+                   <label class="mdl-textfield__label" for="appointment-name">Motivio</label>
+                   <span class="mdl-textfield__error">Porfavor verifique su motivo!</span>
                 </div>
                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
-                    <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-descripcion">
-                    <label class="mdl-textfield__label" for="register-name">Descripcion<em> *</em></label>
-                    <span class="mdl-textfield__error">¡Por favor introduzca una descripcion valida!!</span>
+                    <asp:TextBox ID="Textdescripcion" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
+                   <label class="mdl-textfield__label" for="appointment-name">Descripcion</label>
+                   <span class="mdl-textfield__error">Porfavor verifique su descripcion!</span>
                 </div>
                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
-                    <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-triage">
-                    <label class="mdl-textfield__label" for="register-name">triage <em> *</em></label>
-                    <span class="mdl-textfield__error">¡Por favor introduzca una fecha fina  valida!!</span>
+                    <asp:TextBox ID="Textriage" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
+                   <label class="mdl-textfield__label" for="appointment-name">Triage</label>
+                   <span class="mdl-textfield__error">Porfavor verifique su triage!</span>
                 </div>
                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
-                    <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-paciente">
-                    <label class="mdl-textfield__label" for="register-name">paciente <em> *</em></label>
-                    <span class="mdl-textfield__error">¡Por favor introduzca un paciente valido!!</span>
+                    <asp:TextBox ID="Textpaciente" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
+                   <label class="mdl-textfield__label" for="appointment-name">Paciente</label>
+                   <span class="mdl-textfield__error">Porfavor verifique su paciente!</span>
                 </div>
                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
-                    <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="register-medico">
-                    <label class="mdl-textfield__label" for="register-name">medico <em> *</em></label>
-                    <span class="mdl-textfield__error">¡Por favor introduzca un medico  valida!!</span>
+                   <asp:TextBox ID="TextMedico" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
+                   <label class="mdl-textfield__label" for="appointment-name">Medico</label>
+                   <span class="mdl-textfield__error">Porfavor verifique su medico!</span>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-envelope-o"></i>
-                    <input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="register-email">
-                    <label class="mdl-textfield__label" for="register-email">E <em> *</em></label>
-                    <span class="mdl-textfield__error">Please Enter Valid Email!</span>
-                </div>
-                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                    <i class="fa fa-key"></i>
-                    <input class="mdl-textfield__input" type="password" id="register-password">
-                    <label class="mdl-textfield__label" for="register-password">Password <em> *</em></label>
-                    <span class="mdl-textfield__error">Please Enter Valid Password(Min 6 Character)!</span>
+                   <asp:TextBox ID="TextUrgencias" runat="server" class="mdl-textfield__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"></asp:TextBox>
+                   <label class="mdl-textfield__label" for="appointment-name">Urgencias</label>
+                   <span class="mdl-textfield__error">Porfavor verifique su urgencia!</span>
                 </div>
                 <div class="form-submit">
                     <button class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary">registrar urgencia</button>

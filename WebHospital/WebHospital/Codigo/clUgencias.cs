@@ -12,7 +12,7 @@ namespace WebHospital.Codigo
         {
             string sqlInsert = "INSERT INTO Urgencia(FechaHIngreso,FechaHSalida,Motivo,Descripcion,IdTriage,IdPaciente,IdPaciente)" +
                 "values('" + objUrgencia.FechaHIngreso + "','" + objUrgencia.FechaHSalida + "''" + objUrgencia.Motivo + "'" +
-                "'" + objUrgencia.Descripcion + "','" + objUrgencia.IdTriage + "','" + objUrgencia.paciente + "'" +
+                "'" + objUrgencia.Descripcion + "','" + objUrgencia.IdTriage + "','" + objUrgencia.Idpaciente + "'" +
                 "" + objUrgencia.Idmedico + ")";
 
 

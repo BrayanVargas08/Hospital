@@ -51,39 +51,39 @@ namespace WebHospital.Vista
         protected global::System.Web.UI.WebControls.TextBox Textdescripcion;
 
         /// <summary>
-        /// Control Textriage.
+        /// Control cmdtriage.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textriage;
+        protected global::System.Web.UI.WebControls.DropDownList cmdtriage;
 
         /// <summary>
-        /// Control Textpaciente.
+        /// Control cmbpaciente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textpaciente;
+        protected global::System.Web.UI.WebControls.DropDownList cmbpaciente;
 
         /// <summary>
-        /// Control TextMedico.
+        /// Control cmbMedico.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextMedico;
+        protected global::System.Web.UI.WebControls.DropDownList cmbMedico;
 
         /// <summary>
-        /// Control TextUrgencias.
+        /// Control btnRegistrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextUrgencias;
+        protected global::System.Web.UI.WebControls.Button btnRegistrar;
     }
 }

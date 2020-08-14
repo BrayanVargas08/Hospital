@@ -37,6 +37,7 @@ namespace WebHospital.Vista
                 Session["rol"] = ListaAdmin[0].Rol;
                 if (Session["rol"].ToString() == "Administrador")
                 {
+                    Response.Redirect("indexadministrador.aspx");
                     Response.Write("<script>alert('Admin" + Session["usuario"] + "');</script>");
                 }
                 if (Session["rol"].ToString() == "Emfermero Jefe")
@@ -50,45 +51,45 @@ namespace WebHospital.Vista
             }
 
 
-            //        }
-            //        if (rblUsuarios.SelectedItem.Text == "Paciente")
-            //        {
-            //            objEPaciente.email = txtemail.Text;
-            //            objEPaciente.Password = txtPassword.Text;
-            //            ListaPaciete = objLogin.mtdValidarDatosPaciente(objEPaciente);
-
-            //            if (ListaPaciete.Count > 0)
-            //            {
-            //                Session["usuario"] = ListaPaciete[0].Nombre + " " + ListaPaciete[0].Apellido;
-            //                Response.Write("<script>alert('Paciente" + Session["usuario"] + "');</script>");
-
-            //            }
-            //            else
-            //            {
-            //                Response.Write("<script>alert('Error... Usuario no encontrado');</script>");
-            //            }
-            //        }
-            //        if (rblUsuarios.SelectedItem.Text == "Medico")
-            //        {
-            //            objEMedico.email = txtemail.Text;
-            //            objEMedico.Password = txtPassword.Text;
-            //            ListaMedico = objLogin.mtdValidarDatosMedico(objEMedico);
-
-            //            if (ListaMedico.Count > 0)
-            //            {
-            //                Session["usuario"] = ListaMedico[0].Nombre + " " + ListaMedico[0].Apellido;
-            //                Response.Write("<script>alert('Medico " + Session["usuario"] + "');</script>");
-
-            //            }
-            //            else
-            //            {
-            //                Response.Write("<script>alert('Error... Usuario no encontrado');</script>");
-            //            }
-            //        }
-            //        else
-            //        {
-            //            Response.Write("<script>alert('Por favor indique que tipo de Usuario Ingresa.');</script>");
-
         }
+        //            if (rblUsuarios.SelectedItem.Text == "Paciente")
+        //            {
+        //                objEPaciente.email = txtemail.Text;
+        //                objEPaciente.Password = txtPassword.Text;
+        //                ListaPaciete = objLogin.mtdValidarDatosPaciente(objEPaciente);
+
+        //                if (ListaPaciete.Count > 0)
+        //                {
+        //                    Session["usuario"] = ListaPaciete[0].Nombre + " " + ListaPaciete[0].Apellido;
+        //                    Response.Write("<script>alert('Paciente" + Session["usuario"] + "');</script>");
+
+        //                }
+        //                else
+        //                {
+        //                    Response.Write("<script>alert('Error... Usuario no encontrado');</script>");
+        //                }
+        //            }
+        //            if (rblUsuarios.SelectedItem.Text == "Medico")
+        //            {
+        //                objEMedico.email = txtemail.Text;
+        //                objEMedico.Password = txtPassword.Text;
+        //                ListaMedico = objLogin.mtdValidarDatosMedico(objEMedico);
+
+        //                if (ListaMedico.Count > 0)
+        //                {
+        //                    Session["usuario"] = ListaMedico[0].Nombre + " " + ListaMedico[0].Apellido;
+        //                    Response.Write("<script>alert('Medico " + Session["usuario"] + "');</script>");
+
+        //                }
+        //                else
+        //                {
+        //                    Response.Write("<script>alert('Error... Usuario no encontrado');</script>");
+        //                }
+        //            }
+        //            else
+        //            {
+        //                Response.Write("<script>alert('Por favor indique que tipo de Usuario Ingresa.');</script>");
+
+        //}
     }
 }

@@ -14,7 +14,7 @@ namespace WebHospital.Codigo.Entidad
         public string email { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
-        public DateTime FechaNAcimiento { get; set; }
+        public DateTime FechaNacimiento { get; set; }
         public string Password { get; set; }
         public int IdEspecialidad { get; set; }
     }

@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterInicial.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WebHospital.Vista.CitasMedicas1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    
+
     <!-- cuerpo de la pagina-->
 
     <div id="slider" class="slider-height">
@@ -40,7 +41,8 @@
             </ul>
 
         </div>
-    </div><!-- End Slider Section -->
+    </div>
+    <!-- End Slider Section -->
     <!-- Start Service Section -->
     <div id="hm-service" class="layer-stretch">
         <div class="layer-wrapper">
@@ -52,9 +54,11 @@
                     <img src="Template/images/hospital3.jpg" alt="Klinical Health care">
                 </div>
                 <div class="hm-service-right col-md-7">
-                    <p class="paragraph-medium paragraph-black">La labor del Hospital de la Paz de ariporo desde su creación ha sido el desarrollo de la medicina en la ciudad, formando más de tres mil médicos y más de 600 especialistas altamente calificados, prestando una atención integral en servicios de salud a nuestros pacientes.
+                    <p class="paragraph-medium paragraph-black">
+                        La labor del Hospital de la Paz de ariporo desde su creación ha sido el desarrollo de la medicina en la ciudad, formando más de tres mil médicos y más de 600 especialistas altamente calificados, prestando una atención integral en servicios de salud a nuestros pacientes.
 
-Nuestro compromiso es con la comunidad y con el país, por ello el ser Universitarios es el mejor testimonio que nuestra labor de investigación y actualización médica es permanente, siendo generadores del saber científico, obteniendo reconocimientos a nivel nacional por distintas Asociaciones Médicas y Sociedades Científicas, gracias a los diferentes trabajos desarrollados por los residentes e instructores del Hospital, quienes de la mano del capital administrativo calificado trabajan arduamente para que usted y los suyos reciban un servicio con calidad y calidez, sintiendo siempre que trabajamos unidos por su bienestar.</p>
+Nuestro compromiso es con la comunidad y con el país, por ello el ser Universitarios es el mejor testimonio que nuestra labor de investigación y actualización médica es permanente, siendo generadores del saber científico, obteniendo reconocimientos a nivel nacional por distintas Asociaciones Médicas y Sociedades Científicas, gracias a los diferentes trabajos desarrollados por los residentes e instructores del Hospital, quienes de la mano del capital administrativo calificado trabajan arduamente para que usted y los suyos reciban un servicio con calidad y calidez, sintiendo siempre que trabajamos unidos por su bienestar.
+                    </p>
                     <div class="hm-service">
                         <div class="hm-service-block">
                             <i class="fa fa-stethoscope"></i>
@@ -90,7 +94,8 @@ Nuestro compromiso es con la comunidad y con el país, por ello el ser Universit
                 </div>
             </div>
         </div>
-    </div><!-- End Service Section -->
+    </div>
+    <!-- End Service Section -->
     <!-- Start About Section -->
     <div id="hm-about" class="colored-background">
         <div class="layer-stretch">
@@ -118,7 +123,7 @@ Nuestro compromiso es con la comunidad y con el país, por ello el ser Universit
                             <div class="tbl-cell hm-about-icon"><i class="fa fa-calendar"></i></div>
                             <div class="tbl-cell hm-about-number">
                                 <span class="counter">40</span>
-                                <p> Año de experiencia (s)</p>
+                                <p>Año de experiencia (s)</p>
                             </div>
                         </div>
                         <div class="hm-about-block">
@@ -133,7 +138,7 @@ Nuestro compromiso es con la comunidad y con el país, por ello el ser Universit
                                 <span class="theme-dropcap color-white">E</span>l Hospital de paz de ariporo es una organización prestadora de servicios de salud, interesada en el desarrollo,
 motivación y compromiso de su recurso humano, que ofrece a sus pacientes un servicio de calidad y
 seguridad a través de equipo médico de alta tecnología y sobre todo calidez humana”..
-                            </p> 
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-5">
@@ -143,7 +148,8 @@ seguridad a través de equipo médico de alta tecnología y sobre todo calidez h
                 </div>
             </div>
         </div>
-    </div><!-- End About Section -->
+    </div>
+    <!-- End About Section -->
 
     <!-- Start Feature Section -->
     <div id="hm-feature" class="layer-stretch">
@@ -176,8 +182,10 @@ seguridad a través de equipo médico de alta tecnología y sobre todo calidez h
                             <img src="template/images/tecnologias.jpg" alt="">
                         </div>
                         <span>Tecnologia avanzada</span>
-                        <p class="paragraph-small paragraph-black">Los hospitales son el objetivo de muchas empresas de alta tecnología y de emprendedores innovadores que aportan su talento para generar nuevas tecnologías que ayuden a médicos a realizar mejor su trabajo y a los pasientes hacer su estancia en esos lugares más confortable.
-Conoce las 10 tecnologías  más avanzadas que están innovando los procesos clínicos y quirurgicos en hospitales de todo el mundo.</p>
+                        <p class="paragraph-small paragraph-black">
+                            Los hospitales son el objetivo de muchas empresas de alta tecnología y de emprendedores innovadores que aportan su talento para generar nuevas tecnologías que ayuden a médicos a realizar mejor su trabajo y a los pasientes hacer su estancia en esos lugares más confortable.
+Conoce las 10 tecnologías  más avanzadas que están innovando los procesos clínicos y quirurgicos en hospitales de todo el mundo.
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -186,12 +194,14 @@ Conoce las 10 tecnologías  más avanzadas que están innovando los procesos cl�
                             <img src="template/images/ambulancia.jpg" alt="">
                         </div>
                         <span>Ambulancia</span>
-                        <p class="paragraph-small paragraph-black">Contamos con un parque de 2 ambulancias, 1 medicalizadas y 1 básicas habilitadas con la última
+                        <p class="paragraph-small paragraph-black">
+                            Contamos con un parque de 2 ambulancias, 1 medicalizadas y 1 básicas habilitadas con la última
 resolución del ministerio.
 
 Ambulancia medicalizada Nissan Frontier 4×4 modelo 2014, habilitada con equipos de última tecnología, especial para zonas rurales de difícil acceso en la topografía de nuestra región.
 Ambulancia Volkswagen Crafter 35 modelo 2008 tipo vans, de fácil maniobrabilidad para médicos y
-paramédicos. Dotada con equipos de alta tecnologí.</p>
+paramédicos. Dotada con equipos de alta tecnologí.
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -200,13 +210,15 @@ paramédicos. Dotada con equipos de alta tecnologí.</p>
                             <img src="template/images/primerosauxilios.jpg" alt="">
                         </div>
                         <span>Primeros auxilios</span>
-                        <p class="paragraph-small paragraph-black">En la vida, nos podemos encontrar frente a situaciones donde debemos auxiliar a otra persona. Es por esa razón que debemos tener los conocimientos básicos para realizar los primeros auxilios y ayudar a una persona en situación de accidente o enfermedad repentina, de manera de preservarle la vida y evitar así que su estado empeore.
+                        <p class="paragraph-small paragraph-black">
+                            En la vida, nos podemos encontrar frente a situaciones donde debemos auxiliar a otra persona. Es por esa razón que debemos tener los conocimientos básicos para realizar los primeros auxilios y ayudar a una persona en situación de accidente o enfermedad repentina, de manera de preservarle la vida y evitar así que su estado empeore.
 
 Antes que todo, debemos verificar que la persona a la que vamos a asistir esté consciente, respire y tenga pulso.
 
 Es fundamental, frente a una situación como ésta, siempre evitar el pánico, como así también no cambiar de posición a la persona hasta que se determine la naturaleza del proceso.
 
-Existen procedimientos, en caso de emergencias, que es conveniente seguir, para que la ayuda resulte realmente eficaz.</p>
+Existen procedimientos, en caso de emergencias, que es conveniente seguir, para que la ayuda resulte realmente eficaz.
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -215,7 +227,8 @@ Existen procedimientos, en caso de emergencias, que es conveniente seguir, para 
                             <img src="template/images/farmacia.jpg" alt="">
                         </div>
                         <span>Farmacias y droguerías</span>
-                        <p class="paragraph-small paragraph-black">El servicio de farmacia se encarga de garantizar una terapia farmacológica exitosa con calidad en el cuidado y atención de los pacientes, con el mínimo riesgo.
+                        <p class="paragraph-small paragraph-black">
+                            El servicio de farmacia se encarga de garantizar una terapia farmacológica exitosa con calidad en el cuidado y atención de los pacientes, con el mínimo riesgo.
                             Farmacia hospitalaria: El área de preparación y dispensación de medicamentos del servicio de farmacia se encarga del suministro de medicamentos y dispositivos médicos a las diferentes unidades asistenciales
                             Farmacia clínica:
                             Farmacia ambulatoria:Servicios de gestión:
@@ -227,7 +240,8 @@ Se encuentra ubicada en el primer piso en el hall principal, accediendo por la p
                 </div>
             </div>
         </div>
-    </div><!-- End Feature Section -->
+    </div>
+    <!-- End Feature Section -->
     <!-- Start Doctor Section -->
     <div class="colored-background">
         <div class="layer-stretch">
@@ -267,12 +281,13 @@ Se encuentra ubicada en el primer piso en el hall principal, accediendo por la p
                             <h6>Linda gutierez</h6>
                             <p>Medicina general</p>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
-    </div><!-- End Doctor Section -->
+    </div>
+    <!-- End Doctor Section -->
     <!-- Start Blog Section -->
     <div id="hm-blog" class="layer-stretch">
         <div class="layer-wrapper layer-bottom-10">
@@ -292,10 +307,10 @@ Se encuentra ubicada en el primer piso en el hall principal, accediendo por la p
                         </div>
                         <div class="blog-list-meta">
                             <p>Publicado por Ryan J. Brogan, DO On 07 Jul 2020</p>
-                        </div>  
+                        </div>
                         <div class="blog-list-post">
                             <p class="paragraph-medium paragraph-black">
-                                <span> Las intoxicaciones alimentarias están causadas por bacterias y, a veces, por virus u otros gérmenes. Pueden entrar en los alimentos que comemos y en los líquidos que bebemos. No lo podemos notar con el gusto, oler ni ver esos gérmenes (por lo menos, sin un microscopio). Pero, aunque sean diminutos, pueden tener un gran efecto en nuestro cuerpo.
+                                <span>Las intoxicaciones alimentarias están causadas por bacterias y, a veces, por virus u otros gérmenes. Pueden entrar en los alimentos que comemos y en los líquidos que bebemos. No lo podemos notar con el gusto, oler ni ver esos gérmenes (por lo menos, sin un microscopio). Pero, aunque sean diminutos, pueden tener un gran efecto en nuestro cuerpo.
 
 Cuando los gérmenes que causan intoxicaciones alimentarias entran en nuestro organismo, pueden segregar toxinas. Estas toxinas son tóxicas (de ahí el nombre "intoxicación alimentaria"), y pueden causar diarrea y vómitos.
 
@@ -317,7 +332,7 @@ Por lo general, los médicos usan la expresión "intoxicación alimentaria" para
                         </div>
                         <div class="blog-list-meta">
                             <p>Publicado por OMS On 29 Jul 2020</p>
-                        </div>  
+                        </div>
                         <div class="blog-list-post">
                             <p class="paragraph-medium paragraph-black">
                                 <span>Manténgase al día de la información más reciente sobre el brote de COVID-19, a la que puede acceder en el sitio web de la OMS y a través de las autoridades de salud pública pertinentes a nivel nacional y local. La mayoría de las personas que se infectan padecen una enfermedad leve y se recuperan, pero en otros casos puede ser más grave. Cuide su salud y proteja a los demás a través de las siguientes medidas:
@@ -343,7 +358,8 @@ Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás persona
                 </div>
             </div>
         </div>
-    </div><!-- End Blog Section -->
+    </div>
+    <!-- End Blog Section -->
     <!-- Start Testimonial Section -->
     <div id="testimonial" class="colored-background">
         <div class="layer-stretch">
@@ -397,7 +413,8 @@ Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás persona
                 </div>
             </div>
         </div>
-    </div><!-- End Testimonial Section -->
+    </div>
+    <!-- End Testimonial Section -->
     <!-- Start Emergency Section -->
     <div id="emergency">
         <div class="layer-stretch">
@@ -407,22 +424,24 @@ Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás persona
                 </div>
                 <div class="layer-container">
                     <div class="paragraph-medium paragraph-black">
-                      Número de emergencia puedes llamar las 24 horas a cualquier hora los 7 dias de la semana.
+                        Número de emergencia puedes llamar las 24 horas a cualquier hora los 7 dias de la semana.
 
                     </div>
-                    <div class="emergency-number"> : 57 098 6373537</div>
+                    <div class="emergency-number">: 57 098 6373537</div>
                 </div>
             </div>
         </div>
-    </div><!-- End Emergency Section -->
-    
+    </div>
+    <!-- End Emergency Section -->
+
 
 
     <!-- Fixed Appointment Button at Bottom -->
     <div id="appointment-button" class="animated fadeInUp">
         <button id="appointment-now" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--raised"><i class="fa fa-plus"></i></button>
         <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="appointment-now">Make An Appointment</div>
-    </div><!-- End Fixed Appointment Button at Bottom -->
-   
-            
+    </div>
+    <!-- End Fixed Appointment Button at Bottom -->
+
+
 </asp:Content>

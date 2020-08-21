@@ -335,11 +335,13 @@
     <Compile Include="Codigo\clMedico.cs" />
     <Compile Include="Codigo\clPaciente.cs" />
     <Compile Include="Codigo\clCita.cs" />
+    <Compile Include="Codigo\clTriage.cs" />
     <Compile Include="Codigo\clUgencias.cs" />
     <Compile Include="Codigo\Entidad\clEntidadMedico.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPaciente.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPersonalAdministrativo.cs" />
     <Compile Include="Codigo\Entidad\clEntidadCita.cs" />
+    <Compile Include="Codigo\Entidad\clEntidadTriage.cs" />
     <Compile Include="Codigo\Entidad\clEntidadUrgencias.cs" />
     <Compile Include="Codigo\Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

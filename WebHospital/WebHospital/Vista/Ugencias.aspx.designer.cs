@@ -1,4 +1,5 @@
-﻿//------------------------------------------------------------------------------
+﻿
+//------------------------------------------------------------------------------
 // <generado automáticamente>
 //     Este código fue generado por una herramienta.
 //
@@ -13,6 +14,33 @@ namespace WebHospital.Vista
 
     public partial class Ugencias
     {
+
+        /// <summary>
+        /// Control txtbuscar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtbuscar;
+
+        /// <summary>
+        /// Control butonBuscar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button butonBuscar;
+
+        /// <summary>
+        /// Control gvPacientes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvPacientes;
 
         /// <summary>
         /// Control txtfechaingreso.
@@ -87,3 +115,4 @@ namespace WebHospital.Vista
         protected global::System.Web.UI.WebControls.Button btnRegistrar;
     }
 }
+

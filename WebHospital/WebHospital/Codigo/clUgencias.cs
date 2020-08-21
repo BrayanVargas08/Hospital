@@ -20,7 +20,9 @@ namespace WebHospital.Codigo
            int  result= objSQL.mtdConectado(sqlInsert);
             return result;
 
+           
         }
+
 
     }
 }

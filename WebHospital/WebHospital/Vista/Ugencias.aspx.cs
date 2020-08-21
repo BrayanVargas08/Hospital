@@ -1,4 +1,5 @@
-﻿using Microsoft.SqlServer.Server;
+﻿
+using Microsoft.SqlServer.Server;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,14 +9,18 @@ using System.Web.UI.WebControls;
 using WebHospital.Codigo;
 using WebHospital.Codigo.Entidad;
 using System.Globalization;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace WebHospital.Vista
 {
     public partial class Ugencias : System.Web.UI.Page
     {
+        string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbHospitalPaz.mdf;Integrated Security=True";
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
         protected void Page_Init(object sender, EventArgs e)
         {
@@ -50,8 +55,8 @@ namespace WebHospital.Vista
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
             clEntidadUrgencias objEUrgencias = new clEntidadUrgencias();
-            objEUrgencias.FechaHIngreso = DateTime.Parse( txtfechaingreso.Text);
-            objEUrgencias.FechaHSalida = DateTime.Parse( txtfechaingreso.Text);
+            objEUrgencias.FechaHIngreso = DateTime.Parse(txtfechaingreso.Text);
+            objEUrgencias.FechaHSalida = DateTime.Parse(txtfechaingreso.Text);
             objEUrgencias.Motivo = Textmotivo.Text;
             objEUrgencias.Descripcion = Textdescripcion.Text;
             objEUrgencias.IdTriage = int.Parse(cmdtriage.SelectedValue.ToString());
@@ -67,5 +72,38 @@ namespace WebHospital.Vista
 
 
         }
+        public void BuscarPaciente()
+        {
+
+
+        }
+
+        protected void butonBuscar_Click(object sender, EventArgs e)
+        {
+            //capturamos nuestro datapter
+            try
+            {
+                //declaramos nuestro 
+                SqlDataAdapter da = new SqlDataAdapter("select * from Paciente where Documento like '" + txtbuscar.Text + "%'", conn);
+                //contenerdor de datos
+                DataTable dt = new DataTable();
+                //llneaamos datatable
+                da.Fill(dt);
+                //agregamos al gribview
+                this.gvPacientes.DataSource = dt;
+                gvPacientes.DataBind();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+
+
+
+        }
     }
 }
+
+

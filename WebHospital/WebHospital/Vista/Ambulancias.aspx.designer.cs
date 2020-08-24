@@ -15,6 +15,33 @@ namespace WebHospital.Vista
     {
 
         /// <summary>
+        /// Control Gvambualncias.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView Gvambualncias;
+
+        /// <summary>
+        /// Control lblSussessMensage.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSussessMensage;
+
+        /// <summary>
+        /// Control lblErrorMensage.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblErrorMensage;
+
+        /// <summary>
         /// Control txtCodigo.
         /// </summary>
         /// <remarks>

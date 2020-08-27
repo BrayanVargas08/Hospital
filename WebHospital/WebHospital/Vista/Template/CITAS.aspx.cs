@@ -14,47 +14,47 @@ namespace WebHospital.Vista.Template
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                IniciarllenadodeDropDown();
+            //if (!IsPostBack)
+            //{
+            //    IniciarllenadodeDropDown();
 
-            }
+            //}
 
 
         }
-        private void IniciarllenadodeDropDown()
-        {
+        //private void IniciarllenadodeDropDown()
+        //{
 
-            dropEspecialidad.DataSource = Consultar("SELECT * FROM Especialidad");
-            dropEspecialidad.DataTextField = "Especialidad";
-            dropEspecialidad.DataValueField = "IdEspecialidad";
-            dropEspecialidad.DataBind();
-            dropEspecialidad.Items.Insert(0, new ListItem("[Seleccionar] ", "0"));
-            dropEspecialista.Items.Insert(0, new ListItem("[Seleccionar] ", "0"));
-        }
-        protected void EspecialidadSeleccionada(object sender, EventArgs e)
-        {
-            int IdEspecialidad = Convert.ToInt32(dropEspecialidad.SelectedValue);
-            dropEspecialista.DataSource = Consultar("SELECT * FROM Medico WHERE IdEspecialidad=" + IdEspecialidad);
-            dropEspecialista.DataTextField = "Nombre";
-            dropEspecialista.DataValueField = "IdMedico";
-            dropEspecialista.DataBind();
-            dropEspecialista.Items.Insert(0, new ListItem("[Seleccionar] ", "0"));
-        }
+        //    //dropEspecialidad.DataSource = Consultar("SELECT * FROM Especialidad");
+        //    //dropEspecialidad.DataTextField = "Especialidad";
+        //    //dropEspecialidad.DataValueField = "IdEspecialidad";
+        //    //dropEspecialidad.DataBind();
+        //    //dropEspecialidad.Items.Insert(0, new ListItem("[Seleccionar] ", "0"));
+        //    //dropEspecialista.Items.Insert(0, new ListItem("[Seleccionar] ", "0"));
+        //}
+        //protected void EspecialidadSeleccionada(object sender, EventArgs e)
+        //{
+        //    int IdEspecialidad = Convert.ToInt32(dropEspecialidad.SelectedValue);
+        //    dropEspecialista.DataSource = Consultar("SELECT * FROM Medico WHERE IdEspecialidad=" + IdEspecialidad);
+        //    dropEspecialista.DataTextField = "Nombre";
+        //    dropEspecialista.DataValueField = "IdMedico";
+        //    dropEspecialista.DataBind();
+        //    dropEspecialista.Items.Insert(0, new ListItem("[Seleccionar] ", "0"));
+        //}
 
 
-        public DataSet Consultar(string strSQL)
-        {
-            string strconn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbHospitalPaz.mdf;Integrated Security=True";
-            SqlConnection con = new SqlConnection(strconn);
-            con.Open();
-            SqlCommand cmd = new SqlCommand(strSQL, con);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            con.Close();
-            return ds;
-        }
+        //public DataSet Consultar(string strSQL)
+        //{
+        //    string strconn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbHospitalPaz.mdf;Integrated Security=True";
+        //    SqlConnection con = new SqlConnection(strconn);
+        //    con.Open();
+        //    SqlCommand cmd = new SqlCommand(strSQL, con);
+        //    SqlDataAdapter da = new SqlDataAdapter(cmd);
+        //    DataSet ds = new DataSet();
+        //    da.Fill(ds);
+        //    con.Close();
+        //    return ds;
+        //}
 
    
 
@@ -63,10 +63,10 @@ namespace WebHospital.Vista.Template
 
             clEntidadCita objECita = new clEntidadCita();
             objECita.Documento = TxtNombre.Text;
-            objECita.FechaHIngreso = DateTime.Parse(TxtCita.Text);
-            objECita.IdMedico = int.Parse(dropEspecialista.Text);
-            objECita.IdPaciente = int.Parse(TxtNombre.Text);
-            objECita.IdEspecialidad = int.Parse(dropEspecialidad.Text);
+            //objECita.FechaHIngreso = /*DateTime.Parse(TxtCita.Text)*/;
+            objECita.IdMedico = 1;
+            //objECita.IdPaciente = int.Parse(TxtNombre.Text);
+            objECita.IdEspecialidad = 1;
 
 
 

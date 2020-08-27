@@ -1,8 +1,10 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterAdministrador.master.cs" Inherits="WebHospital.Vista.MasterAdministrador" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterGerente.master.cs" Inherits="WebHospital.Vista.MasterGerente" %>
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+
+<html>
+<head runat="server">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Site Title -->
@@ -33,7 +35,8 @@
     <link rel="stylesheet" href="template/css/style.css">
 </head>
 <body>
-    <!-- Start Header -->
+    <form id="form1" runat="server">
+            <!-- Start Header -->
     <header id="header">
         <!-- Start Header Top Section -->
         <div id="hdr-top-wrapper">
@@ -275,9 +278,11 @@
             </div>
         </div><!-- End Main Header Section -->
     </header><!-- End Header -->
+        <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-       <!-- Start Footer Section -->
+        </div>
+               <!-- Start Footer Section -->
    <footer id="footer">
             <div class="layer-stretch">
                 <!-- Start main Footer Section -->
@@ -422,5 +427,6 @@
     <script src="template/js/smoothscroll.min.js"></script>
     <!--Custom JavaScript for Klinik Template-->
     <script src="template/js/custom.js"></script>
+    </form>
 </body>
-</html
+</html>

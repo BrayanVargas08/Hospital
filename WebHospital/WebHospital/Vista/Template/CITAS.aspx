@@ -80,12 +80,12 @@
                         <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
                     </div>
                     <div class="modal-body">
-                        <div class="appointment-error"></div>
-                        <div class="row">
+                        <%--<div class="appointment-error"></div>--%>
+                        <%--<div class="row">--%>
                             <div class="col-md-6">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                                     <i class="fa fa-user-o"></i>
-                                    <asp:TextBox ID="TxtNombre" runat="server" class="mdl-textfield__input" pattern="[A-Z,a-z, ]*"></asp:TextBox>
+                                    <asp:TextBox ID="TxtNombre" runat="server" class="mdl-textfield__input" TextMode="Number"></asp:TextBox>
                                     <label class="mdl-textfield__label" for="appointment-name">Documento</label>
                                     <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
                                 </div>
@@ -95,7 +95,7 @@
                             <div class="col-md-6">
                                 <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
                                     <i class="fa fa-hospital-o"></i>
-                                    <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
+                                    <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" ></asp:DropDownList>
 
                                     <option value="">&nbsp;</option>
 
@@ -125,8 +125,8 @@
                             </div>
                         </div>
                         <div class="text-center pt-4">
-
-                            <asp:Button  ID="btnRegistrarCita"  class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" >AGENDAR CITA> </asp:Button>
+                            
+                            <asp:Button  ID="btnRegistrarCita"  runat="server" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text="Agendar Cita"/>
                             <%--<button class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment">Submit</button>--%>
                         </div>
                     </div>

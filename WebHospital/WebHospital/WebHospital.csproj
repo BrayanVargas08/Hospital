@@ -348,6 +348,7 @@
     <Compile Include="Codigo\clMedico.cs" />
     <Compile Include="Codigo\clPaciente.cs" />
     <Compile Include="Codigo\clCita.cs" />
+    <Compile Include="Codigo\clPersonalAministrativo.cs" />
     <Compile Include="Codigo\clTraslado.cs" />
     <Compile Include="Codigo\clTriage.cs" />
     <Compile Include="Codigo\clUgencias.cs" />

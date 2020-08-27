@@ -55,7 +55,7 @@ namespace WebHospital.Vista
         protected void btnRegistrarAmb_Click(object sender, EventArgs e)
         {
 
-            //  clEntidadAmbulancias objEAmbulancias = new clEntidadAmbulancias();
+            // clEntidadAmbulancias objEAmbulancias = new clEntidadAmbulancias();
             // objEAmbulancias.codigo = txtCodigo.Text;
             // objEAmbulancias.Placa = TxtPlaca.Text;
             // objEAmbulancias.Conductor = TxtConductor.Text;

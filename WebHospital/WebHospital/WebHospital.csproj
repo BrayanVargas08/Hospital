@@ -335,7 +335,6 @@
     <Content Include="Vista\Template\uploads\testimonial-5.jpg" />
     <Content Include="Vista\Template\CITAS.aspx" />
     <Content Include="Vista\Traslado.aspx" />
-    <Content Include="Vista\Ugencias.aspx" />
     <Content Include="Vista\Urgencias.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -476,12 +475,6 @@
     </Compile>
     <Compile Include="Vista\Traslado.aspx.designer.cs">
       <DependentUpon>Traslado.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Ugencias.aspx.cs">
-      <DependentUpon>Ugencias.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\Ugencias.aspx.designer.cs">
-      <DependentUpon>Ugencias.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\Urgencias.aspx.cs">
       <DependentUpon>Urgencias.aspx</DependentUpon>

@@ -97,7 +97,7 @@ namespace WebHospital.Vista
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TxtPaciente.Text = GridView1.SelectedRow.Cells[6].Text;
+            TxtPaciente.Text = GridView1.SelectedRow.Cells[3].Text;
         }
     }
 }

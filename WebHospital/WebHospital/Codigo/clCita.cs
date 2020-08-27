@@ -14,12 +14,12 @@ namespace WebHospital.Codigo.Entidad
             clAdminSQL objSQL = new clAdminSQL();
             string TomarId = "SELECT IdPaciente from Paciente Where Documento='" + objCita.Documento + "'";
             DataTable tblpaciente = new DataTable();
-            tblpaciente  = objSQL.mtdDesconectado(TomarId);
-            int IdPaciente=int.Parse(tblpaciente.Rows[0][0].ToString());
+            tblpaciente = objSQL.mtdDesconectado(TomarId);
+            int IdPaciente = int.Parse(tblpaciente.Rows[0][0].ToString());
 
             string sqlInsert = "INSERT INTO CitaMedica(FechaHIngreso,Estado,IdMedico,IdPaciente,IdEspecialidad)" +
                 "values('" + objCita.FechaHIngreso + "',Activo,'" + objCita.IdMedico + "'" +
-                "'" + IdPaciente + "','" + objCita.IdEspecialidad + "','" + ")";
+                "'" + objCita.IdPaciente + "','" + objCita.IdEspecialidad + "','" + ")";
             int result = objSQL.mtdConectado(sqlInsert);
             return result;
         }

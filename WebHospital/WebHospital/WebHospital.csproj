@@ -79,8 +79,10 @@
     <Content Include="Vista\CondicionesdePrivacidad.aspx" />
     <Content Include="Vista\Contacto.aspx" />
     <Content Include="Vista\Contactooss.aspx" />
+    <Content Include="Vista\Hospitalizacion.aspx" />
     <Content Include="Vista\index.aspx" />
     <Content Include="Vista\indexadministrador.aspx" />
+    <Content Include="Vista\PoliticasdePrivacidad.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-orange.css" />
@@ -154,16 +156,21 @@
     <Content Include="Vista\Template\forgot.html" />
     <Content Include="Vista\Template\gallery-1.html" />
     <Content Include="Vista\Template\gallery.html" />
+    <Content Include="Vista\Template\images\addnew.png" />
     <Content Include="Vista\Template\images\alejandro.jpeg" />
     <Content Include="Vista\Template\images\boyaca.png" />
     <Content Include="Vista\Template\images\brayan.jpeg" />
+    <Content Include="Vista\Template\images\cancelar.png" />
     <Content Include="Vista\Template\images\covid.jpg" />
     <Content Include="Vista\Template\images\cristian.jpeg" />
     <Content Include="Vista\Template\images\dj.jpeg" />
+    <Content Include="Vista\Template\images\editar.png" />
+    <Content Include="Vista\Template\images\eliminar.png" />
     <Content Include="Vista\Template\images\favicon.png" />
     <Content Include="Vista\Template\images\gerente.png" />
     <Content Include="Vista\Template\images\gerente2.jpg" />
     <Content Include="Vista\Template\images\gerentead.png" />
+    <Content Include="Vista\Template\images\guardar.png" />
     <Content Include="Vista\Template\images\logo.jpg" />
     <Content Include="Vista\Template\images\prueba.jpg" />
     <Content Include="Vista\Template\images\redsa.png" />
@@ -326,6 +333,8 @@
     <Content Include="Vista\Template\uploads\testimonial-4.jpg" />
     <Content Include="Vista\Template\uploads\testimonial-5.jpg" />
     <Content Include="Vista\Template\CITAS.aspx" />
+    <Content Include="Vista\Traslado.aspx" />
+    <Content Include="Vista\Ugencias.aspx" />
     <Content Include="Vista\Urgencias.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -333,17 +342,23 @@
     <Compile Include="Codigo\clAdminSQL.cs" />
     <Compile Include="Codigo\clAmbulancia.cs" />
     <Compile Include="Codigo\clConexion.cs" />
+    <Compile Include="Codigo\clEps.cs" />
+    <Compile Include="Codigo\clHospitalizacion.cs" />
     <Compile Include="Codigo\clLogin.cs" />
     <Compile Include="Codigo\clMedico.cs" />
     <Compile Include="Codigo\clPaciente.cs" />
     <Compile Include="Codigo\clCita.cs" />
+    <Compile Include="Codigo\clTraslado.cs" />
     <Compile Include="Codigo\clTriage.cs" />
     <Compile Include="Codigo\clUgencias.cs" />
     <Compile Include="Codigo\Entidad\clEntidadAmbulancias.cs" />
+    <Compile Include="Codigo\Entidad\clEntidadEps.cs" />
+    <Compile Include="Codigo\Entidad\clEntidadHopitalizacion.cs" />
     <Compile Include="Codigo\Entidad\clEntidadMedico.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPaciente.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPersonalAdministrativo.cs" />
     <Compile Include="Codigo\Entidad\clEntidadCita.cs" />
+    <Compile Include="Codigo\Entidad\clEntidadTraslado.cs" />
     <Compile Include="Codigo\Entidad\clEntidadTriage.cs" />
     <Compile Include="Codigo\Entidad\clEntidadUrgencias.cs" />
     <Compile Include="Codigo\Global.asax.cs">
@@ -377,6 +392,12 @@
     </Compile>
     <Compile Include="Vista\Contactooss.aspx.designer.cs">
       <DependentUpon>Contactooss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Hospitalizacion.aspx.cs">
+      <DependentUpon>Hospitalizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Hospitalizacion.aspx.designer.cs">
+      <DependentUpon>Hospitalizacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -420,6 +441,12 @@
     <Compile Include="Vista\MasterUsuario.Master.designer.cs">
       <DependentUpon>MasterUsuario.Master</DependentUpon>
     </Compile>
+    <Compile Include="Vista\PoliticasdePrivacidad.aspx.cs">
+      <DependentUpon>PoliticasdePrivacidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\PoliticasdePrivacidad.aspx.designer.cs">
+      <DependentUpon>PoliticasdePrivacidad.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Template\CITAS.aspx.cs">
       <DependentUpon>CITAS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -433,6 +460,18 @@
     </Compile>
     <Compile Include="Vista\Template\Registro.aspx.designer.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Traslado.aspx.cs">
+      <DependentUpon>Traslado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Traslado.aspx.designer.cs">
+      <DependentUpon>Traslado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Ugencias.aspx.cs">
+      <DependentUpon>Ugencias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Ugencias.aspx.designer.cs">
+      <DependentUpon>Ugencias.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\Urgencias.aspx.cs">
       <DependentUpon>Urgencias.aspx</DependentUpon>

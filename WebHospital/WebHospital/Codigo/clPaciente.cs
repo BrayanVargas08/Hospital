@@ -11,16 +11,14 @@ namespace WebHospital.Codigo
     {
         public int mtdRegistrar(clEntidadPaciente objPaciente)
         {
-            string sqlInsert = "INSERT INTO Usuario(Nombre,Apellido,Documento,email,Direccion,Telefono,FechaNacimiento,Password,Genero,IdRol)" +
-                "values('" + objPaciente.Nombre + "','" + objPaciente.Apellido + "''" + objPaciente.Documento + "'" +
-                "'" + objPaciente.email + "','" + objPaciente.Direccion + "','" + objPaciente.Telefono + "'" +
-                "" + objPaciente.FechaNacimiento + ",'" + objPaciente.Password + "','" + objPaciente.Genero + "'," + objPaciente.IdEps + ")";
+            string sqlInsert = "INSERT INTO Paciente(Nombre,Apellido,Documento,email,Direccion,Telefono,FechaNacimiento,Password,Genero,IdEps)" +
+                "values('" + objPaciente.Nombre + "','" + objPaciente.Apellido + "','" + objPaciente.Documento + "','" + objPaciente.email + "','" + objPaciente.Direccion + "','" + objPaciente.Telefono + "','" + objPaciente.FechaNacimiento + "','" + objPaciente.Password + "','" + objPaciente.Genero + "','" + objPaciente.IdEps + "')";
 
 
 
             clAdminSQL objSQL = new clAdminSQL();
             int result = objSQL.mtdConectado(sqlInsert);
-            return 4;
+            return result;
 
 
 

@@ -85,9 +85,9 @@
                             <div class="col-md-6">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                                     <i class="fa fa-user-o"></i>
-                                    <asp:TextBox ID="TxtNombre" runat="server" class="mdl-textfield__input" pattern="[A-Z,a-z, ]*"></asp:TextBox>
+                                    <asp:TextBox ID="TxtNombre" runat="server" class="mdl-textfield__input" pattern="[0-9 ]*"></asp:TextBox>
                                     <label class="mdl-textfield__label" for="appointment-name">Documento</label>
-                                    <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
+                                    <%--<span class="mdl-textfield__error">Porfavor verifique su documento!</span>--%>
                                 </div>
                             </div>
 

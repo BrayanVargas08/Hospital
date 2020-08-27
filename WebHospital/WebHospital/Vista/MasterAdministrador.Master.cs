@@ -11,8 +11,7 @@ namespace WebHospital.Vista
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string ss = Session["Usuario"].ToString();
-            lblUsuario.Text = ss;
+
         }
     }
 }

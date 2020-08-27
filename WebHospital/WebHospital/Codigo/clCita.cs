@@ -18,7 +18,8 @@ namespace WebHospital.Codigo.Entidad
             int IdPaciente=int.Parse(tblpaciente.Rows[0][0].ToString());
 
             string sqlInsert = "INSERT INTO CitaMedica(FechaHIngreso,Estado,IdMedico,IdPaciente,IdEspecialidad)" +
-                "values(02/02/2010,'Activo','" + objCita.IdMedico + "','" + IdPaciente + "','" + objCita.IdEspecialidad + "')";
+                "values('" + objCita.FechaHIngreso + "',Activo,'" + objCita.IdMedico + "'" +
+                "'" + IdPaciente + "','" + objCita.IdEspecialidad + "','" + ")";
             int result = objSQL.mtdConectado(sqlInsert);
             return result;
         }

@@ -81,7 +81,6 @@
     <Content Include="Vista\Contactooss.aspx" />
     <Content Include="Vista\index.aspx" />
     <Content Include="Vista\indexadministrador.aspx" />
-    <Content Include="Vista\indexGerente.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-orange.css" />
@@ -338,7 +337,6 @@
     <Compile Include="Codigo\clMedico.cs" />
     <Compile Include="Codigo\clPaciente.cs" />
     <Compile Include="Codigo\clCita.cs" />
-    <Compile Include="Codigo\clPersonalAdministrativo.cs" />
     <Compile Include="Codigo\clTriage.cs" />
     <Compile Include="Codigo\clUgencias.cs" />
     <Compile Include="Codigo\Entidad\clEntidadAmbulancias.cs" />
@@ -394,26 +392,12 @@
     <Compile Include="Vista\indexadministrador.aspx.designer.cs">
       <DependentUpon>indexadministrador.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\indexGerente.aspx.cs">
-      <DependentUpon>indexGerente.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\indexGerente.aspx.designer.cs">
-      <DependentUpon>indexGerente.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Vista\MaestraDoctor.Master.cs">
       <DependentUpon>MaestraDoctor.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\MaestraDoctor.Master.designer.cs">
       <DependentUpon>MaestraDoctor.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\MasterGerente.Master.cs">
-      <DependentUpon>MasterGerente.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\MasterGerente.Master.designer.cs">
-      <DependentUpon>MasterGerente.Master</DependentUpon>
     </Compile>
     <Compile Include="Vista\MasterInicial.Master.cs">
       <DependentUpon>MasterInicial.Master</DependentUpon>
@@ -486,7 +470,6 @@
     <Content Include="Vista\MaestraDoctor.Master" />
     <Content Include="Vista\MasterAdministrador.Master" />
     <Content Include="Vista\MasterUsuario.Master" />
-    <Content Include="Vista\MasterGerente.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

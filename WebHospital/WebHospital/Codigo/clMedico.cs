@@ -24,7 +24,7 @@ namespace WebHospital.Codigo
                 objEMedico.IdMedico = int.Parse(tblMedico.Rows[i][0].ToString());
                 objEMedico.Nombre = tblMedico.Rows[i][1].ToString();
                 objEMedico.Apellido = tblMedico.Rows[i][2].ToString();
-                objEMedico.Documento = tblMedico.Rows[i][3].ToString(); 
+                objEMedico.Documento = tblMedico.Rows[i][3].ToString();
                 objEMedico.Telefono = tblMedico.Rows[i][4].ToString();
                 objEMedico.email = tblMedico.Rows[i][5].ToString();
                 objEMedico.Direccion = tblMedico.Rows[i][6].ToString();

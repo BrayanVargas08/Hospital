@@ -338,6 +338,7 @@
     <Compile Include="Codigo\clAdminSQL.cs" />
     <Compile Include="Codigo\clAmbulancia.cs" />
     <Compile Include="Codigo\clConexion.cs" />
+    <Compile Include="Codigo\clEps.cs" />
     <Compile Include="Codigo\clLogin.cs" />
     <Compile Include="Codigo\clMedico.cs" />
     <Compile Include="Codigo\clPaciente.cs" />
@@ -345,6 +346,7 @@
     <Compile Include="Codigo\clTriage.cs" />
     <Compile Include="Codigo\clUgencias.cs" />
     <Compile Include="Codigo\Entidad\clEntidadAmbulancias.cs" />
+    <Compile Include="Codigo\Entidad\clEntidadEps.cs" />
     <Compile Include="Codigo\Entidad\clEntidadMedico.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPaciente.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPersonalAdministrativo.cs" />

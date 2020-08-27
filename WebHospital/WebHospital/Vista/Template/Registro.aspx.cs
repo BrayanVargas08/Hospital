@@ -16,6 +16,17 @@ namespace WebHospital.Vista.Template
 
         }
 
+        protected void Page_Init(object sender, EventArgs e)
+        {
+            List<clEntidadEps> listaEps = new List<clEntidadEps>();
+            clEps objEps = new clEps();
+            listaEps = objEps.mtdListar();
+            cmbEps.DataSource = listaEps;
+            cmbEps.DataTextField = "Nombre";
+            cmbEps.DataValueField = "IdEps";
+            cmbEps.DataBind();
+        }
+
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
             clEntidadPaciente objEPaciente = new clEntidadPaciente();
@@ -25,13 +36,17 @@ namespace WebHospital.Vista.Template
             objEPaciente.email = txtUsuario.Text;
             objEPaciente.Direccion = txtDireccion.Text;
             objEPaciente.Telefono = txtTelefono.Text;
-           // objEPaciente.FechaNacimiento = Convert.ToDateTime.//
+            objEPaciente.FechaNacimiento = DateTime.Parse(txtFecha.Text);
             objEPaciente.Password = txtContraseña.Text;
             objEPaciente.Genero = RadioButtonGenero.SelectedValue;
+            objEPaciente.IdEps = int.Parse(cmbEps.SelectedValue.ToString());
+            int IdEps = int.Parse(cmbEps.SelectedValue.ToString());
             
 
-            clPaciente objUsuario = new clPaciente();
-            int resultsql = objUsuario.mtdRegistrar(objEPaciente);
+            clPaciente objPaciente = new clPaciente();
+            int resultsql = objPaciente.mtdRegistrar(objEPaciente);
+
+
         }
     }
 }

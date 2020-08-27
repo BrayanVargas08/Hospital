@@ -397,6 +397,7 @@
     </Compile>
     <Compile Include="Vista\Hospitalizacion.aspx.cs">
       <DependentUpon>Hospitalizacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\Hospitalizacion.aspx.designer.cs">
       <DependentUpon>Hospitalizacion.aspx</DependentUpon>
@@ -445,6 +446,7 @@
     </Compile>
     <Compile Include="Vista\PoliticasdePrivacidad.aspx.cs">
       <DependentUpon>PoliticasdePrivacidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\PoliticasdePrivacidad.aspx.designer.cs">
       <DependentUpon>PoliticasdePrivacidad.aspx</DependentUpon>
@@ -472,6 +474,7 @@
     </Compile>
     <Compile Include="Vista\Traslado.aspx.cs">
       <DependentUpon>Traslado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\Traslado.aspx.designer.cs">
       <DependentUpon>Traslado.aspx</DependentUpon>

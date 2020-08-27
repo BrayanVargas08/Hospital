@@ -9,6 +9,19 @@ namespace WebHospital.Codigo
 {
     public class clMedico
     {
+        public int mtdRegistrar(clEntidadMedico objPaciente)
+        {
+            string sqlInsert = "INSERT INTO Medico(Nombre,Apellido,Documento,Telefono,email,Direccion,FechaNacimiento,Password,IdEspecialidad)" +
+                "values('" + objPaciente.Nombre + "','" + objPaciente.Apellido + "','" + objPaciente.Documento + "','" + objPaciente.Telefono + "','" + objPaciente.email + "','" + objPaciente.Direccion + "','" + objPaciente.FechaNacimiento + "','" + objPaciente.Password + "','" + objPaciente.IdEspecialidad + "')";
+
+
+            clAdminSQL objSQL = new clAdminSQL();
+            int result = objSQL.mtdConectado(sqlInsert);
+            return result;
+
+
+
+        }
         public List<clEntidadMedico> mtdListar()
         {
             string sql = "select * from Medico";
@@ -28,7 +41,7 @@ namespace WebHospital.Codigo
                 objEMedico.Telefono = tblMedico.Rows[i][4].ToString();
                 objEMedico.email = tblMedico.Rows[i][5].ToString();
                 objEMedico.Direccion = tblMedico.Rows[i][6].ToString();
-               // objEMedico.FechaNAcimiento = tblMedico.Rows[i][7].ToString();
+                // objEMedico.FechaNAcimiento = tblMedico.Rows[i][7].ToString();
                 objEMedico.Password = tblMedico.Rows[i][8].ToString();
                 objEMedico.IdEspecialidad = int.Parse(tblMedico.Rows[i][9].ToString());
                 listaMedico.Add(objEMedico);

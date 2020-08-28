@@ -374,6 +374,7 @@
                               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-user-o"></i>
                                   <asp:DropDownList ID="cmbEps" class="mdl-textfield__input" runat="server"></asp:DropDownList>
+                                   <label class="mdl-textfield__label" for="appointment-date">Su Eps</label>
                         </div>
 
                             <span class="mdl-textfield__error">Please Enter Valid Name!</span>

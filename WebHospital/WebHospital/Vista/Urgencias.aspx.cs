@@ -22,7 +22,7 @@ namespace WebHospital.Vista
             clTriage objTriege = new clTriage();
             ListaTrieges = objTriege.mtdListar();
             cmdtriage.DataSource = ListaTrieges;
-            cmdtriage.DataTextField = "Nivel";
+            cmdtriage.DataTextField = "Tipo";
             cmdtriage.DataValueField = "IdTriage";
             cmdtriage.DataBind();
             //

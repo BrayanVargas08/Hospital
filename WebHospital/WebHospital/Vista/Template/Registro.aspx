@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <div class="hdr-top-line hidden-xs"></div>
-                        <div class="hdr-top-block hdr-number">
+                        <div class="hdr-top-block hdr-number"> 
                             <div class="font-13">
                                 <!-- <i class="fa fa-mobile font-20 tbl-cell"></i><span class="hidden-xs tbl-cell">Emergency Number : </span><span class="tbl-cell">1800000000</span> -->
                             </div>

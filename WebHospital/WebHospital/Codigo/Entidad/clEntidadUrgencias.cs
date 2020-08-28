@@ -13,8 +13,8 @@ namespace WebHospital.Codigo.Entidad
         public string Motivo { get; set; }
         public string Descripcion { get; set; }
         public int IdTriage { get; set; }
-        public int Idpaciente { get; set; }
-        public int Idmedico { get; set; }
+        public int IdPaciente { get; set; }
+        public int IdMedico { get; set; }
 
         }
 }

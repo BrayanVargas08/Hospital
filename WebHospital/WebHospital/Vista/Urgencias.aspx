@@ -86,13 +86,13 @@
 
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                         <i class="fa fa-user-o"></i>
-                        <asp:TextBox ID="txtfechaingreso" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')" onblur="(this.type='text')"></asp:TextBox>
+                        <asp:TextBox ID="txtfechaingreso" runat="server" class="mdl-textfield__input"></asp:TextBox>
                         <label class="mdl-textfield__label" for="appointment-name">Fecha de Ingreso</label>
                         <span class="mdl-textfield__error">Porfavor verifique su fecha de ingreso!</span>
                     </div>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                         <i class="fa fa-user-o"></i>
-                        <asp:TextBox ID="Textfechafinal" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')" onblur="(this.type='text')"></asp:TextBox>
+                        <asp:TextBox ID="txtfechasalida" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')" onblur="(this.type='text')"></asp:TextBox>
                         <label class="mdl-textfield__label" for="appointment-name">Fecha de final</label>
                         <span class="mdl-textfield__error">Porfavor verifique su fecha final!</span>
                     </div>

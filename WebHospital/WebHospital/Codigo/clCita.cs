@@ -19,7 +19,7 @@ namespace WebHospital.Codigo.Entidad
 
             string sqlInsert = "INSERT INTO CitaMedica(FechaHIngreso,Estado,IdMedico,IdPaciente,IdEspecialidad)" +
                 "values('" + objCita.FechaHIngreso + "',Activo,'" + objCita.IdMedico + "'" +
-                "'" + objCita.IdPaciente + "','" + objCita.IdEspecialidad + "','" + ")";
+                "'" + IdPaciente + "','" + objCita.IdEspecialidad + "' )";
             int result = objSQL.mtdConectado(sqlInsert);
             return result;
         }

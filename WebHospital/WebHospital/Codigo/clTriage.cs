@@ -13,7 +13,7 @@ namespace WebHospital.Codigo
         public List<clEntidadTriage> mtdListar()
          {
             string sql = "select * from Triage";
-            clAdminSQL objSQL = new clAdminSQL();
+            clAdminSQL objSQL = new clAdminSQL(); 
             DataTable tblTriage = new DataTable();
             tblTriage = objSQL.mtdDesconectado(sql);
 

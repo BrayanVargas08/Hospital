@@ -56,7 +56,7 @@ namespace WebHospital.Vista.Template
             return ds;
         }
 
-   
+
 
         protected void btnRegistrarCita_Click(object sender, EventArgs e)
         {
@@ -67,8 +67,6 @@ namespace WebHospital.Vista.Template
             objECita.IdMedico = int.Parse(dropEspecialista.Text);
             objECita.IdPaciente = int.Parse(TxtNombre.Text);
             objECita.IdEspecialidad = int.Parse(dropEspecialidad.Text);
-
-
 
             clCita objCita = new clCita();
             int result = objCita.mtdRegistrarCita(objECita);

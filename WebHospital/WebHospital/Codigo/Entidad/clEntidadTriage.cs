@@ -8,8 +8,9 @@ namespace WebHospital.Codigo.Entidad
     public class clEntidadTriage
     {
         public int idTriage { get; set; }
-        public string nivel { get; set; }
-        public string descripcion { get; set; }
+        public string Nivel { get; set; }
+        public string Tipo { get; set; }
+        public string TiempoEspera { get; set; }
 
     }
 }

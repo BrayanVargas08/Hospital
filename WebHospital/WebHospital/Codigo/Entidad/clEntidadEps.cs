@@ -7,10 +7,10 @@ namespace WebHospital.Codigo.Entidad
 {
     public class clEntidadEps
     {
-        public int IdEps { get; set; }
-        public string Nombre { get; set; }
+       public int  IdEps { get; set; }
+        public String  Nombre { get; set; }
         public string Ciudad { get; set; }
 
-      
+
     }
 }

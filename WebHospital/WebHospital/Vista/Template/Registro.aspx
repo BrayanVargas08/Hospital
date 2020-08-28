@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <div class="hdr-top-line hidden-xs"></div>
-                        <div class="hdr-top-block hdr-number">
+                        <div class="hdr-top-block hdr-number"> 
                             <div class="font-13">
                                 <!-- <i class="fa fa-mobile font-20 tbl-cell"></i><span class="hidden-xs tbl-cell">Emergency Number : </span><span class="tbl-cell">1800000000</span> -->
                             </div>
@@ -374,6 +374,7 @@
                               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-user-o"></i>
                                   <asp:DropDownList ID="cmbEps" class="mdl-textfield__input" runat="server"></asp:DropDownList>
+                                   <label class="mdl-textfield__label" for="appointment-date">Su Eps</label>
                         </div>
 
                             <span class="mdl-textfield__error">Please Enter Valid Name!</span>

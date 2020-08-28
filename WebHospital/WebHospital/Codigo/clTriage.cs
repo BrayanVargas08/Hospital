@@ -25,7 +25,7 @@ namespace WebHospital.Codigo
                 objETrige.idTriage = int.Parse(tblTriage.Rows[i][0].ToString());
                 objETrige.nivel = tblTriage.Rows[i][1].ToString();
                 objETrige.descripcion = tblTriage.Rows[i][2].ToString();
-                listatrage.Add(objETrige);
+                listatrage.Add(objETrige); 
 
             }
             return listatrage;

@@ -14,13 +14,13 @@ namespace WebHospital.Codigo
         {
 
             string sqlInsert = "INSERT INTO Urgencia(FechaHIngreso,FechaHSalida,Motivo,Descripcion,IdTriage,IdPaciente,IdMedico)" +
-               "values('" + objUrgencias.FechaHIngreso + "','" + objUrgencias.FechaHSalida + "','" + objUrgencias.Motivo + "','" + objUrgencias.Descripcion + "','" + objUrgencias.IdTriage + "','" + objUrgencias.Idpaciente + "','" + objUrgencias.Idmedico + "')";
+               "values('" + objUrgencias.FechaHIngreso + "','" + objUrgencias.FechaHSalida + "','" + objUrgencias.Motivo + "','" + objUrgencias.Descripcion + "','" + objUrgencias.IdTriage + "','" + objUrgencias.IdPaciente + "','" + objUrgencias.IdMedico + "')";
 
             clAdminSQL objSQL = new clAdminSQL();
-           int  result= objSQL.mtdConectado(sqlInsert);
+            int result = objSQL.mtdConectado(sqlInsert);
             return result;
 
-           
+
         }
 
 

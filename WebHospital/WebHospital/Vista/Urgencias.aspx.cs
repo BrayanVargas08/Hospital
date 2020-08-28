@@ -22,17 +22,17 @@ namespace WebHospital.Vista
             clTriage objTriege = new clTriage();
             ListaTrieges = objTriege.mtdListar();
             cmdtriage.DataSource = ListaTrieges;
-            cmdtriage.DataTextField = "Nivel";
+            cmdtriage.DataTextField = "Tipo";
             cmdtriage.DataValueField = "IdTriage";
             cmdtriage.DataBind();
             //
-            List<clEntidadPaciente> ListaEPaciente = new List<clEntidadPaciente>();
-            clPaciente objPaciente = new clPaciente();
-            ListaEPaciente = objPaciente.mtdListar();
-            cmbpaciente.DataSource = ListaEPaciente;
-            cmbpaciente.DataTextField = "Nombre";
-            cmbpaciente.DataValueField = "IdPaciente";
-            cmbpaciente.DataBind();
+           // List<clEntidadPaciente> ListaEPaciente = new List<clEntidadPaciente>();
+            //clPaciente objPaciente = new clPaciente();
+            //ListaEPaciente = objPaciente.mtdListar();
+            //cmbpaciente.DataSource = ListaEPaciente;
+            //cmbpaciente.DataTextField = "Nombre";
+            //cmbpaciente.DataValueField = "IdPaciente";
+            //cmbpaciente.DataBind();
             //
             List<clEntidadMedico> ListaEMedico = new List<clEntidadMedico>();
             clMedico objMedico = new clMedico();
@@ -50,17 +50,16 @@ namespace WebHospital.Vista
         {
             clEntidadUrgencias objEUrgencias = new clEntidadUrgencias();
             objEUrgencias.FechaHIngreso = DateTime.Parse(txtfechaingreso.Text);
-            objEUrgencias.FechaHSalida = DateTime.Parse(txtfechaingreso.Text);
+            objEUrgencias.FechaHSalida = DateTime.Parse(txtfechasalida.Text);
             objEUrgencias.Motivo = Textmotivo.Text;
             objEUrgencias.Descripcion = Textdescripcion.Text;
             objEUrgencias.IdTriage = int.Parse(cmdtriage.SelectedValue.ToString());
+            objEUrgencias.IdPaciente = int.Parse(TxtPaciente.Text);
+            objEUrgencias.IdMedico = int.Parse(cmbMedico.SelectedValue.ToString());
             int idTri = int.Parse(cmdtriage.SelectedValue.ToString());
-            objEUrgencias.Idpaciente = int.Parse(cmbpaciente.SelectedValue.ToString());
-            int idPa = int.Parse(cmbpaciente.SelectedValue.ToString());
-            objEUrgencias.Idmedico = int.Parse(cmbMedico.SelectedValue.ToString());
             int idMe = int.Parse(cmbMedico.SelectedValue.ToString());
 
-
+            
             clUgencias objUrgencia = new clUgencias();
             int resultSql = objUrgencia.mtdRegistrar(objEUrgencias);
 
@@ -95,6 +94,11 @@ namespace WebHospital.Vista
            
 
 
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TxtPaciente.Text = GridView1.SelectedRow.Cells[3].Text;
         }
     }
 }

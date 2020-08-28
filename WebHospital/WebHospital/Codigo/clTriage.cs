@@ -23,9 +23,10 @@ namespace WebHospital.Codigo
             {
                 clEntidadTriage objETrige = new clEntidadTriage();
                 objETrige.idTriage = int.Parse(tblTriage.Rows[i][0].ToString());
-                objETrige.nivel = tblTriage.Rows[i][1].ToString();
-                objETrige.descripcion = tblTriage.Rows[i][2].ToString();
-                listatrage.Add(objETrige);
+                objETrige.Nivel = tblTriage.Rows[i][1].ToString();
+                objETrige.Tipo = tblTriage.Rows[i][2].ToString();
+                objETrige.TiempoEspera = tblTriage.Rows[i][3].ToString();
+                listatrage.Add(objETrige);  
 
             }
             return listatrage;

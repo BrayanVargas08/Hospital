@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterInicial.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WebHospital.Vista.CitasMedicas1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+ <from runat="server">
 
     <!-- cuerpo de la pagina-->
 
@@ -443,5 +443,5 @@ Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás persona
     </div>
     <!-- End Fixed Appointment Button at Bottom -->
 
-
+</from>
 </asp:Content>

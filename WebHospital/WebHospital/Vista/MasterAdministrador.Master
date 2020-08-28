@@ -62,7 +62,7 @@
                         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect metarial-menu" data-mdl-for="profile-menu">
                             <li class="mdl-menu__item"><a href="login.html"><i class="fa fa-sign-in"></i>Iniciar Sesion </a></li>
                             <li class="mdl-menu__item"><a data-toggle="modal" data-target="#loginpopup"><i class="fa fa-sign-in"></i>Ventana emergente de inicio de sesion</a></li>
-                            <li class="mdl-menu__item"><a href="register.html"><i class="fa fa-user-o"></i>Registro</a></li>
+                            <li class="mdl-menu__item"><a href="RegistroDeMedico.aspx"><i class="fa fa-user-o"></i>Registro</a></li>
                             <li class="mdl-menu__item"><a data-toggle="modal" data-target="#registerpopup"><i class="fa fa-user-o"></i>Registro emergente</a></li>
                             <li class="mdl-menu__item"><a href="forgot.html"><i class="fa fa-key"></i>Se te olvido tu Contraseña</a></li>
                             <li class="mdl-menu__item"><a href="about.html"><i class="fa fa-info"></i>Ayuda</a></li>

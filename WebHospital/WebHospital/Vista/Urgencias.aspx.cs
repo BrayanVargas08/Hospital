@@ -55,6 +55,7 @@ namespace WebHospital.Vista
             objEUrgencias.Descripcion = Textdescripcion.Text;
             objEUrgencias.IdTriage = int.Parse(cmdtriage.SelectedValue.ToString());
             int idTri = int.Parse(cmdtriage.SelectedValue.ToString());
+            objEUrgencias.Idpaciente = int.Parse(TxtPaciente.ToString());
             objEUrgencias.Idmedico = int.Parse(cmbMedico.SelectedValue.ToString());
             int idMe = int.Parse(cmbMedico.SelectedValue.ToString());
 

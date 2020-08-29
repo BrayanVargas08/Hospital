@@ -21,6 +21,7 @@ namespace WebHospital.Vista.Template
             //}
 
 
+
         }
         //private void IniciarllenadodeDropDown()
         //{

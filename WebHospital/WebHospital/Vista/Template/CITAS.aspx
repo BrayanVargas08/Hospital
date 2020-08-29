@@ -80,8 +80,8 @@
                         <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
                     </div>
                     <div class="modal-body">
-                        <div class="appointment-error"></div>
-                        <div class="row">
+                        <%--<div class="appointment-error"></div>
+                        <div class="row">--%>
                             <div class="col-md-6">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                                     <i class="fa fa-user-o"></i>
@@ -95,8 +95,7 @@
                             <div class="col-md-6">
                                 <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
                                     <i class="fa fa-hospital-o"></i>
-                                    <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
-
+                                    <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" ></asp:DropDownList>
                                     <option value="">&nbsp;</option>
 
                                     </select>
@@ -126,7 +125,9 @@
                         </div>
                         <div class="text-center pt-4">
 
-                            <asp:Button  ID="btnRegistrarCita"  class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text="AGENDAR CITA " /> 
+                            <asp:Button  ID="btnRegistrarCita" runat ="server" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text= "AGENDAR CITA" /> 
+                            
+
                             <%--<button class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment">Submit</button>--%>
                         </div>
                     </div>

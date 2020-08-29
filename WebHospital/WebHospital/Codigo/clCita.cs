@@ -18,7 +18,7 @@ namespace WebHospital.Codigo.Entidad
             int IdPaciente = int.Parse(tblpaciente.Rows[0][0].ToString());
 
             string sqlInsert = "INSERT INTO CitaMedica(FechaHIngreso,Estado,IdMedico,IdPaciente,IdEspecialidad)" +
-                "values('" + objCita.FechaHIngreso + "',Activo,'" + objCita.IdMedico + "'," +
+                "values(05/07/2020,'Activo','" + objCita.IdMedico + "'," +
                 "'" + IdPaciente + "','" + objCita.IdEspecialidad + "' )";
             int result = objSQL.mtdConectado(sqlInsert);
             return result;

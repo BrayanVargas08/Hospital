@@ -126,7 +126,7 @@
                         </div>
                         <div class="text-center pt-4">
 
-                            <asp:Button  ID="btnRegistrarCita"  class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" >AGENDAR CITA> </asp:Button>
+                            <asp:Button  ID="btnRegistrarCita"  class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text="AGENDAR CITA " /> 
                             <%--<button class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment">Submit</button>--%>
                         </div>
                     </div>

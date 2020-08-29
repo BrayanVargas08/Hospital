@@ -18,13 +18,13 @@ namespace WebHospital.Vista.Template
 
         protected void Page_Init(object sender, EventArgs e)
         {
-            List<clEntidadEps> listaEps = new List<clEntidadEps>();
-            clEps objEps = new clEps();
-            listaEps = objEps.mtdListar();
-            cmbEps.DataSource = listaEps;
-            cmbEps.DataTextField = "Nombre";
-            cmbEps.DataValueField = "IdEps";
-            cmbEps.DataBind();
+            //List<clEntidadEps> listaEps = new List<clEntidadEps>();
+            //clEps objEps = new clEps();
+            //listaEps = objEps.mtdListar();
+            //cmbEps.DataSource = listaEps;
+            //cmbEps.DataTextField = "Nombre";
+            //cmbEps.DataValueField = "IdEps";
+            //cmbEps.DataBind();
         }
 
         protected void btnRegistrar_Click(object sender, EventArgs e)

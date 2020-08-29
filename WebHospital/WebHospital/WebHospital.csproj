@@ -82,6 +82,7 @@
     <Content Include="Vista\Hospitalizacion.aspx" />
     <Content Include="Vista\index.aspx" />
     <Content Include="Vista\indexadministrador.aspx" />
+    <Content Include="Vista\PersonalAdministrativo.aspx" />
     <Content Include="Vista\PoliticasdePrivacidad.aspx" />
     <Content Include="Vista\RegistroDeMedico.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
@@ -444,6 +445,13 @@
     </Compile>
     <Compile Include="Vista\MasterUsuario.Master.designer.cs">
       <DependentUpon>MasterUsuario.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\PersonalAdministrativo.aspx.cs">
+      <DependentUpon>PersonalAdministrativo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\PersonalAdministrativo.aspx.designer.cs">
+      <DependentUpon>PersonalAdministrativo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\PoliticasdePrivacidad.aspx.cs">
       <DependentUpon>PoliticasdePrivacidad.aspx</DependentUpon>

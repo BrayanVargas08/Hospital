@@ -13,7 +13,7 @@ namespace WebHospital.Codigo
         {
             string sqlInsert = "Insert Into PersonalAdministrativo (Nombre,Apellido,Documento,Telefono,email,Direccion,Password,IdRol)" +
                 "Values ('" + objEPersonalAdmin.Nombre + "','" + objEPersonalAdmin.Apellido + "','" + objEPersonalAdmin.Documento + "'," +
-                "'" + objEPersonalAdmin.Telefono + "','" + objEPersonalAdmin.Direccion + "','" + objEPersonalAdmin.Password + "','" + objEPersonalAdmin.IdRol + "')";
+                "'" + objEPersonalAdmin.Telefono + "','"+objEPersonalAdmin.email+"','" + objEPersonalAdmin.Direccion + "','" + objEPersonalAdmin.Password + "','" + objEPersonalAdmin.IdRol + "')";
 
             clAdminSQL objSQL = new clAdminSQL();
             int Resultado = objSQL.mtdConectado(sqlInsert);

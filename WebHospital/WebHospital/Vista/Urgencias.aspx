@@ -8,7 +8,7 @@
             <div class="layer-stretch">
                 <div class="page-ttl-container">
                     <h1>URGENCIAS</h1>
-                    <p><a href="#">Home</a> &#8594; <span>Bienvenido a Urgencias</span></p>
+                    <p><a href="indexadministrador.aspx">Home</a> &#8594; <span>Bienvenido a Urgencias</span></p>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
                             <i class="fa fa-user-o"></i>
                             <asp:TextBox ID="txtfechaingreso" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')" onblur="(this.type='text')"></asp:TextBox>
                             <label class="mdl-textfield__label" for="appointment-name">Fecha de Ingreso</label>
-                           <span class="mdl-textfield__error">Porfavor verifique su fecha de ingreso!</span>
+                            <span class="mdl-textfield__error">Porfavor verifique su fecha de ingreso!</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-user-o"></i>
@@ -124,16 +124,16 @@
                             <span class="mdl-textfield__error">Porfavor verifique su medico!</span>
 
                             <div class="form-submit">
-                            <asp:Button ID="btnRegistrar" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Urgencia" OnClick="btnRegistrar_Click" style="left: 35px; bottom: -30px"></asp:Button>
+                                <asp:Button ID="btnRegistrar" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Urgencia" OnClick="btnRegistrar_Click" Style="left: 35px; bottom: -30px"></asp:Button>
 
-                        </div>
+                            </div>
                         </div>
 
-                        
+
 
                     </div>
+                </div>
             </div>
-        </div>
-        <!-- End Register Section -->
+            <!-- End Register Section -->
     </form>
 </asp:Content>

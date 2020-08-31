@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterInicial.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WebHospital.Vista.CitasMedicas1" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterInicial.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WebHospital.Vista.CitasMedicas1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
  <from runat="server">
@@ -56,7 +57,6 @@
                 <div class="hm-service-right col-md-7">
                     <p class="paragraph-medium paragraph-black">
                         La labor del Hospital de la Paz de ariporo desde su creación ha sido el desarrollo de la medicina en la ciudad, formando más de tres mil médicos y más de 600 especialistas altamente calificados, prestando una atención integral en servicios de salud a nuestros pacientes.
-
 Nuestro compromiso es con la comunidad y con el país, por ello el ser Universitarios es el mejor testimonio que nuestra labor de investigación y actualización médica es permanente, siendo generadores del saber científico, obteniendo reconocimientos a nivel nacional por distintas Asociaciones Médicas y Sociedades Científicas, gracias a los diferentes trabajos desarrollados por los residentes e instructores del Hospital, quienes de la mano del capital administrativo calificado trabajan arduamente para que usted y los suyos reciban un servicio con calidad y calidez, sintiendo siempre que trabajamos unidos por su bienestar.
                     </p>
                     <div class="hm-service">
@@ -86,7 +86,7 @@ Nuestro compromiso es con la comunidad y con el país, por ello el ser Universit
                         </div>
                     </div>
                     <div class="hm-service-view text-center">
-                        <a href="" class="button-icon">
+                        <a  class="button-icon">
                             <span>Ver todos los servicios</span>
                             <i class="fa fa-eye"></i>
                         </a>
@@ -109,14 +109,14 @@ Nuestro compromiso es con la comunidad y con el país, por ello el ser Universit
                             <div class="tbl-cell hm-about-icon"><i class="fa fa-user-md"></i></div>
                             <div class="tbl-cell hm-about-number">
                                 <span class="counter">10</span>
-                                <p>Doctor(s)</p>
+                                <p>Doctores</p>
                             </div>
                         </div>
                         <div class="hm-about-block">
                             <div class="tbl-cell hm-about-icon"><i class="fa fa-ambulance"></i></div>
                             <div class="tbl-cell hm-about-number">
                                 <span class="counter">2</span>
-                                <p>Room(s)</p>
+                                <p>Ambulancias</p>
                             </div>
                         </div>
                         <div class="hm-about-block">
@@ -370,45 +370,14 @@ Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás persona
                 <div class="layer-container">
                     <div id="testimonial-slider" class="owl-carousel owl-theme theme-owl-dot">
                         <div class="testimonial-block">
-                            <img class="img-responsive" src="template/uploads/testimonial-1.jpg" alt="">
-                            <div class="paragraph-medium paragraph-white">
+                            <img  class="img-responsive"  src="Template/images/imagesssssss.jpg" />
+                          <div class="paragraph-medium paragraph-white">
                                 <i class="fa fa-quote-left"></i>
-                                This was my second visit here I loved it first visit but love it more on my second visit. I loved thier facility and online system. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veniam sit nemo eveniet recusandae nihil nesciunt rerum alias.
+                               Gracias por el remedio. Siento que ha estado funcionando en un nivel sutil más profundo. Un ver interior. He tenido la sensación de un derretimiento por dentro y una gran sensación de paz y rectitud. Experimenté esto antes con su percepción y tratamiento, así que muchas gracias.
                             </div>
-                            <a>Reuben Snow</a>
+                            <a>Granados Ana</a>
                         </div>
-                        <div class="testimonial-block">
-                            <img class="img-responsive" src="template/uploads/testimonial-2.jpg" alt="">
-                            <div class="paragraph-medium paragraph-white">
-                                <i class="fa fa-quote-left"></i>
-                                Thank you for the remedy. I feel it has been working on a deeper subtle level. An inner seeing. I have had the feeling of a melting inside and great sense of peace and rightness. I experienced this before with your perception and treatment so thank you very much.
-                            </div>
-                            <a>Julien Cain</a>
-                        </div>
-                        <div class="testimonial-block">
-                            <img class="img-responsive" src="template/uploads/testimonial-3.jpg" alt="">
-                            <div class="paragraph-medium paragraph-white">
-                                <i class="fa fa-quote-left"></i>
-                                Thank you for the remedy. I feel it has been working on a deeper subtle level. An inner seeing. I have had the feeling of a melting inside and great sense of peace and rightness. I experienced this before with your perception and treatment so thank you very much.
-                            </div>
-                            <a>Naum Gabo</a>
-                        </div>
-                        <div class="testimonial-block">
-                            <img class="img-responsive" src="uploads/testimonial-4.jpg" alt="">
-                            <div class="paragraph-medium paragraph-white">
-                                <i class="fa fa-quote-left"></i>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias corporis ad veniam, illo expedita aut quaerat voluptatem, magni voluptas necessitatibus omnis error quia deserunt asperiores beatae fugiat quisquam magnam mollitia!
-                            </div>
-                            <a>Winceton Logo</a>
-                        </div>
-                        <div class="testimonial-block">
-                            <img class="img-responsive" src="template/uploads/testimonial-5.jpg" alt="">
-                            <div class="paragraph-medium paragraph-white">
-                                <i class="fa fa-quote-left"></i>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias corporis ad veniam, illo expedita aut quaerat voluptatem, magni voluptas necessitatibus omnis error quia deserunt asperiores beatae fugiat quisquam magnam mollitia!
-                            </div>
-                            <a>Robert Bratheon</a>
-                        </div>
+                       </div>
                     </div>
                 </div>
             </div>

@@ -7,65 +7,74 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace WebHospital.Vista.Template
+namespace WebHospital.Vista
 {
 
 
-    public partial class WebForm1
+    public partial class PruebaCita
     {
 
         /// <summary>
-        /// Control form1.
+        /// Control txtDocumentoP.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox txtDocumentoP;
 
         /// <summary>
-        /// Control TxtDocumento.
+        /// Control dropEspecialidadP.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtDocumento;
+        protected global::System.Web.UI.WebControls.DropDownList dropEspecialidadP;
 
         /// <summary>
-        /// Control dropEspecialidad.
+        /// Control dropEspecialistaP.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dropEspecialidad;
+        protected global::System.Web.UI.WebControls.DropDownList dropEspecialistaP;
 
         /// <summary>
-        /// Control dropEspecialista.
+        /// Control TxtFechaP.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dropEspecialista;
+        protected global::System.Web.UI.WebControls.TextBox TxtFechaP;
 
         /// <summary>
-        /// Control txtfechaCita.
+        /// Control DropDownList5.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtfechaCita;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList5;
 
         /// <summary>
-        /// Control btnRegistrarCita.
+        /// Control dropJornada.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegistrarCita;
+        protected global::System.Web.UI.WebControls.DropDownList dropJornada;
+
+        /// <summary>
+        /// Control Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

@@ -86,6 +86,7 @@
     <Content Include="Vista\IndexMedico.aspx" />
     <Content Include="Vista\PersonalAdministrativo.aspx" />
     <Content Include="Vista\PoliticasdePrivacidad.aspx" />
+    <Content Include="Vista\PruebaCita.aspx" />
     <Content Include="Vista\RegistroDeMedico.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
@@ -476,6 +477,13 @@
     </Compile>
     <Compile Include="Vista\PoliticasdePrivacidad.aspx.designer.cs">
       <DependentUpon>PoliticasdePrivacidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\PruebaCita.aspx.cs">
+      <DependentUpon>PruebaCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\PruebaCita.aspx.designer.cs">
+      <DependentUpon>PruebaCita.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\RegistroDeMedico.aspx.cs">
       <DependentUpon>RegistroDeMedico.aspx</DependentUpon>

@@ -36,7 +36,8 @@ namespace WebHospital.Vista
             //
             List<clEntidadMedico> ListaEMedico = new List<clEntidadMedico>();
             clMedico objMedico = new clMedico();
-            ListaEMedico = objMedico.mtdListar();
+            int id = 0;
+            ListaEMedico = objMedico.mtdListar(id);
             cmbMedico.DataSource = ListaEMedico;
             cmbMedico.DataTextField = "Nombre";
             cmbMedico.DataValueField = "IdMedico";

@@ -58,7 +58,7 @@
                 </asp:SqlDataSource>
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdPaciente" DataSourceID="SqlDataSource1" EmptyDataText="No hay registros de datos para mostrar." OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Style="width: 522px; height: 133px; left: 15px; top: 81px">
                     <Columns>
-                        <asp:BoundField DataField="IdPaciente" HeaderText="IdPaciente" ReadOnly="True" SortExpression="IdPaciente" Visible="False" />
+                        <asp:BoundField DataField="IdPaciente" HeaderText="IdPaciente" ReadOnly="True" SortExpression="IdPaciente" />
                         <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
                         <asp:BoundField DataField="Apellido" HeaderText="Apellido" SortExpression="Apellido" />
                         <asp:BoundField DataField="Documento" HeaderText="Documento" SortExpression="Documento" />
@@ -80,60 +80,58 @@
             <div class="layer-wrapper">
                 <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
                 <div class="form-container">
-
-
-
-
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                        <i class="fa fa-user-o"></i>
-                        <asp:TextBox ID="txtfechaingreso" runat="server" class="mdl-textfield__input"></asp:TextBox>
-                        <label class="mdl-textfield__label" for="appointment-name">Fecha de Ingreso</label>
-                        <span class="mdl-textfield__error">Porfavor verifique su fecha de ingreso!</span>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                        <i class="fa fa-user-o"></i>
-                        <asp:TextBox ID="txtfechasalida" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')" onblur="(this.type='text')"></asp:TextBox>
-                        <label class="mdl-textfield__label" for="appointment-name">Fecha de final</label>
-                        <span class="mdl-textfield__error">Porfavor verifique su fecha final!</span>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                        <i class="fa fa-user-o"></i>
-                        <asp:TextBox ID="Textmotivo" runat="server" class="mdl-textfield__input"></asp:TextBox>
-                        <label class="mdl-textfield__label" for="appointment-name">Motivio</label>
-                        <span class="mdl-textfield__error">Porfavor verifique su motivo!</span>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                        <i class="fa fa-user-o"></i>
-                        <asp:TextBox ID="Textdescripcion" runat="server" class="mdl-textfield__input"></asp:TextBox>
-                        <label class="mdl-textfield__label" for="appointment-name">Descripcion</label>
-                        <span class="mdl-textfield__error">Porfavor verifique su descripcion!</span>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                        <i class="fa fa-user-o"></i>
-                        <asp:DropDownList ID="cmdtriage" runat="server" class="mdl-textfield__input"></asp:DropDownList>
-                        <label class="mdl-textfield__label" for="appointment-name">Triage</label>
-                        <span class="mdl-textfield__error">Porfavor verifique su triage!</span>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                        <%--<i class="fa fa-user-o"></i>--%>
-                        <asp:TextBox ID="TxtPaciente" runat="server" class="mdl-textfield__input"></asp:TextBox>
-                        <label class="mdl-textfield__label" for="appointment-name">Paciente</label>
-                        <span class="mdl-textfield__error">Porfavor verifique su paciente!</span>
-                    </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                        <i class="fa fa-user-o"></i>
-                        <asp:DropDownList ID="cmbMedico" runat="server" class="mdl-textfield__input"></asp:DropDownList>
-                        <label class="mdl-textfield__label" for="appointment-name">Medico</label>
-                        <span class="mdl-textfield__error">Porfavor verifique su medico!</span>
-                    </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-user-o"></i>
+                            <asp:TextBox ID="txtfechaingreso" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')" onblur="(this.type='text')"></asp:TextBox>
+                            <label class="mdl-textfield__label" for="appointment-name">Fecha de Ingreso</label>
+                           <span class="mdl-textfield__error">Porfavor verifique su fecha de ingreso!</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-user-o"></i>
+                            <asp:TextBox ID="txtfechasalida" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')" onblur="(this.type='text')"></asp:TextBox>
+                            <label class="mdl-textfield__label" for="appointment-name">Fecha de final</label>
+                            <span class="mdl-textfield__error">Porfavor verifique su fecha final!</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-user-o"></i>
+                            <asp:TextBox ID="Textmotivo" runat="server" class="mdl-textfield__input"></asp:TextBox>
+                            <label class="mdl-textfield__label" for="appointment-name">Motivio</label>
+                            <span class="mdl-textfield__error">Porfavor verifique su motivo!</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-user-o"></i>
+                            <asp:TextBox ID="Textdescripcion" runat="server" class="mdl-textfield__input"></asp:TextBox>
+                            <label class="mdl-textfield__label" for="appointment-name">Descripcion</label>
+                            <span class="mdl-textfield__error">Porfavor verifique su descripcion!</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-user-o"></i>
+                            <asp:DropDownList ID="cmdtriage" runat="server" class="mdl-textfield__input"></asp:DropDownList>
+                            <label class="mdl-textfield__label" for="appointment-name">Triage</label>
+                            <span class="mdl-textfield__error">Porfavor verifique su triage!</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-user-o"></i>
+                            <asp:TextBox ID="TxtPaciente" runat="server" class="mdl-textfield__input"></asp:TextBox>
+                            <label class="mdl-textfield__label" for="appointment-name">Paciente</label>
+                            <span class="mdl-textfield__error">Porfavor verifique su paciente!</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-user-o"></i>
+                            <asp:DropDownList ID="cmbMedico" runat="server" class="mdl-textfield__input"></asp:DropDownList>
+                            <label class="mdl-textfield__label" for="appointment-name">Medico</label>
+                            <span class="mdl-textfield__error">Porfavor verifique su medico!</span>
 
-                    <div class="form-submit">
-                        <asp:Button ID="btnRegistrar" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Urgencia" OnClick="btnRegistrar_Click"></asp:Button>
+                            <div class="form-submit">
+                            <asp:Button ID="btnRegistrar" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Urgencia" OnClick="btnRegistrar_Click" style="left: 35px; bottom: -30px"></asp:Button>
+
+                        </div>
+                        </div>
+
+                        
 
                     </div>
-
-                </div>
-
             </div>
         </div>
         <!-- End Register Section -->

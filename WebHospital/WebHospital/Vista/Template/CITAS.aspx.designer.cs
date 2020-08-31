@@ -24,13 +24,13 @@ namespace WebHospital.Vista.Template
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control TxtNombre.
+        /// Control TxtDocumento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNombre;
+        protected global::System.Web.UI.WebControls.TextBox TxtDocumento;
 
         /// <summary>
         /// Control dropEspecialidad.
@@ -51,13 +51,13 @@ namespace WebHospital.Vista.Template
         protected global::System.Web.UI.WebControls.DropDownList dropEspecialista;
 
         /// <summary>
-        /// Control TxtFecha.
+        /// Control txtfechaCita.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtFecha;
+        protected global::System.Web.UI.WebControls.TextBox txtfechaCita;
 
         /// <summary>
         /// Control btnRegistrarCita.

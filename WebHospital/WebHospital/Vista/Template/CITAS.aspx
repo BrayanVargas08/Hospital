@@ -80,63 +80,52 @@
                         <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
                     </div>
                     <div class="modal-body">
-                        <%--<div class="appointment-error"></div>
-                        <div class="row">--%>
-                            <div class="col-md-6">
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                                    <i class="fa fa-user-o"></i>
-                                    <asp:TextBox ID="TxtNombre" runat="server" class="mdl-textfield__input" pattern="[0-9 ]*"></asp:TextBox>
-                                  
-                                    <label class="mdl-textfield__label" for="appointment-name">Documento</label>
-                                    <%--<span class="mdl-textfield__error">Porfavor verifique su documento!</span>--%>
-                                </div>
+                        
+                        <div class="col-md-6">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                <i class="fa fa-user-o"></i>
+                                <asp:TextBox ID="TxtDocumento" runat="server" class="mdl-textfield__input" pattern="[0-9 ]*"></asp:TextBox>
+                                <label class="mdl-textfield__label" for="appointment-name">Documento</label>
+                                <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
                             </div>
+                        </div>
 
-                            <%--  --%>
-                            <div class="col-md-6">
-                                <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
-                                    <i class="fa fa-hospital-o"></i>
-                                    <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada" ></asp:DropDownList>
-                                    <option value="">&nbsp;</option>
-
-                                    </select>
-                               
+                          
+                        <div class="col-md-6">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
+                                <i class="fa fa-hospital-o"></i>
+                                <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
                                 <label class="mdl-selectfield__label" for="appointment-department">Selecione Especialidad</label>
-                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
-                                    <i class="fa fa-user-md"></i>
-                                    <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
-                                     <select class="mdl-selectfield__select" id="appointment-doctor">
-                                   
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
+                                <i class="fa fa-user-md"></i>
+                                <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
+                                <select class="mdl-selectfield__select" id="appointment-doctor">
                                 </select>
                                 <label class="mdl-selectfield__label" for="appointment-doctor">Seleccione Un Especialista</label>
-                                </div>
                             </div>
-                           
-                            <div class="col-md-6">
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                                    <i class="fa fa-calendar-o"></i>
-                                   
-                                    <asp:TextBox ID="TxtFecha" runat="server" class="mdl-textfield__inpunt" onfocus="(this.type='date') " onblur="(this.type='text')"></asp:TextBox>
-                                    
-                                    <label class="mdl-textfield__label" for="appointment-date">SELECCIONE LA FECHA DE SU CITA</label>
-                                    <span class="mdl-textfield__error">Please Enter Valid Date Number!</span>
-                                </div>
-                            </div>
-                         
-                      </div>
-                        <div class="text-center pt-4">
-
-                            <asp:Button  ID="btnRegistrarCita" runat ="server" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text= "AGENDAR CITA" /> 
-                            
-
-                            <%--<button class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment">Submit</button>--%>
                         </div>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-user-o"></i>
+                            <asp:TextBox ID="txtfechaCita" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')"></asp:TextBox>
+                            <label class="mdl-textfield__label" for="appointment-name">Fecha de Cita</label>
+                            <span class="mdl-textfield__error">Porfavor verifique su fecha de Cita!</span>
+                        </div>
+
+                    </div>
+                    <div class="text-center pt-4">
+
+                        <asp:Button ID="btnRegistrarCita" runat="server" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text="AGENDAR CITA" />
+
+
+                        <%--<button class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment">Submit</button>--%>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <!-- End Make an Appointment Modal -->
 

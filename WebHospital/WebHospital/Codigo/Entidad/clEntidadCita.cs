@@ -9,7 +9,6 @@ namespace WebHospital.Codigo.Entidad
     {
         public int IdCita { get; set; }
         public int IdMedico { get; set; }
-        public int IdPaciente { get; set; }
         public int IdEspecialidad { get; set; }
         public  int IdPersonalAdmin   { get; set; }
         public string Estado { get; set; }

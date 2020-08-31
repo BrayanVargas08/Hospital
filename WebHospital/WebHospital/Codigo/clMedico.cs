@@ -22,9 +22,9 @@ namespace WebHospital.Codigo
 
 
         }
-        public List<clEntidadMedico> mtdListar()
+        public List<clEntidadMedico> mtdListar(int IdEspecialidad)
         {
-            string sql = "select * from Medico";
+            string sql = "select * from Medico Where IdEspecialidad = '" + IdEspecialidad + "'";
             clAdminSQL objSQL = new clAdminSQL();
             DataTable tblMedico = new DataTable();
             tblMedico = objSQL.mtdDesconectado(sql);
@@ -33,18 +33,16 @@ namespace WebHospital.Codigo
 
             for (int i = 0; i < tblMedico.Rows.Count; i++)
             {
-                clEntidadMedico objEMedico = new clEntidadMedico();
-                objEMedico.IdMedico = int.Parse(tblMedico.Rows[i][0].ToString());
-                objEMedico.Nombre = tblMedico.Rows[i][1].ToString();
-                objEMedico.Apellido = tblMedico.Rows[i][2].ToString();
-                objEMedico.Documento = tblMedico.Rows[i][3].ToString();
-                objEMedico.Telefono = tblMedico.Rows[i][4].ToString();
-                objEMedico.email = tblMedico.Rows[i][5].ToString();
-                objEMedico.Direccion = tblMedico.Rows[i][6].ToString();
-                // objEMedico.FechaNAcimiento = tblMedico.Rows[i][7].ToString();
-                objEMedico.Password = tblMedico.Rows[i][8].ToString();
-                objEMedico.IdEspecialidad = int.Parse(tblMedico.Rows[i][9].ToString());
-                listaMedico.Add(objEMedico);
+                clEntidadMedico objEnMedico = new clEntidadMedico();
+                objEnMedico.IdMedico = int.Parse(tblMedico.Rows[i][0].ToString());
+                objEnMedico.Nombre = tblMedico.Rows[i][1].ToString();
+                objEnMedico.Apellido = tblMedico.Rows[i][2].ToString();
+                objEnMedico.Documento = tblMedico.Rows[i][3].ToString();
+                objEnMedico.Telefono = tblMedico.Rows[i][4].ToString();
+                objEnMedico.email = tblMedico.Rows[i][5].ToString();
+                objEnMedico.Direccion = tblMedico.Rows[i][6].ToString();
+                objEnMedico.IdEspecialidad = IdEspecialidad;
+                listaMedico.Add(objEnMedico);
 
             }
             return listaMedico;

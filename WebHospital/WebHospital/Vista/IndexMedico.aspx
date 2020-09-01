@@ -1,16 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterAdministrador.Master" AutoEventWireup="true" CodeBehind="indexadministrador.aspx.cs" Inherits="WebHospital.Vista.indexadministrador" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterMedico.Master" AutoEventWireup="true" CodeBehind="IndexMedico.aspx.cs" Inherits="WebHospital.Vista.IndexMedico" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Start Page Title Section -->
     <div class="page-ttl">
         <div class="layer-stretch">
             <div class="page-ttl-container">
                 <h1>BIENVENIDO PARTE ADMINISTRATIVA</h1>
-                <p><a href="indexadministrador.aspx">Home</a> &#8594; <a href="indexadministrador.aspx">lista de Blog</a> &#8594; <span>Blog</span></p>
+                <p><a href="#">Home</a> &#8594; <a href="#">lista de Blog</a> &#8594; <span>Blog</span></p>
             </div>
         </div>
-    </div>
-    <!-- End Page Title Section -->
+    </div><!-- End Page Title Section -->
     <!-- Start Blog Section -->
     <div class="layer-stretch">
         <div class="layer-wrapper">
@@ -45,27 +43,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="paragraph-medium paragraph-black">
-                                Aún en tiempos difíciles, aparecen con la mejor energía nuestros héroes de la salud.
+                            <p class="paragraph-medium paragraph-black">Aún en tiempos difíciles, aparecen con la mejor energía nuestros héroes de la salud.
 
 Gracias a nuestras IPS por su ejemplo de compromiso e integralidad.
 
 #PausasActivas
 #MásFuertes
-#RedSaludSomosTodos
-                            </p>
-                            <h3 class="blog-ttl">Red Salud Casanare Asumió Reto ante Asamblea Departamental</h3>
+#RedSaludSomosTodos</p>
+                             <h3 class="blog-ttl">Red Salud Casanare Asumió Reto ante Asamblea Departamental</h3>
                             <div class="theme-quote">
-                                <i class="fa fa-quote-left"></i>Desde el primer momento que asumí  la Gerencia,  decidí recorrer el 100% de nuestras sedes y conocer  de primera mano las necesidades en infraestructura, dotación y atención en salud, con el fin de generar estrategias que garanticen la capacidad de respuesta y brindar un mejor bienestar a las familias casanareñas'. Afirmó el Gerente, Víctor Yamith Sierra
+                                <i class="fa fa-quote-left"></i> Desde el primer momento que asumí  la Gerencia,  decidí recorrer el 100% de nuestras sedes y conocer  de primera mano las necesidades en infraestructura, dotación y atención en salud, con el fin de generar estrategias que garanticen la capacidad de respuesta y brindar un mejor bienestar a las familias casanareñas'. Afirmó el Gerente, Víctor Yamith Sierra
                             </div>
                             <p class="paragraph-medium paragraph-black">Durante dicha sesión se dio a conocer importantes datos como respuesta a cuestionario formulado por la duma departamental, por ejemplo, la situación financiera de la entidad con corte a 31 de mayo de 2020; donde se logró establecer que el 77.16% del presupuesto corresponde a gastos de funcionamiento; el 15.64% son gastos de operación y un 7.20% son gastos de inversión. Presupuestalmente Red Salud Casanare depende de la facturación de servicios prestados a los usuarios de las diferentes EPS, una cartera pendiente que asciende a los $19 mil millones de pesos y está mediante procesos pertinentes y de acuerdo a la norma. </p>
-                            <p class="paragraph-medium paragraph-black">
-                                Se viene adelantando un trabajo en equipo con Secretaría de Salud Departamental  a través de mesas de participación,  y concertación de criterios, lineamientos de habilitación,  nueva Red Hospitalaria, entre otros, logrando estructurar   los proyectos que corresponden  a la Infraestructura de Maní, Trinidad, Paz de Ariporo y Villanueva.
-                            </p>
-
+                            <p class="paragraph-medium paragraph-black">Se viene adelantando un trabajo en equipo con Secretaría de Salud Departamental  a través de mesas de participación,  y concertación de criterios, lineamientos de habilitación,  nueva Red Hospitalaria, entre otros, logrando estructurar   los proyectos que corresponden  a la Infraestructura de Maní, Trinidad, Paz de Ariporo y Villanueva.
+</p>
+                           
                             <p class="paragraph-medium paragraph-black">En atención al usuario se adelanta la formulación de un proyecto para la adquisición de ambulancias, además de la gestión ante las administraciones municipales, quienes han demostrado gran interés y apoyo en cabeza de sus alcaldes.</p>
                             <p class="paragraph-medium paragraph-black">Con el propósito  de implementar acciones necesarias en humanización, calidad y mejores condiciones de prestación de los servicios de salud en las 17 IPS adscritas, se estableció el compromiso con la duma departamental en la concertación de  mesas de trabajo para  tratar temas de avances y ejecución de proyectos de infraestructura y continúa articulando esfuerzos interinstitucionales para tal fin.</p>
-                        </div>
+                           </div>
                         <div class="row blog-meta">
                             <div class="col-sm-7 blog-tag">
                                 <p>Etiquetas : </p>
@@ -87,7 +82,7 @@ Gracias a nuestras IPS por su ejemplo de compromiso e integralidad.
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div>  
                     <div class="theme-material-card">
                         <div class="sub-ttl">Autores</div>
                         <div class="blog-author">
@@ -147,27 +142,27 @@ Gracias a nuestras IPS por su ejemplo de compromiso e integralidad.
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="theme-material-card">
                         <div class="sub-ttl layer-ttl-white">Dejar una respuesta</div>
                         <div class="row comment-form">
                             <div class="col-sm-6">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input">
                                     <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="comment-name">
-                                    <label class="mdl-textfield__label" for="comment-name">Nombre <em>*</em></label>
+                                    <label class="mdl-textfield__label" for="comment-name">Nombre <em> *</em></label>
                                     <span class="mdl-textfield__error">Porfavor introdusca su nombre!</span>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input">
                                     <input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="comment-email">
-                                    <label class="mdl-textfield__label" for="comment-email">Email <em>*</em></label>
+                                    <label class="mdl-textfield__label" for="comment-email">Email <em> *</em></label>
                                     <span class="mdl-textfield__error">Porfavor introdusca un email valido!</span>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="mdl-textfield mdl-js-textfield form-input">
-                                    <textarea class="mdl-textfield__input" rows="4" id="comment-message"></textarea>
+                                    <textarea class="mdl-textfield__input" rows="4" id="comment-message" ></textarea>
                                     <label class="mdl-textfield__label" for="comment-message">Tu Comentario...</label>
                                 </div>
                             </div>
@@ -175,12 +170,12 @@ Gracias a nuestras IPS por su ejemplo de compromiso e integralidad.
                                 <div class="form-submit">
                                     <button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary">Enviar Comentario</button>
                                 </div>
-                            </div>
+                            </div>  
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-
+                    
                     <div class="theme-material-card">
                         <div class="sub-ttl">Publicaciones Recientes</div>
                         <a href="#" class="row blog-recent">
@@ -188,7 +183,8 @@ Gracias a nuestras IPS por su ejemplo de compromiso e integralidad.
                                 <img class="img-responsive img-thumbnail" src="template/images/logo.jpg" alt="">
                             </div>
                             <div class="col-8 blog-recent-post">
-                                <h4>Red Salud Casanare E.S.E.</h4>
+                                <h4>
+Red Salud Casanare E.S.E.</h4>
                                 <p>08 agosto 2020</p>
                             </div>
                         </a>
@@ -207,7 +203,7 @@ Gracias a nuestras IPS por su ejemplo de compromiso e integralidad.
                             </div>
                             <div class="col-8 blog-recent-post">
                                 <h4>Reporte de Covid-19 Departamento de Casanare</h4>
-                                <p>06 agosto 2020</p>
+                                <p> 06 agosto 2020</p>
                             </div>
                         </a>
                         <a href="#" class="row blog-recent">
@@ -225,7 +221,7 @@ Gracias a nuestras IPS por su ejemplo de compromiso e integralidad.
                             </div>
                             <div class="col-8 blog-recent-post">
                                 <h4>Gerente de Red Salud Casanare, Víctor Yamith Sierra dio Bienvenida a los Profesionales Seleccionados del Sorteo Servicio Social Obligatorio
-                                </h4>
+</h4>
                                 <p>10 agosto 2020</p>
                             </div>
                         </a>
@@ -270,11 +266,10 @@ Gracias a nuestras IPS por su ejemplo de compromiso e integralidad.
                         <a href="#" class="theme-tag">Doctor</a>
                         <a href="#" class="theme-tag theme-tag-colored">Hospital</a>
                     </div>
-                </div>
+                   </div>
             </div>
         </div>
-    </div>
-    <!-- End Blog Section -->
+    </div><!-- End Blog Section -->
     <!-- Start Emergency Section -->
     <div id="emergency">
         <div class="layer-stretch">
@@ -284,14 +279,12 @@ Gracias a nuestras IPS por su ejemplo de compromiso e integralidad.
                 </div>
                 <div class="layer-container">
                     <div class="paragraph-medium paragraph-black">
-                        Número de emergencia puedes llamar las 24 horas a cualquier hora los 7 dias de la semana.
+                      Número de emergencia puedes llamar las 24 horas a cualquier hora los 7 dias de la semana.
 
                     </div>
-                    <div class="emergency-number">: 57 098 6373537</div>
+                    <div class="emergency-number"> : 57 098 6373537</div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Emergency Section -->
-
+    </div><!-- End Emergency Section -->
 </asp:Content>

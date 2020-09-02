@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebHospital.Codigo.Entidad;
 
 namespace WebHospital.Vista
 {
@@ -41,6 +42,9 @@ namespace WebHospital.Vista
             dropEspecialistaP.Items.Insert(0, new ListItem("[Seleccionar] ", "0"));
         }
 
+        
+
+
 
         public DataSet Consultar(string strSQL)
         {
@@ -58,6 +62,14 @@ namespace WebHospital.Vista
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            clEntidadCita objECita = new clEntidadCita();
+            objECita.Documento = txtDocumentoP.Text;
+            objECita.FechaHIngreso = DateTime.Parse(TxtFechaP.Text);
+            objECita.IdMedico = int.Parse(dropEspecialistaP.SelectedValue.ToString());
+            //objECita.IdPaciente = int.Parse(TxtNombre.Text);
+            objECita.IdEspecialidad = int.Parse(dropEspecialidadP.SelectedValue.ToString());
+            clCita objCita = new clCita();
+            int result = objCita.mtdRegistrarCita(objECita);
 
         }
     }

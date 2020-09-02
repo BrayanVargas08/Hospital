@@ -49,7 +49,7 @@ namespace WebHospital.Vista.Template
         {
             clEntidadCita objECita = new clEntidadCita();
             objECita.Documento = TxtDocumento.Text;
-            //objECita.FechaHIngreso = DateTime.Parse(txtfechaCita.Text);
+            objECita.FechaHIngreso = DateTime.Parse(txtF.Text);
             objECita.IdMedico = int.Parse(dropEspecialista.SelectedValue.ToString());
             objECita.IdEspecialidad = int.Parse(dropEspecialidad.SelectedValue.ToString());
             clCita objCita = new clCita();

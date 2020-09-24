@@ -15,13 +15,13 @@ namespace WebHospital.Vista
     {
 
         /// <summary>
-        /// Control GridView2.
+        /// Control GridView1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
         /// Control SqlDataSource2.
@@ -33,24 +33,6 @@ namespace WebHospital.Vista
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
 
         /// <summary>
-        /// Control GridView1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
-
-        /// <summary>
-        /// Control SqlDataSource1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-
-        /// <summary>
         /// Control txtFechaHingreso.
         /// </summary>
         /// <remarks>
@@ -60,13 +42,13 @@ namespace WebHospital.Vista
         protected global::System.Web.UI.WebControls.TextBox txtFechaHingreso;
 
         /// <summary>
-        /// Control FechaHSalida.
+        /// Control txtFechaHSalida.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FechaHSalida;
+        protected global::System.Web.UI.WebControls.TextBox txtFechaHSalida;
 
         /// <summary>
         /// Control TxtMotivo.

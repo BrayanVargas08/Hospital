@@ -8,7 +8,7 @@
         <div class="layer-stretch">
             <div class="page-ttl-container">
                 <h1>HOSPITALIZACION</h1>
-                <p><a href="#">ADMINISTRADOR</a> &#8594; <span>Bienvenido HOSPITALIZACION</span></p>
+                <p><a href="#">ADMINISTRADOR</a> &#8594; <span>Bienvenido  HOSPITALIZACION</span></p>
             </div>
         </div>
     </div><!-- End Page Title Section -->

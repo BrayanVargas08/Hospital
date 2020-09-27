@@ -119,6 +119,12 @@
                                         <li><a href="Ambulancias.aspx">Ambulancias</a></li>
                                     </ul>
                                 </li>
+                                 <li>
+                                    <a id="menu-Medicos" class="mdl-button mdl-js-button mdl-js-ripple-effect">Medicos <i class="fa fa-chevron-down"></i></a>
+                                    <ul class="menu-dropdown">
+                                        <li><a href="template/Registro.aspx">Registro de Medico</a></li>
+                                    </ul>
+                                </li>
 <li                             
                             <li class="mobile-menu-close"><i class="fa fa-times"></i></li>
                             </ul><!-- End Menu Section -->

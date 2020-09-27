@@ -55,10 +55,11 @@ namespace WebHospital.Vista
             int resultSql = objHospitalizacion.mtdRegistrar(objEHospitalizacion);
         }
 
-        protected void GridView1_SelectedIndexChanged1(object sender, EventArgs e)
+      
+        protected void GridView1_SelectedIndexChanged2(object sender, EventArgs e)
         {
             TxtPaciente.Text = GridView1.SelectedRow.Cells[6].Text;
-            txturgencia.Text = GridView1.SelectedRow.Cells[7].Text;
+            txturgencia.Text = GridView1.SelectedRow.Cells[0].Text;
         }
     }
 }

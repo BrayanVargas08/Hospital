@@ -122,7 +122,7 @@
                                  <li>
                                     <a id="menu-Medicos" class="mdl-button mdl-js-button mdl-js-ripple-effect">Medicos <i class="fa fa-chevron-down"></i></a>
                                     <ul class="menu-dropdown">
-                                        <li><a href="template/Registro.aspx">Registro de Medico</a></li>
+                                        <li><a href="RegistroDeMedicos.aspx">Registro de Medico</a></li>
                                     </ul>
                                 </li>
 <li                             

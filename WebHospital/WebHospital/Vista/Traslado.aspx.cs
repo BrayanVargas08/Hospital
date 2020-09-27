@@ -39,8 +39,8 @@ namespace WebHospital.Vista
             objETraslado.Destino = TxtDestino.Text;
             objETraslado.IdAmbulancia = int.Parse(cmbAmbulancia.SelectedValue.ToString());
             int idambu = int.Parse(cmbAmbulancia.SelectedValue.ToString());
-            //objETraslado.IdHospitalizacion = int.Parse(cmbHospitalizacion.SelectedValue.ToString());
-            //int idHos = int.Parse(cmbHospitalizacion.SelectedValue.ToString());
+            objETraslado.IdHospitalizacion = int.Parse(txtHospitalizacion.Text);
+
 
 
 

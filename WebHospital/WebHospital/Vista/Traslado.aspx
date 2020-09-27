@@ -85,12 +85,13 @@
                         <label class="mdl-textfield__label" for="appointment-name">Ambulancia</label>
                         <span class="mdl-textfield__error">Porfavor verifique su Ambulancia!</span>
                     </div>
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                         <i class="fa fa-user-o"></i>
                         <asp:TextBox ID="txtHospitalizacion" runat="server" class="mdl-textfield__input"></asp:TextBox>
                         <label class="mdl-textfield__label" for="appointment-name">Hospitalizacion</label>
-                        <span class="mdl-textfield__error">Porfavor verifique su Hospitalizacion!</span>
+                        <span class="mdl-textfield__error">Porfavor verifique su Hospializacion!</span>
                     </div>
+                    
 
                     <div class="form-submit">
                         <asp:Button ID="btnRegistrarTralado" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Traslado" OnClick="btnRegistrarTralado_Click"></asp:Button>

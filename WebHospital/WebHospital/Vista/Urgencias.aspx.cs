@@ -11,7 +11,7 @@ using WebHospital.Codigo.Entidad;
 
 namespace WebHospital.Vista
 {
-   
+
     public partial class Urgencias : System.Web.UI.Page
     {
         string conn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbHospitalPaz.mdf;Integrated Security=True";
@@ -26,7 +26,7 @@ namespace WebHospital.Vista
             cmdtriage.DataValueField = "IdTriage";
             cmdtriage.DataBind();
             //
-           // List<clEntidadPaciente> ListaEPaciente = new List<clEntidadPaciente>();
+            // List<clEntidadPaciente> ListaEPaciente = new List<clEntidadPaciente>();
             //clPaciente objPaciente = new clPaciente();
             //ListaEPaciente = objPaciente.mtdListar();
             //cmbpaciente.DataSource = ListaEPaciente;
@@ -53,9 +53,9 @@ namespace WebHospital.Vista
                 clEspecialidad objEspecialidad = new clEspecialidad();
                 listaEspecialidad = objEspecialidad.mtdListarEspecialidad();
 
-                cmbEspecialidad.DataSource = listaEspecialidad;
-                cmbEspecialidad.DataTextField = "Especialidad";
-                cmbEspecialidad.DataValueField = "IdEspecialidad";
+                dropEspecialidad.DataSource = listaEspecialidad;
+                dropEspecialidad.DataTextField = "Especialidad";
+                dropEspecialidad.DataValueField = "IdEspecialidad";
                 DataBind();
 
             }
@@ -65,13 +65,13 @@ namespace WebHospital.Vista
         {
             List<clEntidadMedico> listaMedicos = new List<clEntidadMedico>();
             clMedico objMedico = new clMedico();
-            int IdEspecialista = int.Parse(cmbEspecialidad.SelectedValue.ToString());
+            int IdEspecialista = int.Parse(dropEspecialidad.SelectedValue.ToString());
             listaMedicos = objMedico.mtdListar(IdEspecialista);
 
-            cmbMedico.DataSource = listaMedicos;
-            cmbMedico.DataTextField = "Nombre";
-            cmbMedico.DataValueField = "IdMedico";
-            cmbMedico.DataBind();
+            dropEspecialista.DataSource = listaMedicos;
+            dropEspecialista.DataTextField = "Nombre";
+            dropEspecialista.DataValueField = "IdMedico";
+            dropEspecialista.DataBind();
         }
 
 
@@ -84,11 +84,11 @@ namespace WebHospital.Vista
             objEUrgencias.Descripcion = Textdescripcion.Text;
             objEUrgencias.IdTriage = int.Parse(cmdtriage.SelectedValue.ToString());
             objEUrgencias.IdPaciente = int.Parse(TxtPaciente.Text);
-            objEUrgencias.IdMedico = int.Parse(cmbMedico.SelectedValue.ToString());
+            objEUrgencias.IdMedico = int.Parse(dropEspecialista.SelectedValue.ToString());
             int idTri = int.Parse(cmdtriage.SelectedValue.ToString());
-            int idMe = int.Parse(cmbMedico.SelectedValue.ToString());
+            int idMe = int.Parse(dropEspecialista.SelectedValue.ToString());
 
-            
+
             clUgencias objUrgencia = new clUgencias();
             int resultSql = objUrgencia.mtdRegistrar(objEUrgencias);
 
@@ -128,7 +128,7 @@ namespace WebHospital.Vista
             {
                 throw ex;
             }
-           
+
 
 
         }
@@ -139,4 +139,3 @@ namespace WebHospital.Vista
         }
     }
 }
-    

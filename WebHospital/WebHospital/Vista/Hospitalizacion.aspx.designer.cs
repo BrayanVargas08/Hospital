@@ -60,13 +60,13 @@ namespace WebHospital.Vista
         protected global::System.Web.UI.WebControls.TextBox txtFechaHingreso;
 
         /// <summary>
-        /// Control FechaHSalida.
+        /// Control txtFechaHSalida.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FechaHSalida;
+        protected global::System.Web.UI.WebControls.TextBox txtFechaHSalida;
 
         /// <summary>
         /// Control TxtMotivo.

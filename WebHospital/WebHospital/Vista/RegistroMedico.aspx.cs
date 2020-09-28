@@ -32,6 +32,17 @@ namespace WebHospital.Vista
 
             clMedico objMedico = new clMedico();
             int resultsql = objMedico.mtdRegistrar(objEMedico);
+            Response.Write("<script>alert('Medico Registrado');</script>");
+            
+
+            this.txtNombre.Text = "";
+            this.txtApellido.Text = "";
+            this.txtDocumento.Text = "";
+            this.txtTelefono.Text = "";
+            this.txtUsuario.Text = "";
+            this.txtDireccion.Text = "";
+            this.txtFechaNacimiento.Text = "";
+            this.txtContraseña.Text = "";
 
 
         }

@@ -64,6 +64,13 @@ namespace WebHospital.Vista
             clUgencias objUrgencia = new clUgencias();
             int resultSql = objUrgencia.mtdRegistrar(objEUrgencias);
 
+            Response.Write("<script>alert('Urgencia Registrada');</script>");
+
+            this.txtfechaingreso.Text = "";
+            this.txtfechasalida.Text = "";
+            this.Textmotivo.Text = "";
+            this.Textdescripcion.Text = "";
+
 
         }
         public void BuscarPaciente()
@@ -86,6 +93,7 @@ namespace WebHospital.Vista
                 //agregamos al gribview
                 this.gvPacientes.DataSource = dt;
                 gvPacientes.DataBind();
+                this.txtbuscar.Text = "";
             }
 
             catch (Exception ex)

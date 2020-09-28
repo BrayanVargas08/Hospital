@@ -116,7 +116,7 @@
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-user-o"></i>
-                    <asp:TextBox ID="FechaHSalida" runat="server" class="mdl-textfield__input" ></asp:TextBox>
+                    <asp:TextBox ID="txtFechaHSalida" runat="server" class="mdl-textfield__input" ></asp:TextBox>
                    <label class="mdl-textfield__label" for="appointment-name">Fecha Salida</label>
                    <span class="mdl-textfield__error">Porfavor verifique su Descripcion!</span>
                 </div>

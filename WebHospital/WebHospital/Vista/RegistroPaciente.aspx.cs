@@ -39,10 +39,21 @@ namespace WebHospital.Vista
             //if (!IsPostBack) { 
             //    btnRegistrar.Attributes.Add("onclick", "return swal('are you sure?');"); }
 
+            this.txtNombre.Text = "";
+            this.txtApellido.Text = "";
+            this.txtDocumento.Text = "";
+            this.txtUsuario.Text = "";
+            this.txtDireccion.Text = "";
+            this.txtTelefono.Text = "";
+            this.txtFecha.Text = "";
+            this.txtContraseña.Text = "";
+            
+
 
 
 
         }
+      
         protected void Page_Init(object sender, EventArgs e)
         {
             List<clEntidadEps> listaEps = new List<clEntidadEps>();

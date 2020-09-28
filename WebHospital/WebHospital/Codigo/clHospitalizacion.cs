@@ -9,6 +9,18 @@ namespace WebHospital.Codigo
 {
     public class clHospitalizacion
     {
+        public int mtdRegistrar(clEntidadHopitalizacion objHospitalizacion)
+        {
+
+            string sqlInsert = "INSERT INTO Urgencia(FechaHIngreso,FechaHSalida,Motivo,Descripcion,Observaciones,IdPaciente,IdUrgencia)" +
+               "values('" + objHospitalizacion.FechaHIngreso + "','" + objHospitalizacion.FechaHSalida + "','" + objHospitalizacion.Motivo + "','" + objHospitalizacion.Descripcion + "','" + objHospitalizacion.Observaciones + "','" + objHospitalizacion.IdPaciente + "','" + objHospitalizacion.IdUrgencia + "')";
+
+            clAdminSQL objSQL = new clAdminSQL();
+            int result = objSQL.mtdConectado(sqlInsert);
+            return result;
+
+
+        }
         public List<clEntidadHopitalizacion> mtdListar()
         {
             string sql = "select * from Hospitalizacion";
@@ -27,7 +39,7 @@ namespace WebHospital.Codigo
                 objEHospitalizacion.Motivo = tblHospitalizacion.Rows[i][3].ToString();
                 objEHospitalizacion.Descripcion = tblHospitalizacion.Rows[i][4].ToString();
                 objEHospitalizacion.Observaciones = tblHospitalizacion.Rows[i][5].ToString();
-                objEHospitalizacion.Idpaciente = int.Parse(tblHospitalizacion.Rows[i][6].ToString());
+                objEHospitalizacion.IdPaciente = int.Parse(tblHospitalizacion.Rows[i][6].ToString());
                 objEHospitalizacion.IdUrgencia = int.Parse(tblHospitalizacion.Rows[i][7].ToString());
 
                 listaHospitalizacion.Add(objEHospitalizacion);
@@ -36,5 +48,6 @@ namespace WebHospital.Codigo
             return listaHospitalizacion;
 
         }
+
     }
 }

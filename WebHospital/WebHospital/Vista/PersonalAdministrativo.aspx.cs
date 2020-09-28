@@ -36,8 +36,18 @@ namespace WebHospital.Vista
             objEPersonalAdmin.Password = txtPassword.Text;
             objEPersonalAdmin.IdRol = int.Parse(rblAdministrativos.SelectedValue);
 
-
+            clPersonalAministrativo objpersonal = new clPersonalAministrativo();
             int Resultado = objPersonalAdmin.mtdRegistroPersonalAdministrativo(objEPersonalAdmin);
+
+            Response.Write("<script>alert('Personal Administrativo Registrado');</script>");
+
+            this.txtNombre.Text = "";
+            this.txtApellido.Text = "";
+            this.txtDocumento.Text = "";
+            this.txtTelefono.Text = "";
+            this.txtemail.Text = "";
+            this.txtDireccion.Text = "";
+            this.txtPassword.Text = "";
 
 
         }

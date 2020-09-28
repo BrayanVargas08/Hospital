@@ -128,16 +128,35 @@
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-user-o"></i>
-                            <asp:DropDownList ID="cmbEspecialidad" runat="server" class="mdl-textfield__input"></asp:DropDownList>
+                            <i class="fa fa-hospital-o"></i>
+                            <%--<asp:DropDownList ID="cmbEspecialidad" runat="server" class="mdl-textfield__input"></asp:DropDownList>--%>
+                           <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
                             <label class="mdl-textfield__label" for="appointment-name">Especialidad</label>
-                            <span class="mdl-textfield__error">Porfavor verifique su medico!</span>
+                            <span class="mdl-textfield__error">Porfavor verifique su Especialidad!</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-user-o"></i>
-                            <asp:DropDownList ID="cmbMedico" runat="server" class="mdl-textfield__input"></asp:DropDownList>
+                            <%--<asp:DropDownList ID="cmbMedico" runat="server" class="mdl-textfield__input"></asp:DropDownList>--%>
+                           <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
                             <label class="mdl-textfield__label" for="appointment-name">Medico</label>
                             <span class="mdl-textfield__error">Porfavor verifique su medico!</span>
                         </div>
+                        <%--      <div class="col-md-6">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
+                                <i class="fa fa-hospital-o"></i>
+                                <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
+                                <label class="mdl-selectfield__label" for="appointment-department">Selecione Especialidad</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
+                                <i class="fa fa-user-md"></i>
+                                <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
+                                <select class="mdl-selectfield__select" id="appointment-doctor">
+                                </select>
+                                <label class="mdl-selectfield__label" for="appointment-doctor">Seleccione Un Especialista</label>
+                            </div>
+                        </div>--%>
                         <div class="form-submit">
                             <asp:Button ID="btnRegistrar" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Urgencia" OnClick="btnRegistrar_Click" Style="left: 35px; bottom: -30px"></asp:Button>
 

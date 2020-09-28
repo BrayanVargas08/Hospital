@@ -56,7 +56,7 @@ namespace WebHospital.Vista
                 cmbEspecialidad.DataSource = listaEspecialidad;
                 cmbEspecialidad.DataTextField = "Especialidad";
                 cmbEspecialidad.DataValueField = "IdEspecialidad";
-                DataBind();
+                cmbEspecialidad.DataBind();
 
             }
 

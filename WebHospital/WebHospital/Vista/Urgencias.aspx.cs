@@ -53,10 +53,10 @@ namespace WebHospital.Vista
                 clEspecialidad objEspecialidad = new clEspecialidad();
                 listaEspecialidad = objEspecialidad.mtdListarEspecialidad();
 
-                cmbEspecialidad.DataSource = listaEspecialidad;
-                cmbEspecialidad.DataTextField = "Especialidad";
-                cmbEspecialidad.DataValueField = "IdEspecialidad";
-                cmbEspecialidad.DataBind();
+                dropEspecialidad.DataSource = listaEspecialidad;
+                dropEspecialidad.DataTextField = "Especialidad";
+                dropEspecialidad.DataValueField = "IdEspecialidad";
+                dropEspecialidad.DataBind();
 
             }
 
@@ -65,13 +65,13 @@ namespace WebHospital.Vista
         {
             List<clEntidadMedico> listaMedicos = new List<clEntidadMedico>();
             clMedico objMedico = new clMedico();
-            int IdEspecialista = int.Parse(cmbEspecialidad.SelectedValue.ToString());
+            int IdEspecialista = int.Parse(dropEspecialidad.SelectedValue.ToString());
             listaMedicos = objMedico.mtdListar(IdEspecialista);
 
-            cmbMedico.DataSource = listaMedicos;
-            cmbMedico.DataTextField = "Nombre";
-            cmbMedico.DataValueField = "IdMedico";
-            cmbMedico.DataBind();
+            dropEspecialista.DataSource = listaMedicos;
+            dropEspecialista.DataTextField = "Nombre";
+            dropEspecialista.DataValueField = "IdMedico";
+            dropEspecialista.DataBind();
         }
 
 
@@ -84,9 +84,9 @@ namespace WebHospital.Vista
             objEUrgencias.Descripcion = Textdescripcion.Text;
             objEUrgencias.IdTriage = int.Parse(cmdtriage.SelectedValue.ToString());
             objEUrgencias.IdPaciente = int.Parse(TxtPaciente.Text);
-            objEUrgencias.IdMedico = int.Parse(cmbMedico.SelectedValue.ToString());
+            objEUrgencias.IdMedico = int.Parse(dropEspecialista.SelectedValue.ToString());
             int idTri = int.Parse(cmdtriage.SelectedValue.ToString());
-            int idMe = int.Parse(cmbMedico.SelectedValue.ToString());
+            int idMe = int.Parse(dropEspecialista.SelectedValue.ToString());
 
             
             clUgencias objUrgencia = new clUgencias();

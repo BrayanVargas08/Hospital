@@ -135,7 +135,7 @@
                             <span class="mdl-textfield__error">Porfavor verifique su Especialidad!</span>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                            <i class="fa fa-user-o"></i>
+                            <i class="fa fa-user-md"></i>
                             <%--<asp:DropDownList ID="cmbMedico" runat="server" class="mdl-textfield__input"></asp:DropDownList>--%>
                            <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
                             <label class="mdl-textfield__label" for="appointment-name">Medico</label>

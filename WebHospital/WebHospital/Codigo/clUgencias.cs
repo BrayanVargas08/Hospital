@@ -9,8 +9,10 @@ namespace WebHospital.Codigo
 {
     public class clUgencias
     {
+
         public int mtdRegistrar(clEntidadUrgencias objUrgencias)
         {
+
             string sqlInsert = "INSERT INTO Urgencia(FechaHIngreso,FechaHSalida,Motivo,Descripcion,IdTriage,IdPaciente,IdMedico)" +
                "values('" + objUrgencias.FechaHIngreso + "','" + objUrgencias.FechaHSalida + "','" + objUrgencias.Motivo + "','" + objUrgencias.Descripcion + "','" + objUrgencias.IdTriage + "','" + objUrgencias.IdPaciente + "','" + objUrgencias.IdMedico + "')";
 

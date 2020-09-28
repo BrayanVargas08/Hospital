@@ -8,18 +8,7 @@ using WebHospital.Codigo.Entidad;
 namespace WebHospital.Codigo
 {
     public class clHospitalizacion
-
     {
-        public int mtdRegistrar(clEntidadHopitalizacion objHospitalizacion)
-        {
-            string sqlInsert = "INSERT INTO Hospitalizacion(FechaHIngreso,FechaHSalida,Motivo,Descripcion,Observaciones,IdPaciente,IdUrgencia)" +
-               "values('" + objHospitalizacion.FechaHIngreso + "','" + objHospitalizacion.FechaHSalida + "','" + objHospitalizacion.Motivo + "','" + objHospitalizacion.Descripcion + "','" + objHospitalizacion.Observaciones + "','" + objHospitalizacion.Idpaciente + "','" + objHospitalizacion.IdUrgencia + "')";
-
-            clAdminSQL objSQL = new clAdminSQL();
-            int result = objSQL.mtdConectado(sqlInsert);
-            return result;
-
-        }
         public List<clEntidadHopitalizacion> mtdListar()
         {
             string sql = "select * from Hospitalizacion";

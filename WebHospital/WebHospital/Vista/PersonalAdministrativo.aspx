@@ -49,68 +49,66 @@
             <div id="doctor-page" class="layer-stretch">
                 <div class="layer-wrapper text-center">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-lg-5">
                             <div class="theme-material-card text-center">
                                 <div class="sub-ttl">Registro Personal Administrativo</div>
 
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon form-bot-check">
                                     <asp:RadioButtonList ID="rblAdministrativos" runat="server" RepeatDirection="Horizontal" CellPadding="10">
-                                        <asp:ListItem Value="2">Emfermero Jefé</asp:ListItem>
-                                        <asp:ListItem Value="3">Gerente</asp:ListItem>
-                                        <asp:ListItem Value="4">Secretaria</asp:ListItem>
                                     </asp:RadioButtonList>
                                 </div>
 
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon is-upgraded" data-upgraded=",MaterialTextfield">
-                                    <i class="fa fa-user-o"></i>
-                                    <asp:TextBox ID="txtNombre" class="mdl-textfield__input" runat="server"></asp:TextBox>
-                                    <%--<input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z, ]*" id="sideapnt-name">--%>
-                                    <label class="mdl-textfield__label" for="sideapnt-name">Nobre</label>
-                                    <span class="mdl-textfield__error">Por favor ingrese un nombre valido!</span>
-                                </div>
+                                <div class="col-md-7">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                        <i class="fa fa-user-o"></i>
+                                        <asp:TextBox ID="txtNombre" runat="server" class="mdl-textfield__input"></asp:TextBox>
+                                        <label class="mdl-textfield__label">Nombre</label>
+                                        <span class="mdl-textfield__error">Porfavor !</span>
+                                    </div>
 
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon is-upgraded" data-upgraded=",MaterialTextfield">
-                                    <i class="fa fa-user-circle"></i>
-                                    <asp:TextBox ID="txtApellido" class="mdl-textfield__input" runat="server"></asp:TextBox>
-                                    <label class="mdl-textfield__label" for="sideapnt-name">Apellido</label>
-                                    <span class="mdl-textfield__error">Por favor ingrese un apellido valido!</span>
-                                </div>
 
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon is-upgraded" data-upgraded=",MaterialTextfield">
-                                    <i class="fa fa-address-card-o"></i>
-                                    <asp:TextBox ID="txtDocumento" class="mdl-textfield__input" runat="server"></asp:TextBox>
-                                    <label class="mdl-textfield__label" for="sideapnt-name">Documento</label>
-                                    <span class="mdl-textfield__error">Por favor ingrese un Documento valido!</span>
-                                </div>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                        <i class="fa fa-user-circle"></i>
+                                        <asp:TextBox ID="txtApellido" class="mdl-textfield__input" runat="server"></asp:TextBox>
+                                        <label class="mdl-textfield__label" >Apellido</label>
+                                        <span class="mdl-textfield__error">Por favor ingrese un apellido valido!</span>
+                                    </div>
 
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon is-upgraded" data-upgraded=",MaterialTextfield">
-                                    <i class="fa fa-envelope-o"></i>
-                                    <asp:TextBox ID="txtemail" class="mdl-textfield__input" runat="server"></asp:TextBox>
-                                    <label class="mdl-textfield__label" for="sideapnt-email">Email</label>
-                                    <span class="mdl-textfield__error">Por favor ingrese un Email valido</span>
-                                </div>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                        <i class="fa fa-address-card-o"></i>
+                                        <asp:TextBox ID="txtDocumento" class="mdl-textfield__input" runat="server"></asp:TextBox>
+                                        <label class="mdl-textfield__label" for="sideapnt-name">Documento</label>
+                                        <span class="mdl-textfield__error">Por favor ingrese un Documento valido!</span>
+                                    </div>
 
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon is-upgraded" data-upgraded=",MaterialTextfield">
-                                    <i class="fa fa-phone"></i>
-                                    <asp:TextBox ID="txtTelefono" class="mdl-textfield__input" runat="server"></asp:TextBox>
-                                    <label class="mdl-textfield__label" for="sideapnt-name">Telefono</label>
-                                    <span class="mdl-textfield__error">Por favor ingrese un Telefono valido!</span>
-                                </div>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                        <i class="fa fa-envelope-o"></i>
+                                        <asp:TextBox ID="txtemail" class="mdl-textfield__input" runat="server"></asp:TextBox>
+                                        <label class="mdl-textfield__label" for="sideapnt-email">Email</label>
+                                        <span class="mdl-textfield__error">Por favor ingrese un Email valido</span>
+                                    </div>
 
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon is-upgraded" data-upgraded=",MaterialTextfield">
-                                    <i class="fa fa-home"></i>
-                                    <asp:TextBox ID="txtDireccion" class="mdl-textfield__input" runat="server"></asp:TextBox>
-                                    <label class="mdl-textfield__label" for="sideapnt-mobile">Dirección</label>
-                                    <span class="mdl-textfield__error">Porfavor ingrese una Direccion valida</span>
-                                </div>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                        <i class="fa fa-phone"></i>
+                                        <asp:TextBox ID="txtTelefono" class="mdl-textfield__input" runat="server"></asp:TextBox>
+                                        <label class="mdl-textfield__label" for="sideapnt-name">Telefono</label>
+                                        <span class="mdl-textfield__error">Por favor ingrese un Telefono valido!</span>
+                                    </div>
 
-                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon is-upgraded" data-upgraded=",MaterialTextfield">
-                                    <i class="fa fa-key"></i>
-                                    <asp:TextBox ID="txtPassword" class="mdl-textfield__input" runat="server"></asp:TextBox>
-                                    <label class="mdl-textfield__label" for="sideapnt-mobile">Contraseña</label>
-                                    <span class="mdl-textfield__error">Porfavor ingrese una contraseña</span>
-                                </div>
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                        <i class="fa fa-home"></i>
+                                        <asp:TextBox ID="txtDireccion" class="mdl-textfield__input" runat="server"></asp:TextBox>
+                                        <label class="mdl-textfield__label" for="sideapnt-mobile">Dirección</label>
+                                        <span class="mdl-textfield__error">Porfavor ingrese una Direccion valida</span>
+                                    </div>
 
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                        <i class="fa fa-key"></i>
+                                        <asp:TextBox ID="txtPassword" class="mdl-textfield__input" runat="server"></asp:TextBox>
+                                        <label class="mdl-textfield__label" for="sideapnt-mobile">Contraseña</label>
+                                        <span class="mdl-textfield__error">Porfavor ingrese una contraseña</span>
+                                    </div>
+                                </div>
                                 <div class="side-error"></div>
                                 <asp:Button ID="btnRegistrar" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary m-1" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Processing" runat="server" Text="Guardar" OnClick="btnRegistrar_Click" />
                             </div>

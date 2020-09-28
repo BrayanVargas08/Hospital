@@ -114,22 +114,13 @@ namespace WebHospital.Vista
         protected global::System.Web.UI.WebControls.TextBox TxtPaciente;
 
         /// <summary>
-        /// Control cmbEspecialidad.
+        /// Control cmbMedico.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cmbEspecialidad;
-
-        /// <summary>
-        /// Control cmbEspecialista.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cmbEspecialista;
+        protected global::System.Web.UI.WebControls.DropDownList cmbMedico;
 
         /// <summary>
         /// Control btnRegistrar.

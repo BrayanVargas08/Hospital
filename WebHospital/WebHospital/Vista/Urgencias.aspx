@@ -56,7 +56,7 @@
                         <asp:Parameter Name="IdPaciente" Type="Int32" />
                     </UpdateParameters>
                 </asp:SqlDataSource>
-                &nbsp;<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdPaciente" DataSourceID="SqlDataSource1" EmptyDataText="No hay registros de datos para mostrar." OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Style="width: 522px; height: 133px; left: 15px; top: 81px" AllowPaging="True" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" PageSize="7">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdPaciente" DataSourceID="SqlDataSource1" EmptyDataText="No hay registros de datos para mostrar." OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Style="width: 522px; height: 133px; left: 15px; top: 81px">
                     <Columns>
                         <asp:BoundField DataField="IdPaciente" HeaderText="IdPaciente" ReadOnly="True" SortExpression="IdPaciente" />
                         <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
@@ -69,17 +69,8 @@
                         <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="Password" Visible="False" />
                         <asp:BoundField DataField="Genero" HeaderText="Genero" SortExpression="Genero" />
                         <asp:BoundField DataField="IdEps" HeaderText="IdEps" SortExpression="IdEps" Visible="False" />
-                        <asp:CommandField SelectText="AGREGAR" ShowSelectButton="True" DeleteText="ELIMINAR" EditText="EDITAR" ShowDeleteButton="True" ShowEditButton="True" />
+                        <asp:CommandField SelectText="AGREGAR" ShowSelectButton="True" />
                     </Columns>
-                    <FooterStyle BackColor="White" ForeColor="#000066" />
-                    <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
-                    <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
-                    <RowStyle ForeColor="#000066" />
-                    <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
-                    <SortedAscendingCellStyle BackColor="#F1F1F1" />
-                    <SortedAscendingHeaderStyle BackColor="#007DBB" />
-                    <SortedDescendingCellStyle BackColor="#CAC9C9" />
-                    <SortedDescendingHeaderStyle BackColor="#00547E" />
                 </asp:GridView>
                 <br />
                 <br />
@@ -126,21 +117,18 @@
                             <label class="mdl-textfield__label" for="appointment-name">Paciente</label>
                             <span class="mdl-textfield__error">Porfavor verifique su paciente!</span>
                         </div>
-                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
-                                <i class="fa fa-hospital-o"></i>
-                                <asp:DropDownList ID="cmbEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
-                                <label class="mdl-selectfield__label" for="appointment-department">Selecione Especialidad</label>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-user-o"></i>
+                            <asp:DropDownList ID="cmbMedico" runat="server" class="mdl-textfield__input"></asp:DropDownList>
+                            <label class="mdl-textfield__label" for="appointment-name">Medico</label>
+                            <span class="mdl-textfield__error">Porfavor verifique su medico!</span>
+
+                            <div class="form-submit">
+                                <asp:Button ID="btnRegistrar" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Urgencia" OnClick="btnRegistrar_Click" Style="left: 35px; bottom: -30px"></asp:Button>
+
                             </div>
-                           <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
-                                <i class="fa fa-user-md"></i>
-                                <asp:DropDownList ID="cmbEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
-                                <select class="mdl-selectfield__select" id="appointment-doctor">
-                                </select>
-                                <label class="mdl-selectfield__label" for="appointment-doctor">Seleccione Un Especialista</label>
-                            </div>
-                        <div class="form-submit">
-                            <asp:Button ID="btnRegistrar" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Urgencia" OnClick="btnRegistrar_Click" Style="left: 35px; bottom: -30px"></asp:Button>
                         </div>
+
 
 
                     </div>

@@ -140,7 +140,7 @@ Gracias a nuestras IPS por su ejemplo de compromiso e integralidad.
                                     </div>
                                 </div>
                                 <div class="col-9 blog-author-details">
-                                    <h4>Johjan mendivelso</h4>
+                                    <h4>Johan mendivelso</h4>
                                     <a>Administrador</a>
                                     <p>Comprenden el estudio de las ciencias básicas y clínicas de la salud, con una clara orientación humanística. Abordan los procesos asociados a las rehabilitaciones física y mental y al desarrollo de un soporte social y cultural adecuado que las promuevan.</p>
                                 </div>

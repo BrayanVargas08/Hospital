@@ -15,6 +15,24 @@ namespace WebHospital.Vista
     {
 
         /// <summary>
+        /// Control GridView2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView2;
+
+        /// <summary>
+        /// Control SqlDataSource2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
+
+        /// <summary>
         /// Control GridView1.
         /// </summary>
         /// <remarks>
@@ -42,13 +60,13 @@ namespace WebHospital.Vista
         protected global::System.Web.UI.WebControls.TextBox txtFechaHingreso;
 
         /// <summary>
-        /// Control txtFechaHSalida.
+        /// Control FechaHSalida.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaHSalida;
+        protected global::System.Web.UI.WebControls.TextBox FechaHSalida;
 
         /// <summary>
         /// Control TxtMotivo.

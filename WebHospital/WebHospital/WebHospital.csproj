@@ -281,6 +281,8 @@
     <Content Include="Vista\Template\uploads\feature-4.jpg" />
     <Content Include="Vista\Template\uploads\feature-5.jpg" />
     <Content Include="Vista\Template\uploads\feature-6.jpg" />
+    <Content Include="Vista\Template\uploads\fondotodo.jpg" />
+    <Content Include="Vista\Template\uploads\fototodos.jpg" />
     <Content Include="Vista\Template\uploads\gallery\800x800-gallery.jpg" />
     <Content Include="Vista\Template\uploads\gallery\gallery-1.jpg" />
     <Content Include="Vista\Template\uploads\gallery\gallery-10.jpg" />

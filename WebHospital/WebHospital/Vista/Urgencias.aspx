@@ -128,15 +128,21 @@
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-user-o"></i>
+                            <asp:DropDownList ID="cmbEspecialidad" runat="server" class="mdl-textfield__input"></asp:DropDownList>
+                            <label class="mdl-textfield__label" for="appointment-name">Especialidad</label>
+                            <span class="mdl-textfield__error">Porfavor verifique su medico!</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                            <i class="fa fa-user-o"></i>
                             <asp:DropDownList ID="cmbMedico" runat="server" class="mdl-textfield__input"></asp:DropDownList>
                             <label class="mdl-textfield__label" for="appointment-name">Medico</label>
                             <span class="mdl-textfield__error">Porfavor verifique su medico!</span>
-
-                            <div class="form-submit">
-                                <asp:Button ID="btnRegistrar" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Urgencia" OnClick="btnRegistrar_Click" Style="left: 35px; bottom: -30px"></asp:Button>
-
-                            </div>
                         </div>
+                        <div class="form-submit">
+                            <asp:Button ID="btnRegistrar" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Urgencia" OnClick="btnRegistrar_Click" Style="left: 35px; bottom: -30px"></asp:Button>
+
+                        </div>
+
 
 
 

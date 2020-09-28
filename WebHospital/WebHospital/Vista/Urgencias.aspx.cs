@@ -34,16 +34,44 @@ namespace WebHospital.Vista
             //cmbpaciente.DataValueField = "IdPaciente";
             //cmbpaciente.DataBind();
             //
-            List<clEntidadMedico> ListaEMedico = new List<clEntidadMedico>();
+            //List<clEntidadMedico> ListaEMedico = new List<clEntidadMedico>();
+            //clMedico objMedico = new clMedico();
+            //int id = 0;
+            //ListaEMedico = objMedico.mtdListar(id);
+            //cmbMedico.DataSource = ListaEMedico;
+            //cmbMedico.DataTextField = "Nombre";
+            //cmbMedico.DataValueField = "IdMedico";
+            //cmbMedico.DataBind();
+
+
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                List<clEntidadEspecialidad> listaEspecialidad = new List<clEntidadEspecialidad>();
+                clEspecialidad objEspecialidad = new clEspecialidad();
+                listaEspecialidad = objEspecialidad.mtdListarEspecialidad();
+
+                cmbEspecialidad.DataSource = listaEspecialidad;
+                cmbEspecialidad.DataTextField = "Especialidad";
+                cmbEspecialidad.DataValueField = "IdEspecialidad";
+                DataBind();
+
+            }
+
+        }
+        protected void EspecialidadSeleccionada(object sender, EventArgs e)
+        {
+            List<clEntidadMedico> listaMedicos = new List<clEntidadMedico>();
             clMedico objMedico = new clMedico();
-            int id = 0;
-            ListaEMedico = objMedico.mtdListar(id);
-            cmbMedico.DataSource = ListaEMedico;
+            int IdEspecialista = int.Parse(cmbEspecialidad.SelectedValue.ToString());
+            listaMedicos = objMedico.mtdListar(IdEspecialista);
+
+            cmbMedico.DataSource = listaMedicos;
             cmbMedico.DataTextField = "Nombre";
             cmbMedico.DataValueField = "IdMedico";
             cmbMedico.DataBind();
-
-
         }
 
 

@@ -41,9 +41,10 @@ namespace WebHospital.Vista.Template
 
             dropEspecialista.DataSource = listaMedicos;
             dropEspecialista.DataTextField = "Nombre";
-            dropEspecialista.DataValueField = "IdMedico";
-            dropEspecialista.DataBind();
+            dropEspecialista.DataValueField = "IdMedico"; }
+              dropEspecialista.DataBind();
         }
+}
 
         protected void btnRegistrarCita_Click(object sender, EventArgs e)
         {

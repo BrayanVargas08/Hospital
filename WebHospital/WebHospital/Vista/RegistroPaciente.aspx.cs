@@ -33,6 +33,13 @@ namespace WebHospital.Vista
 
             clPaciente objPaciente = new clPaciente();
             int resultsql = objPaciente.mtdRegistrar(objEPaciente);
+            //if (!IsPostBack) { 
+            //    btnRegistrar.Attributes.Add("onclick", "return confirm('are you sure');"); }
+            Response.Write("<script>alert('Paciente Registrado');</script>");
+            //if (!IsPostBack) { 
+            //    btnRegistrar.Attributes.Add("onclick", "return swal('are you sure?');"); }
+
+
 
 
         }

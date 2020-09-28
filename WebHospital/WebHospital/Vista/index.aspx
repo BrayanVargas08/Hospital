@@ -1,4 +1,4 @@
-﻿%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterInicial.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WebHospital.Vista.CitasMedicas1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterInicial.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WebHospital.Vista.CitasMedicas1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
  <from runat="server">

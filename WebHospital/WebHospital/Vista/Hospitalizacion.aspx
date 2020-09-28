@@ -20,91 +20,26 @@
         <div class="layer-wrapper">
              <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
             
-             <br />
-             <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="IdPaciente" DataSourceID="SqlDataSource2" EmptyDataText="No hay registros de datos para mostrar." OnSelectedIndexChanged="GridView2_SelectedIndexChanged" AllowPaging="True">
+             <asp:GridView ID="GridView1" runat="server" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1">
+                 <AlternatingRowStyle BackColor="White" />
                  <Columns>
-                     <asp:BoundField DataField="IdPaciente" HeaderText="IdPaciente" ReadOnly="True" SortExpression="IdPaciente" Visible="False" />
-                     <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
-                     <asp:BoundField DataField="Apellido" HeaderText="Apellido" SortExpression="Apellido" />
-                     <asp:BoundField DataField="Documento" HeaderText="Documento" SortExpression="Documento" />
-                     <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" Visible="False" />
-                     <asp:BoundField DataField="Direccion" HeaderText="Direccion" SortExpression="Direccion" />
-                     <asp:BoundField DataField="Telefono" HeaderText="Telefono" SortExpression="Telefono" />
-                     <asp:BoundField DataField="FechaNacimiento" HeaderText="FechaNacimiento" SortExpression="FechaNacimiento" />
-                     <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="Password" Visible="False" />
-                     <asp:BoundField DataField="Genero" HeaderText="Genero" SortExpression="Genero" />
-                     <asp:BoundField DataField="IdEps" HeaderText="IdEps" SortExpression="IdEps" Visible="False" />
-                     <asp:CommandField SelectText="Agregar" ShowSelectButton="True" />
+                     <asp:CommandField SelectText="AGREGAR" ShowSelectButton="True" />
                  </Columns>
+                 <EditRowStyle BackColor="#7C6F57" />
+                 <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                 <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                 <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
+                 <RowStyle BackColor="#E3EAEB" />
+                 <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
+                 <SortedAscendingCellStyle BackColor="#F8FAFA" />
+                 <SortedAscendingHeaderStyle BackColor="#246B61" />
+                 <SortedDescendingCellStyle BackColor="#D4DFE1" />
+                 <SortedDescendingHeaderStyle BackColor="#15524A" />
              </asp:GridView>
-             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:dbHospitalPazConnectionString1 %>" DeleteCommand="DELETE FROM [Paciente] WHERE [IdPaciente] = @IdPaciente" InsertCommand="INSERT INTO [Paciente] ([Nombre], [Apellido], [Documento], [email], [Direccion], [Telefono], [FechaNacimiento], [Password], [Genero], [IdEps]) VALUES (@Nombre, @Apellido, @Documento, @email, @Direccion, @Telefono, @FechaNacimiento, @Password, @Genero, @IdEps)" ProviderName="<%$ ConnectionStrings:dbHospitalPazConnectionString1.ProviderName %>" SelectCommand="SELECT [IdPaciente], [Nombre], [Apellido], [Documento], [email], [Direccion], [Telefono], [FechaNacimiento], [Password], [Genero], [IdEps] FROM [Paciente]" UpdateCommand="UPDATE [Paciente] SET [Nombre] = @Nombre, [Apellido] = @Apellido, [Documento] = @Documento, [email] = @email, [Direccion] = @Direccion, [Telefono] = @Telefono, [FechaNacimiento] = @FechaNacimiento, [Password] = @Password, [Genero] = @Genero, [IdEps] = @IdEps WHERE [IdPaciente] = @IdPaciente">
-                 <DeleteParameters>
-                     <asp:Parameter Name="IdPaciente" Type="Int32" />
-                 </DeleteParameters>
-                 <InsertParameters>
-                     <asp:Parameter Name="Nombre" Type="String" />
-                     <asp:Parameter Name="Apellido" Type="String" />
-                     <asp:Parameter Name="Documento" Type="String" />
-                     <asp:Parameter Name="email" Type="String" />
-                     <asp:Parameter Name="Direccion" Type="String" />
-                     <asp:Parameter Name="Telefono" Type="Int64" />
-                     <asp:Parameter DbType="Date" Name="FechaNacimiento" />
-                     <asp:Parameter Name="Password" Type="String" />
-                     <asp:Parameter Name="Genero" Type="String" />
-                     <asp:Parameter Name="IdEps" Type="Int32" />
-                 </InsertParameters>
-                 <UpdateParameters>
-                     <asp:Parameter Name="Nombre" Type="String" />
-                     <asp:Parameter Name="Apellido" Type="String" />
-                     <asp:Parameter Name="Documento" Type="String" />
-                     <asp:Parameter Name="email" Type="String" />
-                     <asp:Parameter Name="Direccion" Type="String" />
-                     <asp:Parameter Name="Telefono" Type="Int64" />
-                     <asp:Parameter DbType="Date" Name="FechaNacimiento" />
-                     <asp:Parameter Name="Password" Type="String" />
-                     <asp:Parameter Name="Genero" Type="String" />
-                     <asp:Parameter Name="IdEps" Type="Int32" />
-                     <asp:Parameter Name="IdPaciente" Type="Int32" />
-                 </UpdateParameters>
-             </asp:SqlDataSource>
-             <br />
+             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbHospitalPazConnectionString1 %>" ProviderName="<%$ ConnectionStrings:dbHospitalPazConnectionString1.ProviderName %>" SelectCommand="SELECT Urgencia.IdUrgencia, Urgencia.FechaHIngreso, Urgencia.FechaHSalida, Urgencia.Descripcion, Urgencia.Motivo, Paciente.Nombre, Paciente.Apellido, Paciente.Documento, Paciente.IdPaciente FROM Paciente INNER JOIN Urgencia ON Paciente.IdPaciente = Urgencia.IdPaciente"></asp:SqlDataSource>
             
-             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdHospitalizacion" DataSourceID="SqlDataSource1" EmptyDataText="No hay registros de datos para mostrar." OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
-                 <Columns>
-                     <asp:BoundField DataField="IdHospitalizacion" HeaderText="IdHospitalizacion" ReadOnly="True" SortExpression="IdHospitalizacion" Visible="False" />
-                     <asp:BoundField DataField="FechaHIngreso" HeaderText="FechaHIngreso" SortExpression="FechaHIngreso" />
-                     <asp:BoundField DataField="FechaHSalida" HeaderText="FechaHSalida" SortExpression="FechaHSalida" />
-                     <asp:BoundField DataField="Motivo" HeaderText="Motivo" SortExpression="Motivo" />
-                     <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" SortExpression="Descripcion" />
-                     <asp:BoundField DataField="Observaciones" HeaderText="Observaciones" SortExpression="Observaciones" />
-                     <asp:BoundField DataField="IdPaciente" HeaderText="IdPaciente" SortExpression="IdPaciente" />
-                     <asp:BoundField DataField="IdUrgencia" HeaderText="IdUrgencia" SortExpression="IdUrgencia" />
-                 </Columns>
-             </asp:GridView>
-             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbHospitalPazConnectionString1 %>" DeleteCommand="DELETE FROM [Hospitalizacion] WHERE [IdHospitalizacion] = @IdHospitalizacion" InsertCommand="INSERT INTO [Hospitalizacion] ([FechaHIngreso], [FechaHSalida], [Motivo], [Descripcion], [Observaciones], [IdPaciente], [IdUrgencia]) VALUES (@FechaHIngreso, @FechaHSalida, @Motivo, @Descripcion, @Observaciones, @IdPaciente, @IdUrgencia)" ProviderName="<%$ ConnectionStrings:dbHospitalPazConnectionString1.ProviderName %>" SelectCommand="SELECT [IdHospitalizacion], [FechaHIngreso], [FechaHSalida], [Motivo], [Descripcion], [Observaciones], [IdPaciente], [IdUrgencia] FROM [Hospitalizacion]" UpdateCommand="UPDATE [Hospitalizacion] SET [FechaHIngreso] = @FechaHIngreso, [FechaHSalida] = @FechaHSalida, [Motivo] = @Motivo, [Descripcion] = @Descripcion, [Observaciones] = @Observaciones, [IdPaciente] = @IdPaciente, [IdUrgencia] = @IdUrgencia WHERE [IdHospitalizacion] = @IdHospitalizacion">
-                 <DeleteParameters>
-                     <asp:Parameter Name="IdHospitalizacion" Type="Int32" />
-                 </DeleteParameters>
-                 <InsertParameters>
-                     <asp:Parameter Name="FechaHIngreso" Type="DateTime" />
-                     <asp:Parameter Name="FechaHSalida" Type="DateTime" />
-                     <asp:Parameter Name="Motivo" Type="String" />
-                     <asp:Parameter Name="Descripcion" Type="String" />
-                     <asp:Parameter Name="Observaciones" Type="String" />
-                     <asp:Parameter Name="IdPaciente" Type="Int32" />
-                     <asp:Parameter Name="IdUrgencia" Type="Int32" />
-                 </InsertParameters>
-                 <UpdateParameters>
-                     <asp:Parameter Name="FechaHIngreso" Type="DateTime" />
-                     <asp:Parameter Name="FechaHSalida" Type="DateTime" />
-                     <asp:Parameter Name="Motivo" Type="String" />
-                     <asp:Parameter Name="Descripcion" Type="String" />
-                     <asp:Parameter Name="Observaciones" Type="String" />
-                     <asp:Parameter Name="IdPaciente" Type="Int32" />
-                     <asp:Parameter Name="IdUrgencia" Type="Int32" />
-                     <asp:Parameter Name="IdHospitalizacion" Type="Int32" />
-                 </UpdateParameters>
-             </asp:SqlDataSource>
+             <br />
+             <br />
             
             <div class="form-container">
                 

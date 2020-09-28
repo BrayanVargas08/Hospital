@@ -21,7 +21,7 @@
              <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
             
              <br />
-             <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="IdPaciente" DataSourceID="SqlDataSource2" EmptyDataText="No hay registros de datos para mostrar." OnSelectedIndexChanged="GridView2_SelectedIndexChanged">
+             <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="IdPaciente" DataSourceID="SqlDataSource2" EmptyDataText="No hay registros de datos para mostrar." OnSelectedIndexChanged="GridView2_SelectedIndexChanged" AllowPaging="True">
                  <Columns>
                      <asp:BoundField DataField="IdPaciente" HeaderText="IdPaciente" ReadOnly="True" SortExpression="IdPaciente" Visible="False" />
                      <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />

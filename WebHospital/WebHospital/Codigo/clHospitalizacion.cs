@@ -12,7 +12,7 @@ namespace WebHospital.Codigo
         public int mtdRegistrar(clEntidadHopitalizacion objHospitalizacion)
         {
 
-            string sqlInsert = "INSERT INTO Urgencia(FechaHIngreso,FechaHSalida,Motivo,Descripcion,Observaciones,IdPaciente,IdUrgencia)" +
+            string sqlInsert = "INSERT INTO Hospitalizacion(FechaHIngreso,FechaHSalida,Motivo,Descripcion,Observaciones,IdPaciente,IdUrgencia)" +
                "values('" + objHospitalizacion.FechaHIngreso + "','" + objHospitalizacion.FechaHSalida + "','" + objHospitalizacion.Motivo + "','" + objHospitalizacion.Descripcion + "','" + objHospitalizacion.Observaciones + "','" + objHospitalizacion.IdPaciente + "','" + objHospitalizacion.IdUrgencia + "')";
 
             clAdminSQL objSQL = new clAdminSQL();

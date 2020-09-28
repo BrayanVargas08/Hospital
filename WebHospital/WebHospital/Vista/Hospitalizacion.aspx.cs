@@ -22,24 +22,8 @@ namespace WebHospital.Vista
 
         }
 
-        protected void BtnRegistrar_Click(object sender, EventArgs e)
-        {
-             // clEntidadAmbulancias objEAmbulancias = new clEntidadAmbulancias();
-            // objEAmbulancias.codigo = txtCodigo.Text;
-            // objEAmbulancias.Placa = TxtPlaca.Text;
-           //  objEAmbulancias.Conductor = TxtConductor.Text;
-           //  objEAmbulancias.Estado = RdbEstado.SelectedValue.ToString();
-
-
-
-            //   clAmbulancia objAmbu = new clAmbulancia();
-            // int resultSql = objAmbu.mtdRegistrar(objEAmbulancias);
-        }
-
-        protected void GridView2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            TxtPaciente.Text = GridView2.SelectedRow.Cells[3].Text;
-        }
+        
+       
 
         protected void btnRegistroHospitalizacion_Click(object sender, EventArgs e)
         {
@@ -61,6 +45,12 @@ namespace WebHospital.Vista
             this.txtFechaHSalida.Text = "";
             this.TxtMotivo.Text = "";
             this.TxtObservaciones.Text = "";
+        }
+
+        protected void GridView1_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            TxtPaciente.Text = GridView1.SelectedRow.Cells[9].Text;
+            txturgencia.Text = GridView1.SelectedRow.Cells[1].Text;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CITAS.aspx.cs" Inherits="WebHospital.Vista.Template.WebForm1" %>
+﻿2<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CITAS.aspx.cs" Inherits="WebHospital.Vista.Template.WebForm1" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,19 +9,19 @@
     <!-- Site Title -->
     <title>Klinik health care - HTML5 &#38; CSS3 Template for Clinic and Hospital</title>
     <!-- Meta Description Tag -->
-    <meta name="Description" content="Klinik is a HTML5 & CSS3 responsive template"/>
+    <meta name="Description" content="Klinik is a HTML5 & CSS3 responsive template" />
     <!-- Favicon Icon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
     <!-- Font Awesoeme Stylesheet CSS -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <!-- Google web Font -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500" />
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Material Design Lite Stylesheet CSS -->
     <link rel="stylesheet" href="css/material.min.css" />
     <!-- Material Design Select Field Stylesheet CSS -->
-    <link rel="stylesheet" href="css/mdl-selectfield.min.css"/>
+    <link rel="stylesheet" href="css/mdl-selectfield.min.css" />
     <!-- Owl Carousel Stylesheet CSS -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <!-- Animate Stylesheet CSS -->
@@ -31,7 +31,7 @@
     <!-- Flex Slider Stylesheet CSS -->
     <link rel="stylesheet" href="css/flexslider.css" />
     <!-- Custom Main Stylesheet CSS -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <div class="layer-stretch hdr-center">
@@ -115,7 +115,7 @@
                             <label class="mdl-textfield__label" for="appointment-name">Fecha de Cita</label>
                             <span class="mdl-textfield__error">Porfavor verifique su fecha de Cita!</span>
                         </div>
-                        
+
                     </div>
                     <div class="text-center pt-4">
 

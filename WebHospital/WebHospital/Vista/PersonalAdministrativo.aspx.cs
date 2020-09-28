@@ -11,8 +11,16 @@ namespace WebHospital.Vista
 {
     public partial class PersonalAdministrativo : System.Web.UI.Page
     {
+        clPersonalAministrativo objPersonalAdmin = new clPersonalAministrativo();
+
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            List<clEntidadPersonalAdministrativo> listaRol = new List<clEntidadPersonalAdministrativo>();
+            listaRol = objPersonalAdmin.mtdListaRol();
+            rblAdministrativos.DataSource = listaRol;
+            rblAdministrativos.DataTextField = "Rol";
+            rblAdministrativos.DataValueField = "IdRol";
 
         }
 
@@ -28,10 +36,10 @@ namespace WebHospital.Vista
             objEPersonalAdmin.Password = txtPassword.Text;
             objEPersonalAdmin.IdRol = int.Parse(rblAdministrativos.SelectedValue);
 
-            clPersonalAministrativo objPersonalAdmin = new clPersonalAministrativo();
+
             int Resultado = objPersonalAdmin.mtdRegistroPersonalAdministrativo(objEPersonalAdmin);
 
 
-         }
+        }
     }
 }

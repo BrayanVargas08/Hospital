@@ -86,10 +86,8 @@
     <Content Include="Vista\IndexMedico.aspx" />
     <Content Include="Vista\PersonalAdministrativo.aspx" />
     <Content Include="Vista\PoliticasdePrivacidad.aspx" />
-    <Content Include="Vista\Procedimiento.aspx" />
     <Content Include="Vista\PruebaCita.aspx" />
     <Content Include="Vista\RegistroDeMedico.aspx" />
-    <Content Include="Vista\RegistroDeMedicos.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-orange.css" />
@@ -281,8 +279,6 @@
     <Content Include="Vista\Template\uploads\feature-4.jpg" />
     <Content Include="Vista\Template\uploads\feature-5.jpg" />
     <Content Include="Vista\Template\uploads\feature-6.jpg" />
-    <Content Include="Vista\Template\uploads\fondotodo.jpg" />
-    <Content Include="Vista\Template\uploads\fototodos.jpg" />
     <Content Include="Vista\Template\uploads\gallery\800x800-gallery.jpg" />
     <Content Include="Vista\Template\uploads\gallery\gallery-1.jpg" />
     <Content Include="Vista\Template\uploads\gallery\gallery-10.jpg" />
@@ -370,11 +366,9 @@
     <Compile Include="Codigo\Entidad\clEntidadPaciente.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPersonalAdministrativo.cs" />
     <Compile Include="Codigo\Entidad\clEntidadCita.cs" />
-    <Compile Include="Codigo\Entidad\clEntidadProcedimiento.cs" />
     <Compile Include="Codigo\Entidad\clEntidadTraslado.cs" />
     <Compile Include="Codigo\Entidad\clEntidadTriage.cs" />
     <Compile Include="Codigo\Entidad\clEntidadUrgencias.cs" />
-    <Compile Include="Codigo\clProcedimiento.cs" />
     <Compile Include="Codigo\Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -484,13 +478,6 @@
     <Compile Include="Vista\PoliticasdePrivacidad.aspx.designer.cs">
       <DependentUpon>PoliticasdePrivacidad.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Procedimiento.aspx.cs">
-      <DependentUpon>Procedimiento.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\Procedimiento.aspx.designer.cs">
-      <DependentUpon>Procedimiento.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Vista\PruebaCita.aspx.cs">
       <DependentUpon>PruebaCita.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -504,13 +491,6 @@
     </Compile>
     <Compile Include="Vista\RegistroDeMedico.aspx.designer.cs">
       <DependentUpon>RegistroDeMedico.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\RegistroDeMedicos.aspx.cs">
-      <DependentUpon>RegistroDeMedicos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\RegistroDeMedicos.aspx.designer.cs">
-      <DependentUpon>RegistroDeMedicos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\Template\CITAS.aspx.cs">
       <DependentUpon>CITAS.aspx</DependentUpon>

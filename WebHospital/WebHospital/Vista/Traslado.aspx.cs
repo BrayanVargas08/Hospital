@@ -21,13 +21,13 @@ namespace WebHospital.Vista
             cmbAmbulancia.DataValueField = "IdAmbulancia";
             cmbAmbulancia.DataBind();
             //
-        //    List<clEntidadHopitalizacion> ListaEHospitalizacion = new List<clEntidadHopitalizacion>();
-        //    clHospitalizacion objHospitazacion = new clHospitalizacion();
-        //    ListaEHospitalizacion = objHospitazacion.mtdListar();
-        //    cmbHospitalizacion.DataSource = ListaEHospitalizacion;
-        //    cmbHospitalizacion.DataTextField = "Motivo";
-        //    cmbHospitalizacion.DataValueField = "IdHospitalizacion";
-        //    cmbHospitalizacion.DataBind();
+            List<clEntidadHopitalizacion> ListaEHospitalizacion = new List<clEntidadHopitalizacion>();
+            clHospitalizacion objHospitazacion = new clHospitalizacion();
+            ListaEHospitalizacion = objHospitazacion.mtdListar();
+            cmbHospitalizacion.DataSource = ListaEHospitalizacion;
+            cmbHospitalizacion.DataTextField = "Motivo";
+            cmbHospitalizacion.DataValueField = "IdHospitalizacion";
+            cmbHospitalizacion.DataBind();
         }
 
         
@@ -39,8 +39,8 @@ namespace WebHospital.Vista
             objETraslado.Destino = TxtDestino.Text;
             objETraslado.IdAmbulancia = int.Parse(cmbAmbulancia.SelectedValue.ToString());
             int idambu = int.Parse(cmbAmbulancia.SelectedValue.ToString());
-            objETraslado.IdHospitalizacion = int.Parse(txtHospitalizacion.Text);
-
+            objETraslado.IdHospitalizacion = int.Parse(cmbHospitalizacion.SelectedValue.ToString());
+            int idHos = int.Parse(cmbHospitalizacion.SelectedValue.ToString());
 
 
 
@@ -49,11 +49,6 @@ namespace WebHospital.Vista
 
             clTraslado objTraslado = new clTraslado();
             int resultSql = objTraslado.mtdRegistrar(objETraslado);
-        }
-
-        protected void GridView1_SelectedIndexChanged1(object sender, EventArgs e)
-        {
-            txtHospitalizacion.Text = GridView1.SelectedRow.Cells[1].Text;
         }
     }
 }

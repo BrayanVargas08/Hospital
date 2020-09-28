@@ -377,28 +377,26 @@
                                    <label class="mdl-textfield__label" for="appointment-date">Su Eps</label>
                         </div>
 
-                            <span class="mdl-textfield__error">Introduzca un nombre válido.</span>
+                            <span class="mdl-textfield__error">Please Enter Valid Name!</span>
                         </div>
 
 
                         <div class="login-condition">
-                           Al hacer clic en Crear cuenta, aceptas nuestro<br />
-                            <a href="PoliticasdePrivacidad.aspx">terminos y &#38; conndicion</a>
+                            By clicking Creat Account you agree to our<br />
+                            <a href="#">terms &#38; condition</a>
                         </div>
                         <div class="form-submit">
                             <!--<button class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary">Create Account</button>-->
                             <asp:Button ID="btnRegistrar" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" runat="server" Text="Crear Cuenta" OnClick="btnRegistrar_Click" />
                         </div>
-                        <div class="or-using">
-8/5000
-O usando</div>
+                        <div class="or-using">Or Using</div>
                         <div class="social-login">
                             <a href="https://www.facebook.com/" class="social-facebook"><i class="fa fa-facebook"></i>Facebook</a>
                             <a href="https://accounts.google.com/" class="social-google"><i class="fa fa-google"></i>Google</a>
                         </div>
                         <div class="login-link">
-                            <span class="paragraph-small">¿Ya tienes una cuenta?</span>
-                            <a href="#" class="">Inicia sesión ahora</a>
+                            <span class="paragraph-small">Already have an account?</span>
+                            <a href="#" class="">Login Now</a>
                         </div>
                     </div>
 

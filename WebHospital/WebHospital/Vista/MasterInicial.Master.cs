@@ -48,11 +48,13 @@ namespace WebHospital.Vista
                     }
                     if (Session["rol"].ToString() == "Emfermero Jefe")
                     {
-                        Response.Write("<script>alert('Emfermero " + Session["usuario"] + "');</script>");
+                        Response.Redirect("indexadministrador.aspx");
+
                     }
                     if (Session["rol"].ToString() == "Secretaria")
                     {
-                        Response.Write("<script>alert('Secretaria " + Session["usuario"] + "');</script>");
+                        Response.Redirect("indexadministrador.aspx");
+
                     }
                 }
 
@@ -67,7 +69,7 @@ namespace WebHospital.Vista
                 if (ListaPaciente.Count > 0)
                 {
                     Session["usuario"] = ListaPaciente[0].Nombre + " " + ListaPaciente[0].Apellido;
-                    Response.Write("<script>alert('Paciente" + Session["usuario"] + "');</script>");
+                    Response.Redirect("indexMedico.aspx");
 
                 }
                 else
@@ -84,7 +86,7 @@ namespace WebHospital.Vista
                 if (ListaMedico.Count > 0)
                 {
                     Session["usuario"] = ListaMedico[0].Nombre + " " + ListaMedico[0].Apellido;
-                    Response.Write("<script>alert('Medico " + Session["usuario"] + "');</script>");
+                    Response.Redirect("indexMedico.aspx");
 
                 }
                 else

@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Site Title -->
-    <title>ADMINISTRADOR</title>
+    <title>USUARIO</title>
     <!-- Meta Description Tag -->
     <meta name="Description" content="Klinik is a HTML5 & CSS3 responsive template">
     <!-- Favicon Icon -->
@@ -152,12 +152,12 @@
                                                     </ul>
                                                 </li>
                                                 <li class="menu-megamenu-li">
-                                                    <a id="menu-Faq" class="mdl-button mdl-js-button mdl-js-ripple-effect">Pregunta Frecuentes <i class="fa fa-chevron-down"></i></a>
+                                                    <a id="menu-Faq" class="mdl-button mdl-js-button mdl-js-ripple-effect">Preguntas mas Frecuentes <i class="fa fa-chevron-down"></i></a>
                                                     <ul class="menu-megamenu">
                                                         <li class="row">
                                                             <div class="col-lg-3">
                                                                 <ul>
-                                                                    <li><a href="FAQ.aspx">Citas Medicas</a></li>
+                                                                    <li><a href="FAQ.aspx"></a>preguntas frecuentes</li>
                                                                 </ul>
                                                             </div>
                                                         </li>

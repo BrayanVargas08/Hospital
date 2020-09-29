@@ -99,7 +99,7 @@
                             <span class="mdl-textfield__error">Porfavor verifique su Hospitalizacion!</span>
                         </div>
                         <div class="form-submit">
-                            <asp:Button ID="btnRegistrar" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Urgencia" OnClick="btnRegistrar_Click" Style="left: 35px; bottom: -30px"></asp:Button>
+                            <asp:Button ID="btnRegistrar" runat="server" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" Text="Registrar Procedimiento" OnClick="btnRegistrar_Click" Style="left: 35px; bottom: -30px"></asp:Button>
                         </div>
 
 

@@ -86,9 +86,11 @@
     <Content Include="Vista\indexadministrador.aspx" />
     <Content Include="Vista\IndexMedico.aspx" />
     <Content Include="Vista\IndexUsuarios.aspx" />
+    <Content Include="Vista\Medicacion.aspx" />
     <Content Include="Vista\PersonalAdministrativo.aspx" />
     <Content Include="Vista\PoliticasdePrivacidad.aspx" />
     <Content Include="Vista\Procedimiento.aspx" />
+    <Content Include="Vista\ProcesoGeneral.aspx" />
     <Content Include="Vista\PruebaCita.aspx" />
     <Content Include="Vista\RegistroMedico.aspx" />
     <Content Include="Vista\RegistroPaciente.aspx" />
@@ -356,11 +358,13 @@
     <Compile Include="Codigo\clEspecialidad.cs" />
     <Compile Include="Codigo\clHospitalizacion.cs" />
     <Compile Include="Codigo\clLogin.cs" />
+    <Compile Include="Codigo\clMedicacion.cs" />
     <Compile Include="Codigo\clMedico.cs" />
     <Compile Include="Codigo\clPaciente.cs" />
     <Compile Include="Codigo\clCita.cs" />
     <Compile Include="Codigo\clPersonalAministrativo.cs" />
     <Compile Include="Codigo\clProcedimiento.cs" />
+    <Compile Include="Codigo\clProcesoGeneral.cs" />
     <Compile Include="Codigo\clTraslado.cs" />
     <Compile Include="Codigo\clTriage.cs" />
     <Compile Include="Codigo\clUgencias.cs" />
@@ -368,11 +372,13 @@
     <Compile Include="Codigo\Entidad\clEntidadEps.cs" />
     <Compile Include="Codigo\Entidad\clEntidadEspecialidad.cs" />
     <Compile Include="Codigo\Entidad\clEntidadHopitalizacion.cs" />
+    <Compile Include="Codigo\Entidad\clEntidadMedicacion.cs" />
     <Compile Include="Codigo\Entidad\clEntidadMedico.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPaciente.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPersonalAdministrativo.cs" />
     <Compile Include="Codigo\Entidad\clEntidadCita.cs" />
     <Compile Include="Codigo\Entidad\clEntidadProcedimiento.cs" />
+    <Compile Include="Codigo\Entidad\clEntidadProcesoGeneral.cs" />
     <Compile Include="Codigo\Entidad\clEntidadTraslado.cs" />
     <Compile Include="Codigo\Entidad\clEntidadTriage.cs" />
     <Compile Include="Codigo\Entidad\clEntidadUrgencias.cs" />
@@ -480,9 +486,17 @@
     </Compile>
     <Compile Include="Vista\MasterUsuarios.Master.cs">
       <DependentUpon>MasterUsuarios.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\MasterUsuarios.Master.designer.cs">
       <DependentUpon>MasterUsuarios.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Medicacion.aspx.cs">
+      <DependentUpon>Medicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Medicacion.aspx.designer.cs">
+      <DependentUpon>Medicacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\PersonalAdministrativo.aspx.cs">
       <DependentUpon>PersonalAdministrativo.aspx</DependentUpon>
@@ -504,6 +518,13 @@
     </Compile>
     <Compile Include="Vista\Procedimiento.aspx.designer.cs">
       <DependentUpon>Procedimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ProcesoGeneral.aspx.cs">
+      <DependentUpon>ProcesoGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\ProcesoGeneral.aspx.designer.cs">
+      <DependentUpon>ProcesoGeneral.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\PruebaCita.aspx.cs">
       <DependentUpon>PruebaCita.aspx</DependentUpon>

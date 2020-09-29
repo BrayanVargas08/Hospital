@@ -80,6 +80,11 @@
                 <div class="hdr layer-stretch">
                     <div class="row align-items-center justify-content-end">
                         <!-- Start Menu Section -->
+                        <!-- End Menu Section -->
+                        <div class="hdr-center-menu">
+                <div class="hdr layer-stretch">
+                    <div class="row align-items-center justify-content-end">
+                        <!-- Start Menu Section -->
                         <ul class="col menu text-left">
                             <li>
                                 <a id="menu-home" class="mdl-button mdl-js-button mdl-js-ripple-effect">Home <i class="fa fa-chevron-down"></i></a>
@@ -92,9 +97,9 @@
                                 <ul class="menu-megamenu">
                                     <li class="row">
                                         <div class="col-lg-3">
-                                            <ul>
-                                                <li><a href="Template/CITAS.aspx">Citas Medicas</a></li>
-                                            </ul>
+                                             <ul class="menu-dropdown">
+                                    <li><a href="index.aspx">Home</a></li>
+                                </ul>
                                         </div>
                                     </li>
                                 </ul>
@@ -104,9 +109,9 @@
                                 <ul class="menu-megamenu">
                                     <li class="row">
                                         <div class="col-lg-3">
-                                            <ul>
-                                                <li><a href="FAQ.aspx">Citas Medicas</a></li>
-                                            </ul>
+                                             <ul class="menu-dropdown">
+                                    <li><a href="index.aspx">Home</a></li>
+                                </ul>
                                         </div>
                                     </li>
                                 </ul>
@@ -134,6 +139,9 @@
                     </div>
                 </div>
             </div>
+
+                    </div>
+            </div>
         </header>
         <!-- End Header -->
 
@@ -158,7 +166,7 @@
                             <label class="mdl-textfield__label" for="login-password">Contraseña <em>*</em></label>
                             <span class="mdl-textfield__error">Please Enter Valid Password!</span>
                         </div>
-                        
+
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon form-bot-check">
                             <asp:RadioButtonList ID="rblUsuarios" runat="server" RepeatDirection="Horizontal" CellPadding="10">
                                 <asp:ListItem Value="PersonalAdministrativo">Administrativos</asp:ListItem>
@@ -231,10 +239,6 @@
         </div>
         <!-- End Register Modal -->
         <!-- Fixed Appointment Button at Bottom -->
-        <div id="appointment-button" class="animated fadeInUp">
-            <button id="appointment-now" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--raised"><i class="fa fa-plus"></i></button>
-            <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="appointment-now">Make An Appointment</div>
-        </div>
         <!-- End Fixed Appointment Button at Bottom -->
         <!-- Start Footer Section -->
         <footer id="footer">

@@ -14,9 +14,6 @@
                         <p class="animated fadeInDown">RED SALUD CASANARE E.S.E, es la institución que presta servicios de salud de primer Nivel de atención de forma íntegra y humanizada, con seguridad, calidad, pertinencia y compromiso con el bienestar de la comunidad en 16 municipios del Departamento de Casanare . #twitterhash, @facebooktag</p>
                     </div>
                     <img src="Template/images/descargar.jpg" alt="" />
-                    <div class="slider-button slider-appointment">
-                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect animated fadeInUp">Haga su Cita<i class="fa fa-flag-checkered"></i></a>
-                    </div>
                 </li>
                 <li>
                     <div class="slider-info">
@@ -24,9 +21,6 @@
                         <p>RED SALUD CASANARE E.S.E., para el año 2020, se consolidará en el ámbito Departamental, como una empresa moderna, altamente competitiva y auto sostenible, que brinde servicios integrales de Salud en los niveles I y II ambulatorio, con calidad, eficiencia y eficacia. elit#twitterhash, @facebooktag</p>
                     </div>
                     <img src="Template/images/hospital2.jpg" alt="" />
-                    <div class="slider-button slider-appointment">
-                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect animated fadeInUp">Mas informacion <i class="fa fa-external-link"></i></a>
-                    </div>
                 </li>
                 <li>
                     <div class="slider-info">
@@ -34,9 +28,6 @@
                         <p>A esta hora, los Funcionarios Administrativos de Red Salud Casanare E.S.E realizan la jornada laboral desde el Hospital Local de Paz de Ariporo, como iniciativa para conocer y observar el funcionamiento de la IPS. Además, las necesidades de los usuarios, colaboradores y de la comunidad en general #twitterhash, @facebooktag</p>
                     </div>
                     <img src="Template/images/hospiatal23.jpg" alt="" />
-                    <div class="slider-button slider-appointment">
-                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect animated fadeInUp">About Us<i class="fa fa-chevron-right"></i></a>
-                    </div>
                 </li>
             </ul>
 
@@ -405,10 +396,6 @@ Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás persona
 
 
     <!-- Fixed Appointment Button at Bottom -->
-    <div id="appointment-button" class="animated fadeInUp">
-        <button id="appointment-now" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--raised"><i class="fa fa-plus"></i></button>
-        <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="appointment-now">Make An Appointment</div>
-    </div>
     <!-- End Fixed Appointment Button at Bottom -->
 
 </from>

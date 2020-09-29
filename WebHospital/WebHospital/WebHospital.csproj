@@ -85,7 +85,7 @@
     <Content Include="Vista\index.aspx" />
     <Content Include="Vista\indexadministrador.aspx" />
     <Content Include="Vista\IndexMedico.aspx" />
-    <Content Include="Vista\IndexUsuario.aspx" />
+    <Content Include="Vista\IndexUsuarios.aspx" />
     <Content Include="Vista\PersonalAdministrativo.aspx" />
     <Content Include="Vista\PoliticasdePrivacidad.aspx" />
     <Content Include="Vista\Procedimiento.aspx" />
@@ -450,12 +450,12 @@
     <Compile Include="Vista\IndexMedico.aspx.designer.cs">
       <DependentUpon>IndexMedico.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\IndexUsuario.aspx.cs">
-      <DependentUpon>IndexUsuario.aspx</DependentUpon>
+    <Compile Include="Vista\IndexUsuarios.aspx.cs">
+      <DependentUpon>IndexUsuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\IndexUsuario.aspx.designer.cs">
-      <DependentUpon>IndexUsuario.aspx</DependentUpon>
+    <Compile Include="Vista\IndexUsuarios.aspx.designer.cs">
+      <DependentUpon>IndexUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\MasterMedico.Master.cs">
       <DependentUpon>MasterMedico.Master</DependentUpon>
@@ -478,12 +478,11 @@
     <Compile Include="Vista\MasterAdministrador.Master.designer.cs">
       <DependentUpon>MasterAdministrador.Master</DependentUpon>
     </Compile>
-    <Compile Include="Vista\MasterUsuario.Master.cs">
-      <DependentUpon>MasterUsuario.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="Vista\MasterUsuarios.Master.cs">
+      <DependentUpon>MasterUsuarios.Master</DependentUpon>
     </Compile>
-    <Compile Include="Vista\MasterUsuario.Master.designer.cs">
-      <DependentUpon>MasterUsuario.Master</DependentUpon>
+    <Compile Include="Vista\MasterUsuarios.Master.designer.cs">
+      <DependentUpon>MasterUsuarios.Master</DependentUpon>
     </Compile>
     <Compile Include="Vista\PersonalAdministrativo.aspx.cs">
       <DependentUpon>PersonalAdministrativo.aspx</DependentUpon>
@@ -576,7 +575,7 @@
     <Content Include="Vista\MasterInicial.Master" />
     <Content Include="Vista\MasterMedico.Master" />
     <Content Include="Vista\MasterAdministrador.Master" />
-    <Content Include="Vista\MasterUsuario.Master" />
+    <Content Include="Vista\MasterUsuarios.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

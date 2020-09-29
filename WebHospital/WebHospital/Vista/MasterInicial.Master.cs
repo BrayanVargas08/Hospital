@@ -70,8 +70,9 @@ namespace WebHospital.Vista
                 if (ListaPaciente.Count > 0)
                 {
                     Session["usuario"] = ListaPaciente[0].Nombre + " " + ListaPaciente[0].Apellido;
-                    Response.Redirect("indexUsuario.aspx");
-
+                    Response.Write("<script>alert('Error... Usuario no encontrado" + Session["usuario"] + "');</script>");
+                    Response.Redirect("IndexUsuarios.aspx");
+                    
                 }
                 else
                 {

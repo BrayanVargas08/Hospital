@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterUsuarios.Master" AutoEventWireup="true" CodeBehind="IndexUsuarios.aspx.cs" Inherits="WebHospital.Vista.IndexUsuarios" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form runat="server">
-        <!-- cuerpo de la pagina-->
+    <%--<form runat="server">--%>
+    <!-- cuerpo de la pagina-->
     <div id="slider" class="slider-height">
         <div class="flexslider slider-wrapper">
             <ul class="slides">
@@ -82,7 +83,7 @@ Nuestro compromiso es con la comunidad y con el país, por ello el ser Universit
                         </div>
                     </div>
                     <div class="hm-service-view text-center">
-                        <a  class="button-icon">
+                        <a class="button-icon">
                             <span>Ver todos los servicios</span>
                             <i class="fa fa-eye"></i>
                         </a>
@@ -366,18 +367,18 @@ Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás persona
                 <div class="layer-container">
                     <div id="testimonial-slider" class="owl-carousel owl-theme theme-owl-dot">
                         <div class="testimonial-block">
-                            <img  class="img-responsive"  src="Template/images/imagesssssss.jpg" />
-                          <div class="paragraph-medium paragraph-white">
+                            <img class="img-responsive" src="Template/images/imagesssssss.jpg" />
+                            <div class="paragraph-medium paragraph-white">
                                 <i class="fa fa-quote-left"></i>
-                               Gracias por el remedio. Siento que ha estado funcionando en un nivel sutil más profundo. Un ver interior. He tenido la sensación de un derretimiento por dentro y una gran sensación de paz y rectitud. Experimenté esto antes con su percepción y tratamiento, así que muchas gracias.
+                                Gracias por el remedio. Siento que ha estado funcionando en un nivel sutil más profundo. Un ver interior. He tenido la sensación de un derretimiento por dentro y una gran sensación de paz y rectitud. Experimenté esto antes con su percepción y tratamiento, así que muchas gracias.
                             </div>
                             <a>Granados Ana</a>
                         </div>
-                       </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- End Testimonial Section -->
     <!-- Start Emergency Section -->
@@ -407,65 +408,63 @@ Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás persona
         <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="appointment-now">Agende su Cita</div>
     </div>
     <!-- End Fixed Appointment Button at Bottom -->
-   
+
     <!-- Start Make an Appointment Modal -->
-    
-        <div id="appointment" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header text-center">
-                        <h5 class="modal-title">AGENDE AQUI SU CITA </h5>
-                        <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
-                    </div>
-                    <div class="modal-body">
 
-                        <div class="col-md-6">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                                <i class="fa fa-user-o"></i>
-                                <asp:TextBox ID="TxtDocumento" runat="server" class="mdl-textfield__input" pattern="[0-9 ]*"></asp:TextBox>
-                                <label class="mdl-textfield__label" for="appointment-name">Documento</label>
-                                <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
-                            </div>
-                        </div>
+    <div id="appointment" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title">AGENDE AQUI SU CITA </h5>
+                    <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
+                </div>
+                <div class="modal-body">
 
-
-                        <div class="col-md-6">
-                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
-                                <i class="fa fa-hospital-o"></i>
-                                <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
-                                <label class="mdl-selectfield__label" for="appointment-department">Selecione Especialidad</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
-                                <i class="fa fa-user-md"></i>
-                                <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
-                                <select class="mdl-selectfield__select" id="appointment-doctor">
-                                </select>
-                                <label class="mdl-selectfield__label" for="appointment-doctor">Seleccione Un Especialista</label>
-                            </div>
-                        </div>
-
+                    <div class="col-md-6">
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                             <i class="fa fa-user-o"></i>
-                            <asp:TextBox ID="txtF" TextMode="DateTime" class="mdl-textfield__input" onfocus="(this.type='date')" runat="server"></asp:TextBox>
-                            <%--<asp:TextBox ID="txtfechaCita" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')"></asp:TextBox>--%>
-                            <label class="mdl-textfield__label" for="appointment-name">Fecha de Cita</label>
-                            <span class="mdl-textfield__error">Porfavor verifique su fecha de Cita!</span>
+                            <asp:TextBox ID="TxtDocumento" runat="server" class="mdl-textfield__input" pattern="[0-9 ]*"></asp:TextBox>
+                            <label class="mdl-textfield__label" for="appointment-name">Documento</label>
+                            <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
                         </div>
-
                     </div>
-                    <div class="text-center pt-4">
-
-                        <asp:Button ID="btnRegistrarCita" runat="server" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text="AGENDAR CITA" />
 
 
+                    <div class="col-md-6">
+                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
+                            <i class="fa fa-hospital-o"></i>
+                            <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
+                            <label class="mdl-selectfield__label" for="appointment-department">Selecione Especialidad</label>
+                        </div>
                     </div>
+                    <div class="col-md-6">
+                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
+                            <i class="fa fa-user-md"></i>
+                            <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
+                            <select class="mdl-selectfield__select" id="appointment-doctor">
+                            </select>
+                            <label class="mdl-selectfield__label" for="appointment-doctor">Seleccione Un Especialista</label>
+                        </div>
+                    </div>
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                        <i class="fa fa-user-o"></i>
+                        <asp:TextBox ID="txtF" TextMode="DateTime" class="mdl-textfield__input" onfocus="(this.type='date')" runat="server"></asp:TextBox>
+                        <%--<asp:TextBox ID="txtfechaCita" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')"></asp:TextBox>--%>
+                        <label class="mdl-textfield__label" for="appointment-name">Fecha de Cita</label>
+                        <span class="mdl-textfield__error">Porfavor verifique su fecha de Cita!</span>
+                    </div>
+
+                </div>
+                <div class="text-center pt-4">
+
+                    <asp:Button ID="btnRegistrarCita" runat="server" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text="AGENDAR CITA" />
+
+
                 </div>
             </div>
         </div>
-   
+    </div>
 
-    </form>
-     
+    <%--   </form>--%>
 </asp:Content>

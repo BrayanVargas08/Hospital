@@ -7,8 +7,8 @@
     <div class="page-ttl">
         <div class="layer-stretch">
             <div class="page-ttl-container">
-                <h1>TRANSLADO
-                <p><a href="#">ADMINISTRADOR</a> &#8594; <span>Bienvenido TRANSLADO
+                <h1>TRANSLADO</h1>
+                <p><a href="#">ADMINISTRADOR</a> &#8594; <span>Bienvenido TRANSLADO</span></p>
             </div>
         </div>
     </div><!-- End Page Title Section -->

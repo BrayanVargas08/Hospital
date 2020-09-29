@@ -24,138 +24,125 @@ namespace WebHospital.Vista
                 PopulateGridview();
             }
         }
+
         void PopulateGridview()
         {
             DataTable dtbl = new DataTable();
-            using (SqlConnection sqlcon = new SqlConnection(connnectionstring))
+            using (SqlConnection sqlCon = new SqlConnection(connnectionstring))
             {
-                sqlcon.Open();
-                SqlDataAdapter sqlda = new SqlDataAdapter("SELECT * FROM Ambulancia", sqlcon);
-                sqlda.Fill(dtbl);
-
+                sqlCon.Open();
+                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM Ambulancia", sqlCon);
+                sqlDa.Fill(dtbl);
             }
             if (dtbl.Rows.Count > 0)
             {
-                Gvambualncias.DataSource = dtbl;
-                Gvambualncias.DataBind();
+                gvPhoneBook.DataSource = dtbl;
+                gvPhoneBook.DataBind();
             }
             else
             {
                 dtbl.Rows.Add(dtbl.NewRow());
-                Gvambualncias.DataSource = dtbl;
-                Gvambualncias.DataBind();
-                Gvambualncias.Rows[0].Cells.Clear();
-                Gvambualncias.Rows[0].Cells.Add(new TableCell());
-                Gvambualncias.Rows[0].Cells[0].ColumnSpan = dtbl.Columns.Count;
-                Gvambualncias.Rows[0].Cells[0].Text = "No data found..!";
-                Gvambualncias.Rows[0].Cells[0].HorizontalAlign = HorizontalAlign.Center;
-
+                gvPhoneBook.DataSource = dtbl;
+                gvPhoneBook.DataBind();
+                gvPhoneBook.Rows[0].Cells.Clear();
+                gvPhoneBook.Rows[0].Cells.Add(new TableCell());
+                gvPhoneBook.Rows[0].Cells[0].ColumnSpan = dtbl.Columns.Count;
+                gvPhoneBook.Rows[0].Cells[0].Text = "No Data Found ..!";
+                gvPhoneBook.Rows[0].Cells[0].HorizontalAlign = HorizontalAlign.Center;
             }
-        }
-        protected void btnRegistrarAmb_Click(object sender, EventArgs e)
-        {
-
-            // clEntidadAmbulancias objEAmbulancias = new clEntidadAmbulancias();
-            // objEAmbulancias.codigo = txtCodigo.Text;
-            // objEAmbulancias.Placa = TxtPlaca.Text;
-            // objEAmbulancias.Conductor = TxtConductor.Text;
-            // objEAmbulancias.Estado = RdbEstado.SelectedValue.ToString();
-
-
-
-            //   clAmbulancia objAmbu = new clAmbulancia();
-            // int resultSql = objAmbu.mtdRegistrar(objEAmbulancias);
-
 
         }
 
-        protected void Gvambualncias_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void gvPhoneBook_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             try
             {
                 if (e.CommandName.Equals("AddNew"))
                 {
-                    using (SqlConnection sqlcon = new SqlConnection(connnectionstring))
+                    using (SqlConnection sqlCon = new SqlConnection(connnectionstring))
                     {
-                        sqlcon.Open();
-                        string query = "INSERT INTO Ambulancia(Codigo, Placa, Coductor,Estado)VALUES (@Codigo, @Placa, @Coductor, @Estado) ";
-                        SqlCommand sqlCmd = new SqlCommand(query, sqlcon);
-                        sqlCmd.Parameters.AddWithValue("@Codigo", (Gvambualncias.FooterRow.FindControl("txtCodigo") as TextBox).Text.Trim());
-                        sqlCmd.Parameters.AddWithValue("@Placa", (Gvambualncias.FooterRow.FindControl("txtPlaca") as TextBox).Text.Trim());
-                        sqlCmd.Parameters.AddWithValue("@Coductor", (Gvambualncias.FooterRow.FindControl("txtCoductor") as TextBox).Text.Trim());
-                        sqlCmd.Parameters.AddWithValue("@Estado", (Gvambualncias.FooterRow.FindControl("txtEstado") as TextBox).Text.Trim());
-
+                        sqlCon.Open();
+                        string query = "INSERT INTO Ambulancia (Codigo,Placa,Coductor,Estado) VALUES (@Codigo,@Placa,@Coductor,@Estado)";
+                        SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                        sqlCmd.Parameters.AddWithValue("@Codigo", (gvPhoneBook.FooterRow.FindControl("txtCodigoFooter") as TextBox).Text.Trim());
+                        sqlCmd.Parameters.AddWithValue("@Placa", (gvPhoneBook.FooterRow.FindControl("txtPlacaFooter") as TextBox).Text.Trim());
+                        sqlCmd.Parameters.AddWithValue("@Coductor", (gvPhoneBook.FooterRow.FindControl("txtCoductorFooter") as TextBox).Text.Trim());
+                        sqlCmd.Parameters.AddWithValue("@Estado", (gvPhoneBook.FooterRow.FindControl("txtEstadoFooter") as TextBox).Text.Trim());
                         sqlCmd.ExecuteNonQuery();
                         PopulateGridview();
-                        lblSussessMensage.Text = "new record added";
-                        lblErrorMensage.Text = "";
-
+                        lblSuccessMessage.Text = "New Record Added";
+                        lblErrorMessage.Text = "";
                     }
-
                 }
             }
-
-
             catch (Exception ex)
             {
-
-                lblSussessMensage.Text = "";
-                lblErrorMensage.Text = ex.Message;
-
+                lblSuccessMessage.Text = "";
+                lblErrorMessage.Text = ex.Message;
             }
         }
 
-        protected void Gvambualncias_RowEditing(object sender, GridViewEditEventArgs e)
+        protected void gvPhoneBook_RowEditing(object sender, GridViewEditEventArgs e)
         {
-            Gvambualncias.EditIndex = e.NewEditIndex;
+            gvPhoneBook.EditIndex = e.NewEditIndex;
             PopulateGridview();
         }
 
-        protected void Gvambualncias_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        protected void gvPhoneBook_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
-            Gvambualncias.EditIndex = -1;
+            gvPhoneBook.EditIndex = -1;
             PopulateGridview();
         }
 
-        protected void Gvambualncias_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        protected void gvPhoneBook_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             try
             {
-
-                using (SqlConnection sqlcon = new SqlConnection(connnectionstring))
+                using (SqlConnection sqlCon = new SqlConnection(connnectionstring))
                 {
-                    sqlcon.Open();
-                    string query = "UPDATE Ambulancia SET Codigo=@Codigo, Placa=@Placa, Coductor=@Coductor,Estado=@Estado WHERE IdAmbulancia=@id";
-                    SqlCommand sqlCmd = new SqlCommand(query, sqlcon);
-                    sqlCmd.Parameters.AddWithValue("@Codigo", (Gvambualncias.Rows[e.RowIndex].FindControl("txtCodigo") as TextBox).Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Placa", (Gvambualncias.Rows[e.RowIndex].FindControl("txtPlaca") as TextBox).Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Coductor", (Gvambualncias.Rows[e.RowIndex].FindControl("txtCoductor") as TextBox).Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Estado", (Gvambualncias.Rows[e.RowIndex].FindControl("txtEstado") as TextBox).Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Id", Convert.ToInt32(Gvambualncias.DataKeys[e.RowIndex].Value.ToString()));
+                    sqlCon.Open();
+                    string query = "UPDATE PhoneBook SET Codigo=@Codigo,Placa=@Placa,Coductor=@Coductor,Estado=@Estado WHERE IdAmbulancia = @id";
+                    SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                    sqlCmd.Parameters.AddWithValue("@Codigo", (gvPhoneBook.Rows[e.RowIndex].FindControl("txtCodigo") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@Placa", (gvPhoneBook.Rows[e.RowIndex].FindControl("txtPlaca") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@Coductor", (gvPhoneBook.Rows[e.RowIndex].FindControl("txtCoductor") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@Estado", (gvPhoneBook.Rows[e.RowIndex].FindControl("txtEstado") as TextBox).Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@id", Convert.ToInt32(gvPhoneBook.DataKeys[e.RowIndex].Value.ToString()));
                     sqlCmd.ExecuteNonQuery();
-                    Gvambualncias.EditIndex = -1;
+                    gvPhoneBook.EditIndex = -1;
                     PopulateGridview();
-                    lblSussessMensage.Text = "selected record added";
-                    lblErrorMensage.Text = "";
-
+                    lblSuccessMessage.Text = "Selected Record Updated";
+                    lblErrorMessage.Text = "";
                 }
-
             }
-
-
             catch (Exception ex)
             {
-
-                lblSussessMensage.Text = "";
-                lblErrorMensage.Text = ex.Message;
-
+                lblSuccessMessage.Text = "";
+                lblErrorMessage.Text = ex.Message;
             }
         }
 
-        protected void Gvambualncias_RowEditing1(object sender, GridViewEditEventArgs e)
+        protected void gvPhoneBook_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
-            Gvambualncias.EditIndex = e.NewEditIndex;
-            PopulateGridview();
+            try
+            {
+                using (SqlConnection sqlCon = new SqlConnection(connnectionstring))
+                {
+                    sqlCon.Open();
+                    string query = "DELETE FROM Ambulancia WHERE IdAmbulancia = @id";
+                    SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                    sqlCmd.Parameters.AddWithValue("@id", Convert.ToInt32(gvPhoneBook.DataKeys[e.RowIndex].Value.ToString()));
+                    sqlCmd.ExecuteNonQuery();
+                    PopulateGridview();
+                    lblSuccessMessage.Text = "Selected Record Deleted";
+                    lblErrorMessage.Text = "";
+                }
+            }
+            catch (Exception ex)
+            {
+                lblSuccessMessage.Text = "";
+                lblErrorMessage.Text = ex.Message;
+            }
         }
     }
 }

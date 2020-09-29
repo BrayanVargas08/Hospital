@@ -14,7 +14,7 @@ namespace WebHospital.Codigo.Entidad
         public String Motivo { get; set; }
         public String Descripcion { get; set; }
         public String Observaciones { get; set; }
-        public int Idpaciente { get; set; }
+        public int IdPaciente { get; set; }
         public int IdUrgencia { get; set; }
 
 

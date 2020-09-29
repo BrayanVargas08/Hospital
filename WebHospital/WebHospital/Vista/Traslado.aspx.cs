@@ -43,12 +43,14 @@ namespace WebHospital.Vista
             int idHos = int.Parse(cmbHospitalizacion.SelectedValue.ToString());
 
 
-
-
-
-
             clTraslado objTraslado = new clTraslado();
             int resultSql = objTraslado.mtdRegistrar(objETraslado);
+
+            Response.Write("<script>alert('Traslado Registrado');</script>");
+
+            this.txtFechaHTraslado.Text = "";
+            this.TxtDescripcion.Text = "";
+            this.TxtDestino.Text = "";
         }
     }
 }

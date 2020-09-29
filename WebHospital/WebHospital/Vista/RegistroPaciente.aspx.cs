@@ -33,9 +33,28 @@ namespace WebHospital.Vista
 
             clPaciente objPaciente = new clPaciente();
             int resultsql = objPaciente.mtdRegistrar(objEPaciente);
+            //if (!IsPostBack) { 
+            //    btnRegistrar.Attributes.Add("onclick", "return confirm('are you sure');"); }
+            Response.Write("<script>alert('Paciente Registrado');</script>");
+            //if (!IsPostBack) { 
+            //    btnRegistrar.Attributes.Add("onclick", "return swal('are you sure?');"); }
+
+            this.txtNombre.Text = "";
+            this.txtApellido.Text = "";
+            this.txtDocumento.Text = "";
+            this.txtUsuario.Text = "";
+            this.txtDireccion.Text = "";
+            this.txtTelefono.Text = "";
+            this.txtFecha.Text = "";
+            this.txtContraseña.Text = "";
+            this.RadioButtonGenero.SelectedValue = "";
+            
+
+
 
 
         }
+      
         protected void Page_Init(object sender, EventArgs e)
         {
             List<clEntidadEps> listaEps = new List<clEntidadEps>();

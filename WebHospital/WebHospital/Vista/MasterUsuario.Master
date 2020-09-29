@@ -129,64 +129,126 @@
                                         </div>
                                     </div>
                                 </div>
-                               <div class="hdr-center-menu">
-                <div class="hdr layer-stretch">
-                    <div class="row align-items-center justify-content-end">
-                        <!-- Start Menu Section -->
-                        <ul class="col menu text-left">
-                            <li>
-                                <a id="menu-home" class="mdl-button mdl-js-button mdl-js-ripple-effect">Home <i class="fa fa-chevron-down"></i></a>
-                                <ul class="menu-dropdown">
-                                    <li><a href="index.aspx">Home</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-megamenu-li">
-                                <a id="menu-pages" class="mdl-button mdl-js-button mdl-js-ripple-effect">Citas Medicas <i class="fa fa-chevron-down"></i></a>
-                                <ul class="menu-megamenu">
-                                    <li class="row">
-                                        <div class="col-lg-3">
-                                            <ul>
-                                                <li><a href="Template/CITAS.aspx">Citas Medicas</a></li>
+                                <div class="hdr-center-menu">
+                                    <div class="hdr layer-stretch">
+                                        <div class="row align-items-center justify-content-end">
+                                            <!-- Start Menu Section -->
+                                            <ul class="col menu text-left">
+                                                <li>
+                                                    <a id="menu-home" class="mdl-button mdl-js-button mdl-js-ripple-effect">Home <i class="fa fa-chevron-down"></i></a>
+                                                    <ul class="menu-dropdown">
+                                                        <li><a href="index.aspx">Home</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-megamenu-li">
+                                                    <a id="menu-pages" class="mdl-button mdl-js-button mdl-js-ripple-effect">Citas Medicas <i class="fa fa-chevron-down"></i></a>
+                                                    <ul class="menu-megamenu">
+                                                        <li class="row">
+                                                            <div class="col-lg-3">
+                                                                <ul>
+                                                                    <li><a href="Template/CITAS.aspx">Citas Medicas</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-megamenu-li">
+                                                    <a id="menu-Faq" class="mdl-button mdl-js-button mdl-js-ripple-effect">Pregunta Frecuentes <i class="fa fa-chevron-down"></i></a>
+                                                    <ul class="menu-megamenu">
+                                                        <li class="row">
+                                                            <div class="col-lg-3">
+                                                                <ul>
+                                                                    <li><a href="FAQ.aspx">Citas Medicas</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+
+                                                <li></li>
+
+                                                <li></li>
+                                                <li class="mobile-menu-close"><i class="fa fa-times"></i></li>
                                             </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-megamenu-li">
-                                <a id="menu-Faq" class="mdl-button mdl-js-button mdl-js-ripple-effect">Pregunta Frecuentes <i class="fa fa-chevron-down"></i></a>
-                                <ul class="menu-megamenu">
-                                    <li class="row">
-                                        <div class="col-lg-3">
-                                            <ul>
-                                                <li><a href="FAQ.aspx">Citas Medicas</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-
-
-                            <li></li>
-
-                            <li></li>
-                            <li class="mobile-menu-close"><i class="fa fa-times"></i></li>
-                        </ul>
-                        <!-- End Menu Section -->
-                        <div class="col col-md-auto d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                                            <!-- End Menu Section -->
+                                            <%-- <div class="col col-md-auto d-none d-sm-block d-md-block d-lg-block d-xl-block">
                             <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect hdr-apointment"><i class="fa fa-calendar m-0 color-white"></i>Haga su Cita</button>
-                        </div>
-                        <div class="col-2 col-md-auto col-lg-auto">
-                            <div class="mdl-button mdl-js-button mdl-button--fab hdr-search">
-                                <i class="fa fa-search fa-2x color-white"></i>
-                            </div>
-                        </div>
-                        <div id="menu-bar" class="col-2 col-md-auto"><a><i class="fa fa-bars color-white"></i></a></div>
-                    </div>
-                    <div class="search-banner animated fadeInUp">
-                        <input type="text" placeholder="Busca Tu Consulta">
-                    </div>
-                </div>
-            </div>
+                        </div>--%>
+                                            <div>
+                                                <div class="col-md-auto pl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                                                    <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect hdr-apointment" data-toggle="modal" data-target="#appointment">
+                                                        <i class="fa fa-calendar m-0 color-white"></i>AGENDAR CITA</button>
+                                                </div>
+
+
+                                            </div>
+                                            <div id="appointment" class="modal fade" role="dialog">
+                                                <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header text-center">
+                                                            <h5 class="modal-title">AGENDE AQUI SU CITA </h5>
+                                                            <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
+                                                        </div>
+                                                        <div class="modal-body">
+
+                                                            <div class="col-md-6">
+                                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                                                    <i class="fa fa-user-o"></i>
+                                                                    <asp:TextBox ID="TxtDocumento" runat="server" class="mdl-textfield__input" pattern="[0-9 ]*"></asp:TextBox>
+                                                                    <label class="mdl-textfield__label" for="appointment-name">Documento</label>
+                                                                    <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="col-md-6">
+                                                                <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
+                                                                    <i class="fa fa-hospital-o"></i>
+                                                                    <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
+                                                                    <label class="mdl-selectfield__label" for="appointment-department">Selecione Especialidad</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
+                                                                    <i class="fa fa-user-md"></i>
+                                                                    <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
+                                                                    <select class="mdl-selectfield__select" id="appointment-doctor">
+                                                                    </select>
+                                                                    <label class="mdl-selectfield__label" for="appointment-doctor">Seleccione Un Especialista</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                                                <i class="fa fa-user-o"></i>
+                                                                <asp:TextBox ID="txtF" TextMode="DateTime" class="mdl-textfield__input" onfocus="(this.type='date')" runat="server"></asp:TextBox>
+                                                                <%--<asp:TextBox ID="txtfechaCita" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')"></asp:TextBox>--%>
+                                                                <label class="mdl-textfield__label" for="appointment-name">Fecha de Cita</label>
+                                                                <span class="mdl-textfield__error">Porfavor verifique su fecha de Cita!</span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="text-center pt-4">
+
+                                                            <asp:Button ID="btnRegistrarCita" runat="server" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text="AGENDAR CITA" />
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2 col-md-auto col-lg-auto">
+                                                <div class="mdl-button mdl-js-button mdl-button--fab hdr-search">
+                                                    <i class="fa fa-search fa-2x color-white"></i>
+                                                </div>
+                                            </div>
+                                            <div id="menu-bar" class="col-2 col-md-auto"><a><i class="fa fa-bars color-white"></i></a></div>
+                                        </div>
+                                        <div class="search-banner animated fadeInUp">
+                                            <input type="text" placeholder="Busca Tu Consulta">
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                     <!-- End Main Header Section -->

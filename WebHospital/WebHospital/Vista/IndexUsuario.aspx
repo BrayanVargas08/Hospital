@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <!-- cuerpo de la pagina-->
-    <form runat="server">
     <div id="slider" class="slider-height">
         <div class="flexslider slider-wrapper">
             <ul class="slides">
@@ -408,5 +407,4 @@ Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás persona
         <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="appointment-now">Make An Appointment</div>
     </div>
     <!-- End Fixed Appointment Button at Bottom -->
-    </form>
 </asp:Content>

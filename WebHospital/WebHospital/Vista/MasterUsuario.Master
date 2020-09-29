@@ -36,6 +36,9 @@
 </head>
 <body>
     <!-- Start Header -->
+    <form runat="server">
+
+    
     <header id="header">
         <!-- Start Header Top Section -->
         <div id="hdr-top-wrapper">
@@ -401,6 +404,7 @@
     <script src="template/js/smoothscroll.min.js"></script>
     <!--Custom JavaScript for Klinik Template-->
     <script src="template/js/custom.js"></script>
+        </form>
 </body>
 
 

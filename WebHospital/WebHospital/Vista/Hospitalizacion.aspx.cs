@@ -33,7 +33,7 @@ namespace WebHospital.Vista
             objEHospitalizacion.Motivo = TxtMotivo.Text;
             objEHospitalizacion.Descripcion = TxtDescripcion.Text;
             objEHospitalizacion.Observaciones = TxtObservaciones.Text;
-            objEHospitalizacion.IdPaciente = int.Parse(TxtPaciente.Text);
+            objEHospitalizacion.Documento = TxtPaciente.Text;
             objEHospitalizacion.IdUrgencia = int.Parse(txturgencia.Text);
 
             clHospitalizacion objHospitalizacion = new clHospitalizacion();
@@ -45,11 +45,13 @@ namespace WebHospital.Vista
             this.txtFechaHSalida.Text = "";
             this.TxtMotivo.Text = "";
             this.TxtObservaciones.Text = "";
+            this.TxtDescripcion.Text = "";
+            this.TxtPaciente.Text = "";
         }
 
         protected void GridView1_SelectedIndexChanged1(object sender, EventArgs e)
         {
-            TxtPaciente.Text = GridView1.SelectedRow.Cells[9].Text;
+            TxtPaciente.Text = GridView1.SelectedRow.Cells[8].Text;
             txturgencia.Text = GridView1.SelectedRow.Cells[1].Text;
         }
     }

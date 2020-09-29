@@ -25,23 +25,7 @@ namespace WebHospital.Vista
             cmdtriage.DataTextField = "Tipo";
             cmdtriage.DataValueField = "IdTriage";
             cmdtriage.DataBind();
-            //
-           // List<clEntidadPaciente> ListaEPaciente = new List<clEntidadPaciente>();
-            //clPaciente objPaciente = new clPaciente();
-            //ListaEPaciente = objPaciente.mtdListar();
-            //cmbpaciente.DataSource = ListaEPaciente;
-            //cmbpaciente.DataTextField = "Nombre";
-            //cmbpaciente.DataValueField = "IdPaciente";
-            //cmbpaciente.DataBind();
-            //
-            //List<clEntidadMedico> ListaEMedico = new List<clEntidadMedico>();
-            //clMedico objMedico = new clMedico();
-            //int id = 0;
-            //ListaEMedico = objMedico.mtdListar(id);
-            //cmbMedico.DataSource = ListaEMedico;
-            //cmbMedico.DataTextField = "Nombre";
-            //cmbMedico.DataValueField = "IdMedico";
-            //cmbMedico.DataBind();
+  ;
 
 
         }
@@ -83,7 +67,7 @@ namespace WebHospital.Vista
             objEUrgencias.Motivo = Textmotivo.Text;
             objEUrgencias.Descripcion = Textdescripcion.Text;
             objEUrgencias.IdTriage = int.Parse(cmdtriage.SelectedValue.ToString());
-            objEUrgencias.IdPaciente = int.Parse(TxtPaciente.Text);
+            objEUrgencias.Documento = TxtPaciente.Text;
             objEUrgencias.IdMedico = int.Parse(dropEspecialista.SelectedValue.ToString());
             int idTri = int.Parse(cmdtriage.SelectedValue.ToString());
             int idMe = int.Parse(dropEspecialista.SelectedValue.ToString());
@@ -98,6 +82,7 @@ namespace WebHospital.Vista
             this.txtfechasalida.Text = "";
             this.Textmotivo.Text = "";
             this.Textdescripcion.Text = "";
+            this.TxtPaciente.Text = "";
 
 
         }
@@ -135,7 +120,7 @@ namespace WebHospital.Vista
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TxtPaciente.Text = GridView1.SelectedRow.Cells[0].Text;
+            TxtPaciente.Text = GridView1.SelectedRow.Cells[3].Text;
         }
     }
 }

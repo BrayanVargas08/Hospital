@@ -6,7 +6,7 @@ using System.Web;
 
 namespace WebHospital.Codigo.Entidad
 {
-    public class clEntidadHopitalizacion
+    public class clEntidadHopitalizacion : clEntidadPaciente
     {
         public int IdHospitalizacion { get; set; }
         public DateTime FechaHIngreso { get; set; }

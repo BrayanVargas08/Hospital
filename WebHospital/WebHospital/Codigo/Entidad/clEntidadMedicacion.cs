@@ -8,7 +8,7 @@ namespace WebHospital.Codigo.Entidad
     public class clEntidadMedicacion
     {
         public int IdMedicacion { get; set; }
-        public DateTime HoraMedicacion { get; set; }
+        public string HoraMedicacion { get; set; }
         public string Cantidad { get; set; }
         public string MetodoAplicacion { get; set; }
         public int IdProcesoGeneral { get; set; }

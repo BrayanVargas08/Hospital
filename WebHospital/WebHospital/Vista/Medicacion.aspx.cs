@@ -13,5 +13,10 @@ namespace WebHospital.Vista
         {
 
         }
+
+        protected void btnRegistroMedicacion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace WebHospital.Codigo
             {
                 clEntidadMedicacion objMedicacion = new clEntidadMedicacion();
                 objMedicacion.IdMedicacion = int.Parse(tblMedicacion.Rows[i][0].ToString());
-                objMedicacion.HoraMedicacion = DateTime.Parse(tblMedicacion.Rows[i][1].ToString());
+                objMedicacion.HoraMedicacion = tblMedicacion.Rows[i][1].ToString();
                 objMedicacion.Cantidad = tblMedicacion.Rows[i][2].ToString();
                 objMedicacion.MetodoAplicacion = tblMedicacion.Rows[i][3].ToString();
                 objMedicacion.IdProcesoGeneral = int.Parse(tblMedicacion.Rows[i][4].ToString());

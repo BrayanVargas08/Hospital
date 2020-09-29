@@ -47,6 +47,7 @@ namespace WebHospital.Vista
             this.TxtObservaciones.Text = "";
             this.TxtDescripcion.Text = "";
             this.TxtPaciente.Text = "";
+            this.txturgencia.Text = "";
         }
 
         protected void GridView1_SelectedIndexChanged1(object sender, EventArgs e)

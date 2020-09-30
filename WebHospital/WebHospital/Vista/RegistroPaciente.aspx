@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-    <form id="formPaciente" runat="server">
         <div class="page-ttl">
             <div class="layer-stretch">
                 <div class="page-ttl-container">
@@ -310,5 +309,4 @@ O usando
                 </div>
             </div>
         </div>
-    </form>
 </asp:Content>

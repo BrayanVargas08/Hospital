@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <html>
     <body>
-        <form id="form1" runat="server">
             <div class="page-ttl">
                 <div class="layer-stretch">
                     <div class="page-ttl-container">
@@ -97,7 +96,6 @@
             <asp:Label ID="lblErrorMessage" Text="" runat="server" ForeColor="Red" />
 
                 </div>
-        </form>
     </body>
     </html>
 

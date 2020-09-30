@@ -1,8 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterMedico.Master" AutoEventWireup="true" CodeBehind="RegistroMedico.aspx.cs" Inherits="WebHospital.Vista.RegistroMedico" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterAdministrador.Master" AutoEventWireup="true" CodeBehind="RegistroMedico.aspx.cs" Inherits="WebHospital.Vista.RegistroMedico" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Start Page Title Section -->
-    <form runat="server">
         <div class="page-ttl">
             <div class="layer-stretch">
                 <div class="page-ttl-container">
@@ -278,5 +276,4 @@ O usando
                 </div>
             </div>
         </div>
-    </form>
 </asp:Content>

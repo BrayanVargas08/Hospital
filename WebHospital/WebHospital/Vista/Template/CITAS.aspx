@@ -99,7 +99,7 @@
 
                         <asp:Button ID="btnRegistrarCita" runat="server" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text="AGENDAR CITA" />
 
-
+                        Response.write("CITA REGISTRADA  CORRECTAMENTE")
                     </div>
                 </div>
             </div>

@@ -53,6 +53,8 @@ namespace WebHospital.Vista.Template
             objECita.IdEspecialidad = int.Parse(dropEspecialidad.SelectedValue.ToString());
             clCita objCita = new clCita();
             int result = objCita.mtdRegistrarCita(objECita);
+            Response.Write("<script>alert('Cita Registrada');</script>");
+
 
         }
     }

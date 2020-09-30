@@ -58,9 +58,9 @@ namespace WebHospital.Vista
             this.txtValoracion.Text = "";
         }
 
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void GridView1_SelectedIndexChanged1(object sender, EventArgs e)
         {
-            txtPaciente.Text = GridView1.SelectedRow.Cells[7].Text;
+            txtPaciente.Text = GridView1.SelectedRow.Cells[3].Text;
         }
     }
 }

@@ -16,11 +16,7 @@ namespace WebHospital.Vista
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            List<clEntidadPersonalAdministrativo> listaRol = new List<clEntidadPersonalAdministrativo>();
-            listaRol = objPersonalAdmin.mtdListaRol();
-            rblAdministrativos.DataSource = listaRol;
-            rblAdministrativos.DataTextField = "Rol";
-            rblAdministrativos.DataValueField = "IdRol";
+            
 
         }
 

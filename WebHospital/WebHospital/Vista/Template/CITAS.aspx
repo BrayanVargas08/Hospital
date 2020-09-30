@@ -36,32 +36,10 @@
 <body>
     <div class="layer-stretch hdr-center">
         <div class="row align-items-center">
-            <div class="col-2">
-                <div class="hdr-center-logo">
-                    <a href="index.html" class="d-inline-block">
-                        <img src="images/logo.png" alt=""></a>
-                </div>
-            </div>
+
             <div class="col-10">
                 <div class="hdr-center-submenu row pull-right">
-                    <div class="col-md-auto mr-3 d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                        <div class="tbl-cell">
-                            <i class="fa fa-envelope-o"></i>
-                        </div>
-                        <div class="tbl-cell text-left p-0">
-                            <p class="font-12 m-0 text-muted">Have a query?</p>
-                            <p class="font-14 m-0">support@pepdev.com</p>
-                        </div>
-                    </div>
-                    <div class="col-md-auto d-none d-sm-none d-md-block d-lg-block d-xl-block">
-                        <div class="tbl-cell">
-                            <i class="fa fa-mobile font-28"></i>
-                        </div>
-                        <div class="tbl-cell text-left p-0">
-                            <p class="font-12 m-0 text-muted">Want to Clarify?</p>
-                            <p class="font-14 m-0">1800 000 000</p>
-                        </div>
-                    </div>
+
                     <div class="col-md-auto pl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block">
 
                         <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect hdr-apointment"><i class="fa fa-calendar m-0 color-white"></i>AGENDAR CITA</button>
@@ -73,7 +51,7 @@
     <form id="form1" runat="server">
 
         <div id="appointment" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-body">
                 <div class="modal-content">
                     <div class="modal-header text-center">
                         <h5 class="modal-title">AGENDE AQUI SU CITA </h5>

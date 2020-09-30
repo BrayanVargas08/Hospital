@@ -38,7 +38,6 @@ namespace WebHospital.Vista
 
                 if (ListaAdmin.Count > 0)
                 {
-                    Session["usuario"] = ListaAdmin[0].Nombre + " " + ListaAdmin[0].Apellido;
 
                     Session["rol"] = ListaAdmin[0].Rol;
                     if (Session["rol"].ToString() == "Administrador")
@@ -70,7 +69,6 @@ namespace WebHospital.Vista
                 if (ListaPaciente.Count > 0)
                 {
                     Session["usuario"] = ListaPaciente[0].Nombre + " " + ListaPaciente[0].Apellido;
-                    Response.Write("<script>alert('Error... Usuario no encontrado" + Session["usuario"] + "');</script>");
                     Response.Redirect("IndexUsuarios.aspx");
                     
                 }

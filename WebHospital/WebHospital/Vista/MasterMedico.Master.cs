@@ -24,5 +24,11 @@ namespace WebHospital.Vista
             Session.Abandon();
             Response.Redirect("index.aspx");
         }
+
+        protected void lkbCerrar_Click1(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("index.aspx");
+        }
     }
 }

@@ -41,9 +41,9 @@ namespace WebHospital.Vista
                     Session["usuario"] = ListaAdmin[0].Nombre + " " + ListaAdmin[0].Apellido;
 
                     Session["rol"] = ListaAdmin[0].Rol;
-                    if (Session["rol"].ToString() == "Admin")
+                    if (Session["rol"].ToString() == "Administrador")
                     {
-                        Response.Write("<script>alert('Admin" + Session["usuario"] + "');</script>");
+                        Session["usuario"] = ListaAdmin[0].Nombre + " " + ListaAdmin[0].Apellido; 
                         Response.Redirect("indexadministrador.aspx");
                         
                     }

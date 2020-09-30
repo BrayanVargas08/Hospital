@@ -22,9 +22,9 @@ namespace WebHospital.Codigo
             tblDatos = objSQL.mtdDesconectado(cosulta);
             List<clEntidadPersonalAdministrativo> DatosEncontradosAdmin = new List<clEntidadPersonalAdministrativo>();
 
-                objEPersonalAdmin.Nombre = tblDatos.Rows[0][1].ToString();
-                objEPersonalAdmin.Apellido = tblDatos.Rows[0][2].ToString();
-                objEPersonalAdmin.Rol = tblDatos.Rows[0][3].ToString();
+                objEPersonalAdmin.Nombre = tblDatos.Rows[0][0].ToString();
+                objEPersonalAdmin.Apellido = tblDatos.Rows[0][1].ToString();
+                objEPersonalAdmin.Rol = tblDatos.Rows[0][2].ToString();
                 DatosEncontradosAdmin.Add(objEPersonalAdmin);
 
            

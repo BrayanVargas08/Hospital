@@ -93,7 +93,7 @@
     <Content Include="Vista\ProcesoGeneral.aspx" />
     <Content Include="Vista\PruebaCita.aspx" />
     <Content Include="Vista\RegistroMedico.aspx" />
-    <Content Include="Vista\RegistroPaciente.aspx" />
+    <Content Include="Vista\RegistroPacientes.aspx" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-blue.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-green.css" />
     <Content Include="Vista\Source\Multiple Color Stylesheet\style-orange.css" />
@@ -542,12 +542,12 @@
     <Compile Include="Vista\RegistroMedico.aspx.designer.cs">
       <DependentUpon>RegistroMedico.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\RegistroPaciente.aspx.cs">
-      <DependentUpon>RegistroPaciente.aspx</DependentUpon>
+    <Compile Include="Vista\RegistroPacientes.aspx.cs">
+      <DependentUpon>RegistroPacientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\RegistroPaciente.aspx.designer.cs">
-      <DependentUpon>RegistroPaciente.aspx</DependentUpon>
+    <Compile Include="Vista\RegistroPacientes.aspx.designer.cs">
+      <DependentUpon>RegistroPacientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\Template\CITAS.aspx.cs">
       <DependentUpon>CITAS.aspx</DependentUpon>

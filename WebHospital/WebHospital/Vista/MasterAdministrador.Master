@@ -43,14 +43,24 @@
                         <div class="col-md-6 text-left hidden-xs">
                             <div class="hdr-top-block">
                                 <div id="hdr-social">
-                                    <ul class="social-list social-list-sm">
-                                        <li><a class="width-auto font-13">Follow Us : </a></li>
-                                        <li><a href="#" target="_blank" id="hdr-facebook"><i class="fa fa-facebook"></i></a><span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-facebook">Facebook</span></li>
-                                        <li><a href="#" target="_blank" id="hdr-twitter"><i class="fa fa-twitter"></i></a><span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-twitter">Twitter</span></li>
-                                        <li><a href="#" target="_blank" id="hdr-google"><i class="fa fa-google"></i></a><span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-google">Google</span></li>
-                                        <li><a href="#" target="_blank" id="hdr-instagram"><i class="fa fa-instagram"></i></a><span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-instagram">Instagram</span></li>
-                                        <li><a href="#" target="_blank" id="hdr-youtube"><i class="fa fa-youtube"></i></a><span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-youtube">Youtube</span></li>
+                                    <ul> 
+                                        <li>
+                                    <a href="https://www.facebook.com/redsaludcasanare/?ti=as" id="hdr-facebook" class="fa fa-facebook rounded"></a>
+                                    <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-facebook">Facebook</span>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/RCasanare?s=09" id="hdr-twitter" class="fa fa-twitter rounded"></a>
+                                    <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-twitter">Twitter</span>
+                                </li>
 
+                                <li>
+                                    <a href="https://instagram.com/redsaludcasanare?igshid=1xhsbdq9im04k" id="hdr-instagram" class="fa fa-instagram rounded"></a>
+                                    <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-instagram">Instagram</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCfYY9Fkt0ZZg62sVHS3B0ig" id="hdr-youtube" class="fa fa-youtube rounded"></a>
+                                    <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-youtube">Youtube</span>
+                                </li>
                                     </ul>
                                 </div>
                             </div>
@@ -84,18 +94,7 @@
                         <div class="tbl-cell hdr-menu">
                             <!-- Start Menu Section -->
                             <ul class="menu">
-                                <li>
-                                    <a id="menu-home" class="mdl-button mdl-js-button mdl-js-ripple-effect">Home <i class="fa fa-chevron-down"></i></a>
-                                    <ul class="menu-dropdown">
-                                        <li><a href="indexadministrador.aspx">Home</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a id="menu-citas" class="mdl-button mdl-js-button mdl-js-ripple-effect">Citas<i class="fa fa-chevron-down"></i></a>
-                                    <ul class="menu-dropdown">
-                                        <li><a href="Template/CITAS.aspx">Citas Medicas</a></li>
-                                    </ul>
-                                </li>
+                        
                                 <li>
                                     <a id="menu-urgencias" class="mdl-button mdl-js-button mdl-js-ripple-effect">Urgencias<i class="fa fa-chevron-down"></i></a>
                                     <ul class="menu-dropdown">
@@ -121,15 +120,9 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a id="menu-medico" class="mdl-button mdl-js-button mdl-js-ripple-effect">Medico<i class="fa fa-chevron-down"></i></a>
+                                    <a id="menu-home" class="mdl-button mdl-js-button mdl-js-ripple-effect">Medico <i class="fa fa-chevron-down"></i></a>
                                     <ul class="menu-dropdown">
                                         <li><a href="RegistroMedico.aspx">Registro Medico</a></li>
-                                    </ul>
-                                </li>
-                                 <li>
-                                    <a id="menu-paciente" class="mdl-button mdl-js-button mdl-js-ripple-effect">Paciente<i class="fa fa-chevron-down"></i></a>
-                                    <ul class="menu-dropdown">
-                                        <li><a href="RegistroPaciente.aspx">Registro Paciente</a></li>
                                     </ul>
                                 </li>
                                 <li>

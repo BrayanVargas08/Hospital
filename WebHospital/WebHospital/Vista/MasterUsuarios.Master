@@ -42,11 +42,10 @@
                 <div class="layer-stretch hdr -top">
                     <div class="row">
                         <div class="col-md-6 text-left hidden-xs">
-                            <div class="hdr-top-block">
-                                <div id="hdr-social">
-                                    <ul class="social-list social-list-sm">
-                                         <ul> 
-                                        <li>
+                        <div class="hdr-top-block">
+                            <div id="hdr-social">
+                                 <ul class="social-list social-list-bordered">
+                                <li>
                                     <a href="https://www.facebook.com/redsaludcasanare/?ti=as" id="hdr-facebook" class="fa fa-facebook rounded"></a>
                                     <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-facebook">Facebook</span>
                                 </li>
@@ -63,14 +62,11 @@
                                     <a href="https://www.youtube.com/channel/UCfYY9Fkt0ZZg62sVHS3B0ig" id="hdr-youtube" class="fa fa-youtube rounded"></a>
                                     <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-youtube">Youtube</span>
                                 </li>
-                                    </ul>
-                                    </ul>
-                                </div>
-
-
-
+                            </ul>
                             </div>
+
                         </div>
+                    </div>
                         <div class="col-md-6 text-right">
                             <div class="hdr-top-block">
                                 <div class="d-none d-sm-block d-md-block d-lg-block d-xl-block">

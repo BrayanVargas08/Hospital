@@ -11,11 +11,17 @@ namespace WebHospital.Codigo
     {
         public int mtdRegistrar(clEntidadHopitalizacion objHospitalizacion)
         {
+            //Aca vamos a tomar el id del paciente
+            clAdminSQL objSQL = new clAdminSQL();
+            string TomarId = "SELECT IdPaciente from Paciente Where Documento='" + objHospitalizacion.Documento + "'";
+            DataTable tblpaciente = new DataTable();
+            tblpaciente = objSQL.mtdDesconectado(TomarId);
+            int IdPaciente = int.Parse(tblpaciente.Rows[0][0].ToString());
+
 
             string sqlInsert = "INSERT INTO Hospitalizacion(FechaHIngreso,FechaHSalida,Motivo,Descripcion,Observaciones,IdPaciente,IdUrgencia)" +
-               "values('" + objHospitalizacion.FechaHIngreso + "','" + objHospitalizacion.FechaHSalida + "','" + objHospitalizacion.Motivo + "','" + objHospitalizacion.Descripcion + "','" + objHospitalizacion.Observaciones + "','" + objHospitalizacion.IdPaciente + "','" + objHospitalizacion.IdUrgencia + "')";
+               "values('" + objHospitalizacion.FechaHIngreso + "','" + objHospitalizacion.FechaHSalida + "','" + objHospitalizacion.Motivo + "','" + objHospitalizacion.Descripcion + "','" + objHospitalizacion.Observaciones + "','" + IdPaciente + "','" + objHospitalizacion.IdUrgencia + "')";
 
-            clAdminSQL objSQL = new clAdminSQL();
             int result = objSQL.mtdConectado(sqlInsert);
             return result;
 

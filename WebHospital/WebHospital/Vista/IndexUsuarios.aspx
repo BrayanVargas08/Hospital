@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterUsuarios.Master" AutoEventWireup="true" CodeBehind="IndexUsuarios.aspx.cs" Inherits="WebHospital.Vista.IndexUsuarios" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <<<<<<< Updated upstream
     <%--<form runat="server">--%>
     <!-- cuerpo de la pagina-->
     <div id="slider" class="slider-height">
@@ -37,434 +38,138 @@
                     </div>--%>
                 </li>
             </ul>
+=======
+>>>>>>> Stashed changes
 
-        </div>
-    </div>
-    <!-- End Slider Section -->
-    <!-- Start Service Section -->
-    <div id="hm-service" class="layer-stretch">
-        <div class="layer-wrapper">
-            <div class="layer-ttl">
-                <h3>QUE HACEMOS?</h3>
-            </div>
-            <div class="layer-container row">
-                <div class="hm-service-left col-md-5">
-                    <img src="Template/images/hospital3.jpg" alt="Klinical Health care">
-                </div>
-                <div class="hm-service-right col-md-7">
-                    <p class="paragraph-medium paragraph-black">
-                        La labor del Hospital de la Paz de ariporo desde su creación ha sido el desarrollo de la medicina en la ciudad, formando más de tres mil médicos y más de 600 especialistas altamente calificados, prestando una atención integral en servicios de salud a nuestros pacientes.
-Nuestro compromiso es con la comunidad y con el país, por ello el ser Universitarios es el mejor testimonio que nuestra labor de investigación y actualización médica es permanente, siendo generadores del saber científico, obteniendo reconocimientos a nivel nacional por distintas Asociaciones Médicas y Sociedades Científicas, gracias a los diferentes trabajos desarrollados por los residentes e instructores del Hospital, quienes de la mano del capital administrativo calificado trabajan arduamente para que usted y los suyos reciban un servicio con calidad y calidez, sintiendo siempre que trabajamos unidos por su bienestar.
-                    </p>
-                    <div class="hm-service">
-                        <div class="hm-service-block">
-                            <i class="fa fa-stethoscope"></i>
-                            <span>Centro Cardiovascular</span>
-                        </div>
-                        <div class="hm-service-block">
-                            <i class="fa fa-child"></i>
-                            <span>Centro de Parto</span>
-                        </div>
-                        <div class="hm-service-block">
-                            <i class="fa fa-certificate"></i>
-                            <span>Mamografia</span>
-                        </div>
-                        <div class="hm-service-block">
-                            <i class="fa fa-h-square"></i>
-                            <span>Dermatologia</span>
-                        </div>
-                        <div class="hm-service-block">
-                            <i class="fa fa-stethoscope"></i>
-                            <span>Paediatria</span>
-                        </div>
-                        <div class="hm-service-block">
-                            <i class="fa fa-bullhorn"></i>
-                            <span>Centro de Radiografia</span>
-                        </div>
+    <%--Formulario Citas--%>
+    <div class="auto-style1">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="theme-material-card text-center">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title">AGENDE AQUI SU CITA </h5>
                     </div>
-                    <div class="hm-service-view text-center">
-                        <a class="button-icon">
-                            <span>Ver todos los servicios</span>
-                            <i class="fa fa-eye"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Service Section -->
-    <!-- Start About Section -->
-    <div id="hm-about" class="colored-background">
-        <div class="layer-stretch">
-            <div class="layer-wrapper">
-                <div class="layer-ttl layer-ttl-white">
-                    <h3>Quienes SOMOS</h3>
-                </div>
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="hm-about-block">
-                            <div class="tbl-cell hm-about-icon"><i class="fa fa-user-md"></i></div>
-                            <div class="tbl-cell hm-about-number">
-                                <span class="counter">10</span>
-                                <p>Doctores</p>
+                    <div class="modal-body">
+
+                        <div class="col-md-9">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                <i class="fa fa-user-o"></i>
+                                <asp:TextBox ID="TxtDocumento" runat="server" class="mdl-textfield__input" pattern="[0-9 ]*"></asp:TextBox>
+                                <label class="mdl-textfield__label" for="appointment-name">Documento</label>
+                                <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
                             </div>
                         </div>
-                        <div class="hm-about-block">
-                            <div class="tbl-cell hm-about-icon"><i class="fa fa-ambulance"></i></div>
-                            <div class="tbl-cell hm-about-number">
-                                <span class="counter">2</span>
-                                <p>Ambulancias</p>
+
+
+                        <div class="col-md-9">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
+                                <i class="fa fa-hospital-o"></i>
+                                <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
+                                <label class="mdl-selectfield__label" for="appointment-department">Selecione Especialidad</label>
                             </div>
                         </div>
-                        <div class="hm-about-block">
-                            <div class="tbl-cell hm-about-icon"><i class="fa fa-calendar"></i></div>
-                            <div class="tbl-cell hm-about-number">
-                                <span class="counter">40</span>
-                                <p>Año de experiencia (s)</p>
+                        <div class="col-md-9">
+                            <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
+                                <i class="fa fa-user-md"></i>
+                                <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
+                                <label class="mdl-selectfield__label" for="appointment-doctor">Seleccione Un Especialista</label>
                             </div>
                         </div>
-                        <div class="hm-about-block">
-                            <div class="tbl-cell hm-about-icon"><i class="fa fa-clock-o"></i></div>
-                            <div class="tbl-cell hm-about-number">
-                                <span class="counter">168</span>
-                                <p>Horario de apertura por semana</p>
+
+                        <div class="col-md-9">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                <i class="fa fa-user-o"></i>
+                                <asp:TextBox ID="txtF" class="mdl-textfield__input" onfocus="(this.type='date')" runat="server"></asp:TextBox>
+                                <%--<asp:TextBox ID="txtfechaCita" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')"></asp:TextBox>--%>
+                                <label class="mdl-textfield__label" for="appointment-name">Fecha de Cita</label>
+                                <span class="mdl-textfield__error">Porfavor verifique su fecha de Cita!</span>
                             </div>
                         </div>
-                        <div class="hm-about-paragraph">
-                            <p class="paragraph-medium paragraph-white">
-                                <span class="theme-dropcap color-white">E</span>l Hospital de paz de ariporo es una organización prestadora de servicios de salud, interesada en el desarrollo,
-motivación y compromiso de su recurso humano, que ofrece a sus pacientes un servicio de calidad y
-seguridad a través de equipo médico de alta tecnología y sobre todo calidez humana”..
-                            </p>
-                        </div>
+
                     </div>
-                    <div class="col-md-5">
-                        <img class="img-thumbnail" src="Template/images/hospital6.jpeg" alt="">
+                    <div class="text-center pt-4">
+
+                        <asp:Button ID="btnRegistrarCita" runat="server" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text="AGENDAR CITA" />
+
                     </div>
+                </div>
+            </div>
+
+            <%--Lista de Citas--%>
+
+            <div class="col-md-7">
+                <div class="theme-material-card text-center">
+
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbHospitalPazConnectionString1 %>" ProviderName="<%$ ConnectionStrings:dbHospitalPazConnectionString1.ProviderName %>"></asp:SqlDataSource>
+                    <asp:GridView ID="gvCitas" runat="server" AllowPaging="True" CssClass="auto-style2" DataSourceID="SqlDataSource1" Height="186px" Width="378px" CellPadding="4" ForeColor="#333333" GridLines="None">
+                        <AlternatingRowStyle BackColor="White" />
+                        <EditRowStyle BackColor="#7C6F57" />
+                        <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                        <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#E3EAEB" />
+                        <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
+                        <SortedAscendingCellStyle BackColor="#F8FAFA" />
+                        <SortedAscendingHeaderStyle BackColor="#246B61" />
+                        <SortedDescendingCellStyle BackColor="#D4DFE1" />
+                        <SortedDescendingHeaderStyle BackColor="#15524A" />
+                    </asp:GridView>
 
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End About Section -->
-
-    <!-- Start Feature Section -->
-    <div id="hm-feature" class="layer-stretch">
-        <div class="layer-wrapper layer-bottom-10">
-            <div class="layer-ttl">
-                <h3>Por qué elegirnos</h3>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <div class="hm-feature-block-1">
-                        <div class="theme-img theme-img-scalerotate">
-                            <img src="Template/images/hospital8.jpg" alt="">
-                        </div>
-                        <span>Departamento de emergencia</span>
-                        <p class="paragraph-small paragraph-black">departamento de emergencias ( ED ), también conocido como un accidente y de emergencia departamento ( A & E ), la sala de emergencia ( ER ), sala de urgencias ( EW ) o servicio de urgencias , es un centro de tratamiento médico especializado en medicina de emergencia , la aguda atención de los pacientes que presente sin cita previa; ya sea por sus propios medios o por la de una ambulancia . El servicio de urgencias se encuentra generalmente en el hospital, u otra atención primaria central.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="hm-feature-block-1">
-                        <div class="theme-img theme-img-scalerotate">
-                            <img src="template/images/hospital7.jpg" alt="">
-                        </div>
-                        <span>24 horas de servicio</span>
-                        <p class="paragraph-small paragraph-black">El Servicio de Urgencias 24 horas del Centro Médico red salud brinda una atención  oportuna con calidad y calidez, en la cual las acciones médico – asistenciales están caracterizadas por la prudencia, la pericia, la experiencia, la capacitación técnica.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="hm-feature-block-1">
-                        <div class="theme-img theme-img-scalerotate">
-                            <img src="template/images/tecnologias.jpg" alt="">
-                        </div>
-                        <span>Tecnologia avanzada</span>
-                        <p class="paragraph-small paragraph-black">
-                            Los hospitales son el objetivo de muchas empresas de alta tecnología y de emprendedores innovadores que aportan su talento para generar nuevas tecnologías que ayuden a médicos a realizar mejor su trabajo y a los pasientes hacer su estancia en esos lugares más confortable.
-Conoce las 10 tecnologías  más avanzadas que están innovando los procesos clínicos y quirurgicos en hospitales de todo el mundo.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="hm-feature-block-1">
-                        <div class="theme-img theme-img-scalerotate">
-                            <img src="template/images/ambulancia.jpg" alt="">
-                        </div>
-                        <span>Ambulancia</span>
-                        <p class="paragraph-small paragraph-black">
-                            Contamos con un parque de 2 ambulancias, 1 medicalizadas y 1 básicas habilitadas con la última
-resolución del ministerio.
-
-Ambulancia medicalizada Nissan Frontier 4×4 modelo 2014, habilitada con equipos de última tecnología, especial para zonas rurales de difícil acceso en la topografía de nuestra región.
-Ambulancia Volkswagen Crafter 35 modelo 2008 tipo vans, de fácil maniobrabilidad para médicos y
-paramédicos. Dotada con equipos de alta tecnologí.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="hm-feature-block-1">
-                        <div class="theme-img theme-img-scalerotate">
-                            <img src="template/images/primerosauxilios.jpg" alt="">
-                        </div>
-                        <span>Primeros auxilios</span>
-                        <p class="paragraph-small paragraph-black">
-                            En la vida, nos podemos encontrar frente a situaciones donde debemos auxiliar a otra persona. Es por esa razón que debemos tener los conocimientos básicos para realizar los primeros auxilios y ayudar a una persona en situación de accidente o enfermedad repentina, de manera de preservarle la vida y evitar así que su estado empeore.
-
-Antes que todo, debemos verificar que la persona a la que vamos a asistir esté consciente, respire y tenga pulso.
-
-Es fundamental, frente a una situación como ésta, siempre evitar el pánico, como así también no cambiar de posición a la persona hasta que se determine la naturaleza del proceso.
-
-Existen procedimientos, en caso de emergencias, que es conveniente seguir, para que la ayuda resulte realmente eficaz.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <div class="hm-feature-block-1">
-                        <div class="theme-img theme-img-scalerotate">
-                            <img src="template/images/farmacia.jpg" alt="">
-                        </div>
-                        <span>Farmacias y droguerías</span>
-                        <p class="paragraph-small paragraph-black">
-                            El servicio de farmacia se encarga de garantizar una terapia farmacológica exitosa con calidad en el cuidado y atención de los pacientes, con el mínimo riesgo.
-                            Farmacia hospitalaria: El área de preparación y dispensación de medicamentos del servicio de farmacia se encarga del suministro de medicamentos y dispositivos médicos a las diferentes unidades asistenciales
-                            Farmacia clínica:
-                            Farmacia ambulatoria:Servicios de gestión:
-Comprenden la evaluación de nuevos medicamentos, evaluación del uso de medicamentos, educación continua, información de medicamentos e investigación clínica
-La Farmacia ambulatoria presta servicio a pacientes dados de alta del Hospital Pablo Tobón Uribe y público en general.
-Se encuentra ubicada en el primer piso en el hall principal, accediendo por la puerta principal.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Feature Section -->
-    <!-- Start Doctor Section -->
-    <div class="colored-background">
-        <div class="layer-stretch">
-            <div class="layer-wrapper">
-                <div class="layer-ttl layer-ttl-white">
-                    <h3>Nuestro equipo</h3>
-                </div>
-                <div class="layer-container">
-                    <div id="hm-doctor-slider" class="owl-carousel owl-theme theme-owl-dot">
-                        <div class="hm-doctor">
-                            <img class="img-responsive" src="template/images/medico1.jpg" alt="">
-                            <h6>Dr. Daniel miguel</h6>
-                            <p>Ginecologo</p>
-                        </div>
-                        <div class="hm-doctor">
-                            <img class="img-responsive" src="template/images/medico2.jpg" alt="">
-                            <h6>Dr. Melisa silva</h6>
-                            <p>Ginecologo</p>
-                        </div>
-                        <div class="hm-doctor">
-                            <img class="img-responsive" src="template/images/medico3.jpg" alt="">
-                            <h6>Dr. Cheri Aria</h6>
-                            <p>Dermatologo</p>
-                        </div>
-                        <div class="hm-doctor">
-                            <img class="img-responsive" src="template/images/medico4.jpg" alt="">
-                            <h6>Steve gonzalez</h6>
-                            <p>Odontologia</p>
-                        </div>
-                        <div class="hm-doctor">
-                            <img class="img-responsive" src="template/images/medico5.jpg" alt="">
-                            <h6>Barbara sigua</h6>
-                            <p>Pediatra</p>
-                        </div>
-                        <div class="hm-doctor">
-                            <img class="img-responsive" src="template/images/medico6.jpg" alt="">
-                            <h6>Linda gutierez</h6>
-                            <p>Medicina general</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Doctor Section -->
-    <!-- Start Blog Section -->
-    <div id="hm-blog" class="layer-stretch">
-        <div class="layer-wrapper layer-bottom-10">
-            <div class="layer-ttl">
-                <h3>Ultimas publicaciones</h3>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="blog-list-block">
-                        <div class="blog-list-picture">
-                            <div class="theme-img theme-img-scalerotate">
-                                <img src="template/images/intoxicacion.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="blog-list-ttl">
-                            <h3><a href="#">¿Por qué ocurrió la intoxicación alimentaria y cómo? - Remedio casero</a></h3>
-                        </div>
-                        <div class="blog-list-meta">
-                            <p>Publicado por Ryan J. Brogan, DO On 07 Jul 2020</p>
-                        </div>
-                        <div class="blog-list-post">
-                            <p class="paragraph-medium paragraph-black">
-                                <span>Las intoxicaciones alimentarias están causadas por bacterias y, a veces, por virus u otros gérmenes. Pueden entrar en los alimentos que comemos y en los líquidos que bebemos. No lo podemos notar con el gusto, oler ni ver esos gérmenes (por lo menos, sin un microscopio). Pero, aunque sean diminutos, pueden tener un gran efecto en nuestro cuerpo.
-
-Cuando los gérmenes que causan intoxicaciones alimentarias entran en nuestro organismo, pueden segregar toxinas. Estas toxinas son tóxicas (de ahí el nombre "intoxicación alimentaria"), y pueden causar diarrea y vómitos.
-
-Por lo general, los médicos usan la expresión "intoxicación alimentaria" para describir una enfermedad que se desarrolla deprisa después de ingerir un alimento contaminado. La gente suele tener diarrea o empezar a vomitar a las pocas horas de haberse infectado. Lo bueno es que las intoxicaciones alimentarias también suelen remitir por sí solas en poco tiempo. La mayoría de la gente se recupera en un par de días y no tiene ningún tipo de secuela.</span>
-                                <a href="https://kidshealth.org/es/teens/food-poisoning-esp.html">(leer mas)</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="blog-list-block">
-                        <div class="blog-list-picture">
-                            <div class="theme-img theme-img-scalerotate">
-                                <img src="template/images/corona.jpeg" alt="">
-                            </div>
-                        </div>
-                        <div class="blog-list-ttl">
-                            <h3><a href="#">Todo lo que necesitas saber sobre el coronavirus en colombia, ¿es bueno o malo?</a></h3>
-                        </div>
-                        <div class="blog-list-meta">
-                            <p>Publicado por OMS On 29 Jul 2020</p>
-                        </div>
-                        <div class="blog-list-post">
-                            <p class="paragraph-medium paragraph-black">
-                                <span>Manténgase al día de la información más reciente sobre el brote de COVID-19, a la que puede acceder en el sitio web de la OMS y a través de las autoridades de salud pública pertinentes a nivel nacional y local. La mayoría de las personas que se infectan padecen una enfermedad leve y se recuperan, pero en otros casos puede ser más grave. Cuide su salud y proteja a los demás a través de las siguientes medidas:
-
-Lávese las manos frecuentemente
-Lávese las manos con frecuencia con un desinfectante de manos a base de alcohol o con agua y jabón.
-
-¿Por qué? Lavarse las manos con un desinfectante a base de alcohol o con agua y jabón mata el virus si este está en sus manos.
-
-Adopte medidas de higiene respiratoria
-Al toser o estornudar, cúbrase la boca y la nariz con el codo flexionado o con un pañuelo; tire el pañuelo inmediatamente y lávese las manos con un desinfectante de manos a base de alcohol, o con agua y jabón.
-
-¿Por qué? Al cubrir la boca y la nariz durante la tos o el estornudo se evita la propagación de gérmenes y virus. Si usted estornuda o tose cubriéndose con las manos puede contaminar los objetos o las personas a los que toque.
-
-Mantenga el distanciamiento social
-Mantenga al menos 1 metro (3 pies) de distancia entre usted y las demás personas, particularmente aquellas que tosan, estornuden y tengan fiebre.
-
-¿Por qué? Cuando alguien con una enfermedad respiratoria, como la infección por el 2019-nCoV, tose o estornuda, proyecta pequeñas gotículas que contienen el virus. Si está demasiado cerca, puede inhalar el virus.</span>
-                                <a href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public?gclid=CjwKCAjw34n5BRA9EiwA2u9k33q7IKyWiD3jYoFvUVzQUHf0C46e4MzWirRVWqO9xrXGpDAJvmI8ChoClcMQAvD_BwE">(leer mas)</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Blog Section -->
-    <!-- Start Testimonial Section -->
-    <div id="testimonial" class="colored-background">
-        <div class="layer-stretch">
-            <div class="layer-wrapper">
-                <div class="layer-ttl layer-ttl-white">
-                    <h3>Lo que dice la gente</h3>
-                </div>
-                <div class="layer-container">
-                    <div id="testimonial-slider" class="owl-carousel owl-theme theme-owl-dot">
-                        <div class="testimonial-block">
-                            <img class="img-responsive" src="Template/images/imagesssssss.jpg" />
-                            <div class="paragraph-medium paragraph-white">
-                                <i class="fa fa-quote-left"></i>
-                                Gracias por el remedio. Siento que ha estado funcionando en un nivel sutil más profundo. Un ver interior. He tenido la sensación de un derretimiento por dentro y una gran sensación de paz y rectitud. Experimenté esto antes con su percepción y tratamiento, así que muchas gracias.
-                            </div>
-                            <a>Granados Ana</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- End Testimonial Section -->
-    <!-- Start Emergency Section -->
-    <div id="emergency">
-        <div class="layer-stretch">
-            <div class="layer-wrapper">
-                <div class="layer-ttl">
-                    <h3>En emergencia</h3>
-                </div>
-                <div class="layer-container">
-                    <div class="paragraph-medium paragraph-black">
-                        Número de emergencia puedes llamar las 24 horas a cualquier hora los 7 dias de la semana.
-
-                    </div>
-                    <div class="emergency-number">: 57 098 6373537</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Emergency Section -->
 
 
 
-    <!-- Fixed Appointment Button at Bottom -->
-    <div id="appointment-button" class="animated fadeInUp">
-        <button id="appointment-now" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--raised"><i class="fa fa-plus"></i></button>
-        <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="appointment-now">Agende su Cita</div>
-    </div>
-    <!-- End Fixed Appointment Button at Bottom -->
-
-    <!-- Start Make an Appointment Modal -->
-
-    <div id="appointment" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h5 class="modal-title">AGENDE AQUI SU CITA </h5>
-                    <asp:Button class="close" data-dismiss="modal">&times;</asp:Button>
-                </div>
-                <div class="modal-body">
-
-                    <div class="col-md-6">
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                            <i class="fa fa-user-o"></i>
-                            <asp:TextBox ID="TxtDocumento" runat="server" class="mdl-textfield__input" pattern="[0-9 ]*"></asp:TextBox>
-                            <label class="mdl-textfield__label" for="appointment-name">Documento</label>
-                            <span class="mdl-textfield__error">Porfavor verifique su documento!</span>
-                        </div>
-                    </div>
 
 
-                    <div class="col-md-6">
-                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
-                            <i class="fa fa-hospital-o"></i>
-                            <asp:DropDownList ID="dropEspecialidad" runat="server" class="mdl-selectfield__select" AutoPostBack="true" OnSelectedIndexChanged="EspecialidadSeleccionada"></asp:DropDownList>
-                            <label class="mdl-selectfield__label" for="appointment-department">Selecione Especialidad</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label form-input-icon">
-                            <i class="fa fa-user-md"></i>
-                            <asp:DropDownList ID="dropEspecialista" runat="server" class="mdl-selectfield__select" AutoPostBack="true"></asp:DropDownList>
-                            <select class="mdl-selectfield__select" id="appointment-doctor">
-                            </select>
-                            <label class="mdl-selectfield__label" for="appointment-doctor">Seleccione Un Especialista</label>
-                        </div>
-                    </div>
-
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
-                        <i class="fa fa-user-o"></i>
-                        <asp:TextBox ID="txtF" TextMode="DateTime" class="mdl-textfield__input" onfocus="(this.type='date')" runat="server"></asp:TextBox>
-                        <%--<asp:TextBox ID="txtfechaCita" runat="server" class="mdl-textfield__input" onfocus="(this.type='date')"></asp:TextBox>--%>
-                        <label class="mdl-textfield__label" for="appointment-name">Fecha de Cita</label>
-                        <span class="mdl-textfield__error">Porfavor verifique su fecha de Cita!</span>
-                    </div>
-
-                </div>
-                <div class="text-center pt-4">
-
-                    <asp:Button ID="btnRegistrarCita" runat="server" class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect mdl-button--raised button button-primary button-lg make-appointment" OnClick="btnRegistrarCita_Click" Text="AGENDAR CITA" />
-
-
-                </div>
-            </div>
-        </div>
     </div>
 
-    <%--   </form>--%>
+
+
+
+    <!-- End Make an Appointment Modal -->
+
+
+    <!-- **********Included Scripts*********** -->
+
+    <!-- Jquery Library 2.1 JavaScript-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- Popper JavaScript-->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap Core JavaScript-->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Material Design Lite JavaScript-->
+    <script src="js/material.min.js"></script>
+    <!-- Material Select Field Script -->
+    <script src="js/mdl-selectfield.min.js"></script>
+    <!-- Flexslider Plugin JavaScript-->
+    <script src="js/jquery.flexslider.min.js"></script>
+    <!-- Owl Carousel Plugin JavaScript-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Scrolltofixed Plugin JavaScript-->
+    <script src="js/jquery-scrolltofixed.min.js"></script>
+    <!-- Magnific Popup Plugin JavaScript-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- WayPoint Plugin JavaScript-->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- CounterUp Plugin JavaScript-->
+    <script src="js/jquery.counterup.js"></script>
+    <!-- SmoothScroll Plugin JavaScript-->
+    <script src="js/smoothscroll.min.js"></script>
+    <!--Custom JavaScript for Klinik Template-->
+    <script src="js/custom.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-93901876-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+</div>
+    </div>
 </asp:Content>

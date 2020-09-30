@@ -112,21 +112,7 @@
                                 <p class="font-12 m-0 text-muted">Want to Clarify?</p>
                                 <p class="font-14 m-0">1800 000 000</p>
                             </div>--%>
-                            </div>
-                            <div class="layer-stretch hdr-center">
-                                <div class="row align-items-center">
-
-                                    <div class="col-10">
-                                        <div class="hdr-center-submenu row pull-right">
-
-                                            <div class="col-md-auto pl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block">
-
-                                                <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect hdr-apointment"><i class="fa fa-calendar m-0 color-white"></i>AGENDAR CITA</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

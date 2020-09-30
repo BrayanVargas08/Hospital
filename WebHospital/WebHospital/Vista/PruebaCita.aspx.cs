@@ -64,7 +64,7 @@ namespace WebHospital.Vista
         {
             clEntidadCita objECita = new clEntidadCita();
             objECita.Documento = txtDocumentoP.Text;
-            objECita.FechaHIngreso = DateTime.Parse(TxtFechaP.Text);
+            objECita.FechaHIngreso = TxtFechaP.Text;
             objECita.IdMedico = int.Parse(dropEspecialistaP.SelectedValue.ToString());
             //objECita.IdPaciente = int.Parse(TxtNombre.Text);
             objECita.IdEspecialidad = int.Parse(dropEspecialidadP.SelectedValue.ToString());

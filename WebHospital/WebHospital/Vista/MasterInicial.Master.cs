@@ -114,6 +114,7 @@ namespace WebHospital.Vista
                 if (ListaPaciente.Count > 0)
                 {
                     Session["usuario"] = ListaPaciente[0].Nombre + " " + ListaPaciente[0].Apellido;
+                    Session["documento"] = ListaPaciente[0].Documento;
                     Response.Redirect("IndexUsuarios.aspx");
                     
                 }

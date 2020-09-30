@@ -14,7 +14,7 @@ namespace WebHospital.Vista
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            
+
             if (!IsPostBack)
             {
                 List<clEntidadEspecialidad> listaEspecialidad = new List<clEntidadEspecialidad>();
@@ -28,8 +28,16 @@ namespace WebHospital.Vista
 
             }
 
+            string consulta = "SELECT CitaMedica.FechaHIngreso, CitaMedica.Estado, Medico.Nombre AS [Nombre Medico], Medico.Apellido AS [Apellido Medico], Paciente.Nombre AS [Nombre Paciente], Paciente.Apellido AS [Apellido Paciente], Paciente.Documento " +
+                "FROM CitaMedica INNER JOIN Medico ON CitaMedica.IdMedico = Medico.IdMedico " +
+                "INNER JOIN Paciente ON CitaMedica.IdPaciente = Paciente.IdPaciente " +
+                "WHERE (Paciente.Documento = "+Session["documento"]+")";
+            SqlDataSource1.SelectCommand = consulta;
+            gvCitas.DataSourceID = "SqlDataSource1";
+
 
         }
+
         protected void EspecialidadSeleccionada(object sender, EventArgs e)
         {
             List<clEntidadMedico> listaMedicos = new List<clEntidadMedico>();
@@ -42,16 +50,17 @@ namespace WebHospital.Vista
             dropEspecialista.DataValueField = "IdMedico";
             dropEspecialista.DataBind();
         }
+
         protected void btnRegistrarCita_Click(object sender, EventArgs e)
         {
             clEntidadCita objECita = new clEntidadCita();
             objECita.Documento = TxtDocumento.Text;
-            objECita.FechaHIngreso = DateTime.Parse(txtF.Text);
+            objECita.FechaHIngreso = txtF.Text;
             objECita.IdMedico = int.Parse(dropEspecialista.SelectedValue.ToString());
             objECita.IdEspecialidad = int.Parse(dropEspecialidad.SelectedValue.ToString());
             clCita objCita = new clCita();
             int result = objCita.mtdRegistrarCita(objECita);
-
+            Response.Write("<script>alert('Cita Registrada');</script>");
         }
     }
 }

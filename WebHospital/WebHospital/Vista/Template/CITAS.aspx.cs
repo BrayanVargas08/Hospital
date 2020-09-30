@@ -30,6 +30,14 @@ namespace WebHospital.Vista.Template
 
             }
 
+            //string consulta = "SELECT CitaMedica.FechaHIngreso, CitaMedica.Estado, Medico.Nombre AS [Nombre Medico], Medico.Apellido AS [Apellido Medico], Paciente.Nombre AS [Nombre Paciente], Paciente.Apellido AS [Apellido Paciente], Paciente.Documento " +
+            //    "FROM CitaMedica INNER JOIN Medico ON CitaMedica.IdMedico = Medico.IdMedico " +
+            //    "INNER JOIN Paciente ON CitaMedica.IdPaciente = Paciente.IdPaciente " +
+            //    "WHERE (Paciente.Documento = "++")";
+            //SqlDataSource1.SelectCommand = consulta;
+            //gvCitas.DataSourceID = "SqlDataSource1";
+            
+
         }
 
         protected void EspecialidadSeleccionada(object sender, EventArgs e)
@@ -48,7 +56,7 @@ namespace WebHospital.Vista.Template
         {
             clEntidadCita objECita = new clEntidadCita();
             objECita.Documento = TxtDocumento.Text;
-            objECita.FechaHIngreso = DateTime.Parse(txtF.Text);
+            objECita.FechaHIngreso = txtF.Text;
             objECita.IdMedico = int.Parse(dropEspecialista.SelectedValue.ToString());
             objECita.IdEspecialidad = int.Parse(dropEspecialidad.SelectedValue.ToString());
             clCita objCita = new clCita();

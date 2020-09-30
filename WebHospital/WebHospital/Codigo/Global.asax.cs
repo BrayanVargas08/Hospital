@@ -18,6 +18,7 @@ namespace WebHospital.Codigo
         protected void Session_Start(object sender, EventArgs e)
         {
             Session["usuario"] = "";
+            Session["documento"] = "";
             Session["rol"] = "";
         }
 

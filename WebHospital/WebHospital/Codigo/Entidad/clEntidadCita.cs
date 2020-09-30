@@ -12,7 +12,7 @@ namespace WebHospital.Codigo.Entidad
         public int IdEspecialidad { get; set; }
         public  int IdPersonalAdmin   { get; set; }
         public string Estado { get; set; }
-        public DateTime FechaHIngreso { get; set; }
+        public string FechaHIngreso { get; set; }
 
     }
 }

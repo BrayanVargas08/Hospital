@@ -36,7 +36,7 @@ namespace WebHospital.Codigo
         //En este metodo se validan los datos para el inicio de sesión de los pacientes registrados en el Hospital.
         public List<clEntidadPaciente> mtdValidarDatosPaciente(clEntidadPaciente objEPaciente)
         {
-            string cosulta = "Select Nombre,Apellido From Paciente " +
+            string cosulta = "Select Nombre,Apellido,Documento From Paciente " +
                 "Where email='" + objEPaciente.email + "' AND Password = '" + objEPaciente.Password + "'";
             DataTable tblDatos = new DataTable();
             tblDatos = objSQL.mtdDesconectado(cosulta);
@@ -44,6 +44,7 @@ namespace WebHospital.Codigo
 
             objEPaciente.Nombre = tblDatos.Rows[0][0].ToString();
             objEPaciente.Apellido = tblDatos.Rows[0][1].ToString();
+            objEPaciente.Documento = tblDatos.Rows[0][2].ToString();
             DatosEncontradosPaciente.Add(objEPaciente);
 
             return DatosEncontradosPaciente;

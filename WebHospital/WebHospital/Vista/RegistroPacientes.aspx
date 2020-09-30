@@ -105,18 +105,8 @@
                         <asp:Button ID="btnRegistrar" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" runat="server" Text="Crear Cuenta" OnClick="btnRegistrar_Click" />
                     </div>
 
-                    <div class="or-using">
-                        8/5000
-O usando
-                    </div>
-                    <div class="social-login">
-                        <a href="https://www.facebook.com/" class="social-facebook"><i class="fa fa-facebook"></i>Facebook</a>
-                        <a href="https://accounts.google.com/" class="social-google"><i class="fa fa-google"></i>Google</a>
-                    </div>
-                    <div class="login-link">
-                        <span class="paragraph-small">¿Ya tienes una cuenta?</span>
-                        <a href="#" class="">Inicia sesión ahora</a>
-                    </div>
+                    
+                  
                 </div>
 
             </div>

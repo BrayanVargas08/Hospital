@@ -69,7 +69,7 @@
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                         <i class="fa fa-key"></i>
                         <!--<input class="mdl-textfield__input" type="password" id="register-password">-->
-                        <asp:TextBox ID="txtContraseña" class="mdl-textfield__input" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtContraseña" class="mdl-textfield__input" runat="server" TextMode="Password"></asp:TextBox>
                         <label class="mdl-textfield__label" for="register-password">Contraseña <em>*</em></label>
                         <span class="mdl-textfield__error">Please Enter Valid Password(Min 6 Character)!</span>
                     </div>

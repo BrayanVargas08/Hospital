@@ -54,7 +54,7 @@
                     </div>
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                         <i class="fa fa-user-o"></i>
-                        <asp:DropDownList ID="cmbAmbulancia" runat="server" class="mdl-textfield__input"></asp:DropDownList>
+                        <asp:DropDownList ID="cmbAmbulanciaa" runat="server" class="mdl-textfield__input"></asp:DropDownList>
                         <label class="mdl-textfield__label" for="appointment-name">Ambulancia</label>
                         <span class="mdl-textfield__error">Porfavor verifique su Ambulancia!</span>
                     </div>

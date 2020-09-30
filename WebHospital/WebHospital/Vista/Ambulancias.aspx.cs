@@ -47,7 +47,7 @@ namespace WebHospital.Vista
                 gvPhoneBook.Rows[0].Cells.Clear();
                 gvPhoneBook.Rows[0].Cells.Add(new TableCell());
                 gvPhoneBook.Rows[0].Cells[0].ColumnSpan = dtbl.Columns.Count;
-                gvPhoneBook.Rows[0].Cells[0].Text = "No Data Found ..!";
+                gvPhoneBook.Rows[0].Cells[0].Text = "Datos No Encontrados ..!";
                 gvPhoneBook.Rows[0].Cells[0].HorizontalAlign = HorizontalAlign.Center;
             }
 
@@ -70,7 +70,7 @@ namespace WebHospital.Vista
                         sqlCmd.Parameters.AddWithValue("@Estado", (gvPhoneBook.FooterRow.FindControl("txtEstadoFooter") as TextBox).Text.Trim());
                         sqlCmd.ExecuteNonQuery();
                         PopulateGridview();
-                        lblSuccessMessage.Text = "New Record Added";
+                        lblSuccessMessage.Text = "Nuevo Registro Agregado";
                         lblErrorMessage.Text = "";
                     }
                 }
@@ -101,7 +101,7 @@ namespace WebHospital.Vista
                 using (SqlConnection sqlCon = new SqlConnection(connnectionstring))
                 {
                     sqlCon.Open();
-                    string query = "UPDATE PhoneBook SET Codigo=@Codigo,Placa=@Placa,Coductor=@Coductor,Estado=@Estado WHERE IdAmbulancia = @id";
+                    string query = "UPDATE Ambulancia SET Codigo=@Codigo,Placa=@Placa,Coductor=@Coductor,Estado=@Estado WHERE IdAmbulancia = @id";
                     SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                     sqlCmd.Parameters.AddWithValue("@Codigo", (gvPhoneBook.Rows[e.RowIndex].FindControl("txtCodigo") as TextBox).Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@Placa", (gvPhoneBook.Rows[e.RowIndex].FindControl("txtPlaca") as TextBox).Text.Trim());
@@ -111,7 +111,7 @@ namespace WebHospital.Vista
                     sqlCmd.ExecuteNonQuery();
                     gvPhoneBook.EditIndex = -1;
                     PopulateGridview();
-                    lblSuccessMessage.Text = "Selected Record Updated";
+                    lblSuccessMessage.Text = "Registro Seleccionado Actualizado";
                     lblErrorMessage.Text = "";
                 }
             }
@@ -134,7 +134,7 @@ namespace WebHospital.Vista
                     sqlCmd.Parameters.AddWithValue("@id", Convert.ToInt32(gvPhoneBook.DataKeys[e.RowIndex].Value.ToString()));
                     sqlCmd.ExecuteNonQuery();
                     PopulateGridview();
-                    lblSuccessMessage.Text = "Selected Record Deleted";
+                    lblSuccessMessage.Text = "Registro Seleccionado Eliminado";
                     lblErrorMessage.Text = "";
                 }
             }

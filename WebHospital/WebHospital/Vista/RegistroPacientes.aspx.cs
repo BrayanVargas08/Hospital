@@ -47,7 +47,7 @@ namespace WebHospital.Vista
             this.txtTelefono.Text = "";
             this.txtFecha.Text = "";
             this.txtContraseña.Text = "";
-            this.RadioButtonGenero.SelectedValue = "";
+            RadioButtonGenero.ClearSelection();
 
 
 

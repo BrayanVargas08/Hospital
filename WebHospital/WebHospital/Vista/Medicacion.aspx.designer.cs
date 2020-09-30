@@ -15,22 +15,22 @@ namespace WebHospital.Vista
     {
 
         /// <summary>
-        /// Control GridView1.
+        /// Control GridView2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView GridView2;
 
         /// <summary>
-        /// Control SqlDataSource1.
+        /// Control SqlDataSource2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
 
         /// <summary>
         /// Control txtHoraMedicacion.
@@ -60,31 +60,40 @@ namespace WebHospital.Vista
         protected global::System.Web.UI.WebControls.TextBox txtMetodoAplicacion;
 
         /// <summary>
-        /// Control TxtObservaciones.
+        /// Control cmdProcesoGeneral.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtObservaciones;
+        protected global::System.Web.UI.WebControls.DropDownList cmdProcesoGeneral;
 
         /// <summary>
-        /// Control TxtPaciente.
+        /// Control cmbMedicamento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtPaciente;
+        protected global::System.Web.UI.WebControls.DropDownList cmbMedicamento;
 
         /// <summary>
-        /// Control txturgencia.
+        /// Control cmbProcedimiento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txturgencia;
+        protected global::System.Web.UI.WebControls.DropDownList cmbProcedimiento;
+
+        /// <summary>
+        /// Control txtPaciente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPaciente;
 
         /// <summary>
         /// Control btnRegistroMedicacion.

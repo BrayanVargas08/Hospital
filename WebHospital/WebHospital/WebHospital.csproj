@@ -359,6 +359,7 @@
     <Compile Include="Codigo\clHospitalizacion.cs" />
     <Compile Include="Codigo\clLogin.cs" />
     <Compile Include="Codigo\clMedicacion.cs" />
+    <Compile Include="Codigo\clMedicamento.cs" />
     <Compile Include="Codigo\clMedico.cs" />
     <Compile Include="Codigo\clPaciente.cs" />
     <Compile Include="Codigo\clCita.cs" />
@@ -373,6 +374,7 @@
     <Compile Include="Codigo\Entidad\clEntidadEspecialidad.cs" />
     <Compile Include="Codigo\Entidad\clEntidadHopitalizacion.cs" />
     <Compile Include="Codigo\Entidad\clEntidadMedicacion.cs" />
+    <Compile Include="Codigo\Entidad\clEntidadMedicamento.cs" />
     <Compile Include="Codigo\Entidad\clEntidadMedico.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPaciente.cs" />
     <Compile Include="Codigo\Entidad\clEntidadPersonalAdministrativo.cs" />
@@ -556,7 +558,6 @@
     </Compile>
     <Compile Include="Vista\Traslado.aspx.cs">
       <DependentUpon>Traslado.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\Traslado.aspx.designer.cs">
       <DependentUpon>Traslado.aspx</DependentUpon>

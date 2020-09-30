@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WebHospital.Codigo.Entidad
 {
-    public class clEntidadMedicacion
+    public class clEntidadMedicacion : clEntidadMedicamento
     {
         public int IdMedicacion { get; set; }
         public string HoraMedicacion { get; set; }
@@ -14,5 +14,6 @@ namespace WebHospital.Codigo.Entidad
         public int IdProcesoGeneral { get; set; }
         public int IdMedicamento { get; set; }
         public int IdProcedimiento { get; set; }
+        public int IdPaciente { get; set; }
     }
 }

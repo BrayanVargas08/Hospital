@@ -11,11 +11,16 @@ namespace WebHospital.Codigo
     {
         public int mtdRegistrar(clEntidadMedicacion objMedicacion)
         {
-
-            string sqlInsert = "INSERT INTO Hospitalizacion(HoraMedicacion,Cantidad,MetodoAplicacion,IdProcesoGeneral,IdMedicamento,IdProcedimiento)" +
-               "values('" + objMedicacion.HoraMedicacion + "','" + objMedicacion.Cantidad + "','" + objMedicacion.MetodoAplicacion + "','" + objMedicacion.IdProcesoGeneral + "','" + objMedicacion.IdMedicamento + "','" + objMedicacion.IdProcedimiento + "')";
-
+            //Aca vamos a tomar el id del paciente
             clAdminSQL objSQL = new clAdminSQL();
+            string TomarId = "SELECT IdPaciente from Paciente Where Nombre='" + objMedicacion.Nombre + "'";
+            DataTable tblpaciente = new DataTable();
+            tblpaciente = objSQL.mtdDesconectado(TomarId);
+            int IdPaciente = int.Parse(tblpaciente.Rows[0][0].ToString());
+
+            string sqlInsert = "INSERT INTO Medicacion(HoraMedicacion,Cantidad,MetodoAplicacion,IdProcesoGeneral,IdMedicamento,IdProcedimiento,IdPaciente)" +
+               "values('" + objMedicacion.HoraMedicacion + "','" + objMedicacion.Cantidad + "','" + objMedicacion.MetodoAplicacion + "','" + objMedicacion.IdProcesoGeneral + "','" + objMedicacion.IdMedicamento + "','" + objMedicacion.IdProcedimiento + "','" + IdPaciente + "')";
+
             int result = objSQL.mtdConectado(sqlInsert);
             return result;
 
@@ -40,6 +45,7 @@ namespace WebHospital.Codigo
                 objMedicacion.IdProcesoGeneral = int.Parse(tblMedicacion.Rows[i][4].ToString());
                 objMedicacion.IdMedicamento = int.Parse(tblMedicacion.Rows[i][5].ToString());
                 objMedicacion.IdProcedimiento = int.Parse(tblMedicacion.Rows[i][6].ToString());
+                objMedicacion.IdPaciente = int.Parse(tblMedicacion.Rows[i][7].ToString());
                
                 listaMedicacion.Add(objMedicacion);
 

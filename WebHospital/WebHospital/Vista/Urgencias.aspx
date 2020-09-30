@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vista/MasterAdministrador.Master" AutoEventWireup="true" CodeBehind="Urgencias.aspx.cs" Inherits="WebHospital.Vista.Urgencias" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form runat="server">
+    
 
         <!-- Start Page Title Section -->
         <div class="page-ttl">
@@ -169,5 +169,5 @@
                 </div>
             </div>
             <!-- End Register Section -->
-    </form>
+    
 </asp:Content>

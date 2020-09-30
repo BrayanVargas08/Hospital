@@ -54,6 +54,12 @@ namespace WebHospital.Vista
 
             clProcedimiento objProcedimiento = new clProcedimiento();
             int resultSql = objProcedimiento.mtdRegistrar(objEProcedimiento);
+
+            Response.Write("<script>alert('Procedimiento Registrado');</script>");
+
+            this.txtDescripcion.Text = "";
+            this.txtObservaciones.Text = "";
+            this.txtfechaproceso.Text = "";
         }
 
         protected void GridView1_SelectedIndexChanged1(object sender, EventArgs e)

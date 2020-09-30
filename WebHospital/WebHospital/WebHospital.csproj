@@ -86,6 +86,7 @@
     <Content Include="Vista\indexadministrador.aspx" />
     <Content Include="Vista\IndexMedico.aspx" />
     <Content Include="Vista\IndexUsuarios.aspx" />
+    <Content Include="Vista\Lista.aspx" />
     <Content Include="Vista\PersonalAdministrativo.aspx" />
     <Content Include="Vista\PoliticasdePrivacidad.aspx" />
     <Content Include="Vista\Procedimiento.aspx" />
@@ -457,6 +458,13 @@
     <Compile Include="Vista\IndexUsuarios.aspx.designer.cs">
       <DependentUpon>IndexUsuarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vista\Lista.aspx.cs">
+      <DependentUpon>Lista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Lista.aspx.designer.cs">
+      <DependentUpon>Lista.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vista\MasterMedico.Master.cs">
       <DependentUpon>MasterMedico.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -480,6 +488,7 @@
     </Compile>
     <Compile Include="Vista\MasterUsuarios.Master.cs">
       <DependentUpon>MasterUsuarios.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\MasterUsuarios.Master.designer.cs">
       <DependentUpon>MasterUsuarios.Master</DependentUpon>

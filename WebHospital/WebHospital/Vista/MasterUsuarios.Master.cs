@@ -11,12 +11,12 @@ namespace WebHospital.Vista
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Session["usuario"] == null)
-            //{
-            //    Response.Redirect("index.aspx");
-            //}
+            if (Session["usuario"] == null)
+            {
+                Response.Redirect("index.aspx");
+            }
 
-            //lblUsuario.Text = Session["usuario"].ToString();
+            lblUsuario.Text = Session["usuario"].ToString();
         }
 
         protected void lkbCerrar_Click(object sender, EventArgs e)

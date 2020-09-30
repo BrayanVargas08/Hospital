@@ -12,13 +12,19 @@
                 </div>
                 </div>
                 <div>
-                   <asp:GridView ID="gvPhoneBook" runat="server" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="IdAmbulancia"
-                ShowHeaderWhenEmpty="true"
+            <br />
+            <asp:Label ID="lblSuccessMessage" runat="server" ForeColor="Green" style="font-size: medium" />
+            <br />
+            <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red" style="font-size: medium" />
+
+                    <div class="text-center">
+                   <asp:GridView ID="gvPhoneBook" runat="server" AutoGenerateColumns="False" ShowFooter="True" DataKeyNames="IdAmbulancia"
+                ShowHeaderWhenEmpty="True"
 
                 OnRowCommand="gvPhoneBook_RowCommand" OnRowEditing="gvPhoneBook_RowEditing" OnRowCancelingEdit="gvPhoneBook_RowCancelingEdit"
                 OnRowUpdating="gvPhoneBook_RowUpdating" OnRowDeleting="gvPhoneBook_RowDeleting"
 
-                BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
+                BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" CssClass="dropdown" style="width: 495px; height: 189px; top: -42px; left: 348px">
                 <%-- Theme Properties --%>
                 <FooterStyle BackColor="White" ForeColor="#000066" />
                 <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
@@ -64,7 +70,7 @@
                             <asp:TextBox ID="txtCoductorFooter" runat="server" />
                         </FooterTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField HeaderText="Email">
+                    <asp:TemplateField HeaderText="Estado">
                         <ItemTemplate>
                             <asp:Label Text='<%# Eval("Estado") %>' runat="server" />
                         </ItemTemplate>
@@ -77,23 +83,20 @@
                     </asp:TemplateField>
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:ImageButton ImageUrl="~/Images/edit.png" runat="server" CommandName="Edit" ToolTip="Edit" Width="20px" Height="20px"/>
-                            <asp:ImageButton ImageUrl="~/Images/delete.png" runat="server" CommandName="Delete" ToolTip="Delete" Width="20px" Height="20px"/>
+                            <asp:ImageButton ImageUrl="~/Vista/Template/images/editar.png" runat="server" CommandName="Edit" ToolTip="Edit" Width="20px" Height="20px"/>
+                            <asp:ImageButton ImageUrl="~/Vista/Template/images/eliminar.png" runat="server" CommandName="Delete" ToolTip="Delete" Width="20px" Height="20px"/>
                         </ItemTemplate>
                         <EditItemTemplate>
-                            <asp:ImageButton ImageUrl="~/Images/save.png" runat="server" CommandName="Update" ToolTip="Update" Width="20px" Height="20px"/>
-                            <asp:ImageButton ImageUrl="~/Images/cancel.png" runat="server" CommandName="Cancel" ToolTip="Cancel" Width="20px" Height="20px"/>
+                            <asp:ImageButton ImageUrl="~/Vista/Template/images/guardar.png" runat="server" CommandName="Update" ToolTip="Update" Width="20px" Height="20px"/>
+                            <asp:ImageButton ImageUrl="~/Vista/Template/images/cancelar.png" runat="server" CommandName="Cancel" ToolTip="Cancel" Width="20px" Height="20px"/>
                         </EditItemTemplate>
                         <FooterTemplate>
-                            <asp:ImageButton ImageUrl="~/Images/addnew.png" runat="server" CommandName="AddNew" ToolTip="Add New" Width="20px" Height="20px"/>
+                            <asp:ImageButton ImageUrl="~/Vista/Template/images/addnew.png" runat="server" CommandName="AddNew" ToolTip="Add New" Width="20px" Height="20px"/>
                         </FooterTemplate>
                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
-            <br />
-            <asp:Label ID="lblSuccessMessage" Text="" runat="server" ForeColor="Green" />
-            <br />
-            <asp:Label ID="lblErrorMessage" Text="" runat="server" ForeColor="Red" />
+                    </div>
 
                 </div>
     </body>

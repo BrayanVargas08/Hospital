@@ -7,7 +7,7 @@
         <div class="flexslider slider-wrapper">
             <ul class="slides">
                 <li>
-                    <div cl<%--a--%>ss="slider-info">
+                    <div class="slider-info">
                         <h1 class="animated fadeInDown">Hospital de Paz de ariporo</h1>
                         <p class="animated fadeInDown">RED SALUD CASANARE E.S.E, es la institución que presta servicios de salud de primer Nivel de atención de forma íntegra y humanizada, con seguridad, calidad, pertinencia y compromiso con el bienestar de la comunidad en 16 municipios del Departamento de Casanare . #twitterhash, @facebooktag</p>
                     </div>

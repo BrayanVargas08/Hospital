@@ -243,7 +243,7 @@ Se encuentra ubicada en el primer piso en el hall principal, accediendo por la p
                     <div id="hm-doctor-slider" class="owl-carousel owl-theme theme-owl-dot">
                         <div class="hm-doctor">
                             <img class="img-responsive" src="template/images/medico1.jpg" alt="">
-                            <h6>Dr. Daniel miguel</h6>
+                            <h6>Dr. linda Gutierrez</h6>
                             <p>Ginecologo</p>
                         </div>
                         <div class="hm-doctor">
@@ -268,7 +268,7 @@ Se encuentra ubicada en el primer piso en el hall principal, accediendo por la p
                         </div>
                         <div class="hm-doctor">
                             <img class="img-responsive" src="template/images/medico6.jpg" alt="">
-                            <h6>Linda gutierez</h6>
+                            <h6>Dr. Daniel miguel</h6>
                             <p>Medicina general</p>
                         </div>
 
